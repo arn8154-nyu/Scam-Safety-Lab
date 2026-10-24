@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="description" content="Practice spotting scam text messages in a safe place. Free, no account needed.">
+<title>Scam-Safety Practice Lab</title>
+<link rel="stylesheet" href="styles.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<!-- APP:START -->
+<div class="app">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <p class="brand">Scam-Safety Practice Lab</p>
+      <div class="textsize" role="group" aria-label="Text size">
+        <span class="textsize-label">Text size</span>
+        <button type="button" id="size-normal" class="size-btn" data-size="normal" aria-pressed="true">A</button>
+        <button type="button" id="size-large" class="size-btn size-btn-large" data-size="large" aria-pressed="false">A+</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- Home -->
+    <section id="screen-home" class="screen" aria-labelledby="home-title">
+      <div class="home">
+        <div class="home-text">
+          <h1 id="home-title" tabindex="-1">Practice spotting scams in a safe place</h1>
+          <p class="lead">These text messages are made up, so nothing you tap here can hurt you. Decide if each one is safe or suspicious, and see what to look for.</p>
+          <p class="meta" id="home-count">6 practice messages, about 10 minutes</p>
+          <div class="actions">
+            <button type="button" id="start-btn" class="btn btn-primary" disabled>Start practicing</button>
+          </div>
+          <p class="status" id="load-status" role="status"></p>
+          <details class="how">
+            <summary>How does this work?</summary>
+            <ol class="how-steps">
+              <li>Read a text message, just like one on your phone.</li>
+              <li>Choose <strong>Looks safe</strong> or <strong>Seems suspicious</strong>.</li>
+              <li>See the signs that give it away, and what to do if you get one like it.</li>
+            </ol>
+            <p>There is no timer, and nothing you choose is saved or shared.</p>
+          </details>
+        </div>
+        <div class="home-art" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-bubble">Your package is on hold. Update within 24 hours…</div>
+            <div class="phone-bubble phone-bubble-safe">Reminder: your appointment is Thursday at 10:30.</div>
+            <div class="phone-q">Safe or suspicious?</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Practice -->
+    <section id="screen-practice" class="screen" aria-labelledby="practice-title" hidden>
+      <div class="progress-row">
+        <button type="button" class="link-btn" data-go="home">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          Home
+        </button>
+        <div class="progress">
+          <p class="progress-label" id="practice-count">Message 1 of 6</p>
+          <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="practice-fill"></div></div>
+        </div>
+      </div>
+      <div class="split">
+        <div class="split-main">
+          <p class="chip">Text message</p>
+          <div class="message-card" id="practice-message"></div>
+        </div>
+        <div class="split-side">
+          <h2 id="practice-title" tabindex="-1">Is this message safe or suspicious?</h2>
+          <div class="choice-list">
+            <button type="button" class="btn btn-choice" data-answer="safe">Looks safe</button>
+            <button type="button" class="btn btn-choice" data-answer="suspicious">Seems suspicious</button>
+          </div>
+          <p class="meta">Take your time. There is no timer.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feedback -->
+    <section id="screen-feedback" class="screen" aria-labelledby="feedback-title" hidden>
+      <div class="progress-row">
+        <button type="button" class="link-btn" data-go="home">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          Home
+        </button>
+        <p class="progress-label" id="feedback-count">Message 1 of 6</p>
+      </div>
+      <div class="result" id="result-box">
+        <svg class="result-icon result-icon-right" aria-hidden="true" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6"/></svg>
+        <svg class="result-icon result-icon-wrong" aria-hidden="true" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 11v6"/><path d="M12 7.5h.01"/></svg>
+        <div class="result-text">
+          <h2 id="feedback-title" tabindex="-1">Good catch. This is a scam.</h2>
+          <p id="feedback-choice">You chose: Seems suspicious</p>
+          <p id="feedback-note" class="result-note"></p>
+        </div>
+      </div>
+      <div class="split">
+        <div class="split-main">
+          <h3 id="signs-title">Warning signs</h3>
+          <ol class="signs" id="signs-list"></ol>
+        </div>
+        <div class="split-side">
+          <div class="tip">
+            <h3 id="tip-title">What to do instead</h3>
+            <p id="tip-text"></p>
+          </div>
+          <details class="again">
+            <summary>Show the message again</summary>
+            <div class="message-card" id="feedback-message"></div>
+          </details>
+        </div>
+      </div>
+      <div class="actions actions-end">
+        <button type="button" id="next-btn" class="btn btn-primary">Next message</button>
+      </div>
+    </section>
+
+    <!-- Done -->
+    <section id="screen-done" class="screen" aria-labelledby="done-title" hidden>
+      <div class="done">
+        <h1 id="done-title" tabindex="-1">Nice work. You finished this practice round.</h1>
+        <div class="split">
+          <div class="score">
+            <p class="score-total" id="score-total">You got 0 of 6 right</p>
+            <div class="score-row">
+              <p>Scams you caught: <strong id="score-scam">0 of 3</strong></p>
+              <div class="bar" aria-hidden="true"><div class="bar-fill" id="bar-scam"></div></div>
+            </div>
+            <div class="score-row">
+              <p>Safe messages you recognized: <strong id="score-safe">0 of 3</strong></p>
+              <div class="bar" aria-hidden="true"><div class="bar-fill" id="bar-safe"></div></div>
+            </div>
+          </div>
+          <div class="tip">
+            <h2>One thing to remember</h2>
+            <p>If a message rushes you or asks you to tap a link, stop. Contact the company yourself, using a number or website you already trust.</p>
+          </div>
+        </div>
+        <div class="actions actions-center">
+          <button type="button" id="again-btn" class="btn btn-primary">Practice again</button>
+          <button type="button" class="btn btn-secondary" data-go="home">Back to home</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+<!-- APP:END -->
+</body>
+</html>
