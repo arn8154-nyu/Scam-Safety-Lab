@@ -1,6 +1,6 @@
 /* Scam-Safety Practice Lab, Sprint 1
    Practice engine for text-message scenarios.
-   Scenarios live in data/scenarios.json, separate from this code, so new
+   Scenarios live in scenarios.json, separate from this code, so new
    messages can be added without changing the app.
    Security note: every piece of scenario text is placed on the page with
    textContent, never innerHTML, so text in the data file can't run as code.
@@ -10,7 +10,7 @@
 (function () {
   "use strict";
 
-  var DATA_URL = "data/scenarios.json";
+  var DATA_URL = "scenarios.json";
   var SIZE_KEY = "ssl-text-size";
 
   var scenarios = [];

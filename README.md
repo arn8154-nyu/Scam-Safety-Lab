@@ -24,12 +24,12 @@ Plain HTML, CSS, and JavaScript, with no frameworks and no build step. It's host
 | `index.html` | The page structure: home, practice, feedback, and results screens |
 | `styles.css` | Layout, colors, text sizes, and the phone and laptop layouts |
 | `app.js` | Loads the scenarios, runs the practice round, shows feedback, and counts results |
-| `data/scenarios.json` | The practice messages and their feedback, kept separate from the code |
-| `fonts/` | Atkinson Hyperlegible, a typeface designed for readers with low vision (SIL Open Font License) |
+| `scenarios.json` | The practice messages and their feedback, kept separate from the code |
+| `atkinson-hyperlegible-*.woff2` | Atkinson Hyperlegible, a typeface designed for readers with low vision (license in `OFL-LICENSE.txt`) |
 
 ## Adding a scenario
 
-Add an entry to `data/scenarios.json` with `id`, `channel`, `isScam` (true or false), `category`, `sender`, `time`, `message`, three `signs` (each with a `title` and `detail`), and a `tip`. All names, numbers, and websites in scenarios are fictional.
+Add an entry to `scenarios.json` with `id`, `channel`, `isScam` (true or false), `category`, `sender`, `time`, `message`, three `signs` (each with a `title` and `detail`), and a `tip`. All names, numbers, and websites in scenarios are fictional.
 
 ## Privacy and security
 
@@ -41,4 +41,4 @@ Add an entry to `data/scenarios.json` with `id`, `channel`, `isScam` (true or fa
 
 ## Running it
 
-GitHub Pages serves the site directly from this repository. To test on your own computer, the files need to be served by a local web server (for example, the Live Server extension in VS Code), because browsers block loading `data/scenarios.json` when you open `index.html` straight from a folder.
+GitHub Pages serves the site directly from this repository. To test on your own computer, the files need to be served by a local web server (for example, the Live Server extension in VS Code), because browsers block loading `scenarios.json` when you open `index.html` straight from a folder.
