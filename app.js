@@ -22,9 +22,9 @@
   var LANG_KEY = "ssl-language";
   var LANGS = ["en", "es", "bn"];
 
-  var rounds = [];         // each round is a set of practice messages
-  var roundIndex = 0;
-  var scenarios = [];      // the messages in the current round
+  var sets = [];           // set 1: the main 12 messages; set 2: 12 new ones for a retry
+  var mode = "main";       // "main" (set 1), "round2" (set 2), or "mix" (a mix of both)
+  var scenarios = [];      // the messages in the current practice
   var words = null;        // everything in translations.json
   var lang = "en";
   var current = 0;
@@ -154,7 +154,9 @@
     $("lang-group").setAttribute("aria-label", t("language"));
     $("size-group").setAttribute("aria-label", t("textSize"));
     fillHow2();
-    drawHomeRounds();
+    if (sets.length) {
+      $("home-count").textContent = t("homeCount", { n: num(sets[0].scenarios.length) });
+    }
     if (loadFailed) { $("load-status").textContent = t("loadError"); }
 
     if (screenNow === "practice") { drawPractice(); }
@@ -206,17 +208,26 @@
     container.appendChild(time);
   }
 
-  /* ---------- Rounds ---------- */
+  /* ---------- Which messages to practice ---------- */
 
-  function drawHomeRounds() {
-    if (!rounds.length) { return; }
-    var n = rounds[0].scenarios.length;
-    $("home-count").textContent = t("homeCount", { rounds: num(rounds.length), n: num(n) });
-    var btn = $("round2-btn");
-    btn.hidden = rounds.length < 2;
-    if (rounds.length >= 2) {
-      btn.textContent = t("roundStart", { r: num(2), n: num(rounds[1].scenarios.length) });
+  // A fresh mix of 6 scams and 6 safe messages from everything, used once
+  // someone has already seen both sets.
+  function shuffle(list) {
+    var a = list.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
     }
+    return a;
+  }
+
+  function mixedSet() {
+    var all = [];
+    sets.forEach(function (s) { all = all.concat(s.scenarios); });
+    var half = Math.floor(sets[0].scenarios.length / 2);
+    var scams = shuffle(all.filter(function (s) { return s.isScam; })).slice(0, half);
+    var safe = shuffle(all.filter(function (s) { return !s.isScam; })).slice(0, half);
+    return shuffle(scams.concat(safe));
   }
 
   /* ---------- Situation note (some safe messages depend on what you know) ---------- */
@@ -290,16 +301,22 @@
 
   /* ---------- Practice round ---------- */
 
-  function startRound(index) {
-    roundIndex = typeof index === "number" ? index : roundIndex;
-    scenarios = rounds[roundIndex].scenarios;
+  function startRound(newMode) {
+    mode = newMode;
+    if (mode === "round2") { scenarios = sets[1].scenarios; }
+    else if (mode === "mix") { scenarios = mixedSet(); }
+    else { scenarios = sets[0].scenarios; }
     current = 0;
     answers = [];
     showPractice();
   }
 
   function countLabel(index) {
-    return t("roundMessageCount", { r: num(roundIndex + 1), i: num(index + 1), n: num(scenarios.length) });
+    // "Round 2" is only mentioned for the retry with new messages.
+    if (mode === "round2") {
+      return t("roundMessageCount", { r: num(2), i: num(index + 1), n: num(scenarios.length) });
+    }
+    return t("messageCount", { i: num(index + 1), n: num(scenarios.length) });
   }
 
   function drawPractice() {
@@ -401,15 +418,15 @@
       }
     });
 
-    $("done-title").textContent = t("doneTitle", { r: num(roundIndex + 1) });
-    var nextBtn = $("next-round-btn");
-    var hasNext = roundIndex + 1 < rounds.length;
-    nextBtn.hidden = !hasNext;
-    if (hasNext) {
-      nextBtn.textContent = t("nextRound", { r: num(roundIndex + 2), n: num(rounds[roundIndex + 1].scenarios.length) });
+    $("done-title").textContent = mode === "round2" ? t("doneTitleRound", { r: num(2) }) : t("doneTitle");
+    // After the main 12, the retry gives 12 new messages (round 2).
+    // After that, it gives a fresh mix from all the messages.
+    var again = $("again-btn");
+    if (mode === "main" && sets.length > 1) {
+      again.textContent = t("retryNew", { n: num(sets[1].scenarios.length) });
+    } else {
+      again.textContent = t("retryMix");
     }
-    // When there's a next round, "practice again" becomes the secondary choice.
-    $("again-btn").className = "btn " + (hasNext ? "btn-secondary" : "btn-primary");
 
     $("score-total").textContent = t("scoreTotal", { right: num(right), total: num(total) });
     $("score-scam").textContent = t("ofN", { a: num(scamRight), b: num(scamTotal) });
@@ -438,16 +455,15 @@
       .catch(function () { words = null; /* English already in the page */ })
       .then(function () { return getJSON(DATA_URL); })
       .then(function (data) {
-        rounds = (data && data.rounds) || [];
-        if (!rounds.length && data && data.scenarios) { rounds = [{ scenarios: data.scenarios }]; }
-        if (!rounds.length || !rounds[0].scenarios.length) { throw new Error("No scenarios"); }
-        scenarios = rounds[0].scenarios;
+        sets = (data && data.sets) || [];
+        if (!sets.length && data && data.scenarios) { sets = [{ scenarios: data.scenarios }]; }
+        if (!sets.length || !sets[0].scenarios.length) { throw new Error("No scenarios"); }
+        scenarios = sets[0].scenarios;
         applyWords();
         if (!words) {
           $("home-count").textContent = scenarios.length + " practice messages, about 10 minutes";
         }
         $("start-btn").disabled = false;
-        $("round2-btn").disabled = false;
         status.textContent = "";
       })
       .catch(function () {
@@ -473,10 +489,10 @@
 
     // First time through, people see the warning signs before practicing.
     $("start-btn").addEventListener("click", function () { show("lesson"); });
-    $("lesson-start-btn").addEventListener("click", function () { startRound(0); });
-    $("round2-btn").addEventListener("click", function () { startRound(1); });
-    $("again-btn").addEventListener("click", function () { startRound(roundIndex); });
-    $("next-round-btn").addEventListener("click", function () { startRound(roundIndex + 1); });
+    $("lesson-start-btn").addEventListener("click", function () { startRound("main"); });
+    $("again-btn").addEventListener("click", function () {
+      startRound(mode === "main" && sets.length > 1 ? "round2" : "mix");
+    });
     $("next-btn").addEventListener("click", next);
 
     Array.prototype.forEach.call(document.querySelectorAll("[data-answer]"), function (btn) {
