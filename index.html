@@ -71,6 +71,39 @@
       </div>
     </section>
 
+    <!-- Lesson: what to look for, shown before the first round -->
+    <section id="screen-lesson" class="screen" aria-labelledby="lesson-title" hidden>
+      <div class="progress-row">
+        <button type="button" class="link-btn" data-go="home">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          <span data-i18n="home">Home</span>
+        </button>
+      </div>
+      <div class="lesson">
+        <h1 id="lesson-title" tabindex="-1" data-i18n="lessonTitle">Before you start: 4 warning signs</h1>
+        <p class="lead" data-i18n="lessonLead">Scam texts usually have at least one of these signs. Look for them in every message.</p>
+        <ol class="signs lesson-signs">
+          <li><p><strong data-i18n="sign1Title">It rushes or scares you.</strong> <span data-i18n="sign1Text"></span></p></li>
+          <li><p><strong data-i18n="sign2Title">It wants you to tap a link.</strong> <span data-i18n="sign2Text"></span></p></li>
+          <li><p><strong data-i18n="sign3Title">You didn't sign up for it.</strong> <span data-i18n="sign3Text"></span></p></li>
+          <li><p><strong data-i18n="sign4Title">It asks for money, gift cards, passwords, or secrecy.</strong> <span data-i18n="sign4Text"></span></p></li>
+        </ol>
+        <div class="split">
+          <div class="tip tip-strong">
+            <h2 data-i18n="checkTitle">The safe way to check</h2>
+            <p data-i18n="checkText"></p>
+          </div>
+          <div class="tip">
+            <h2 data-i18n="realTitle">Real messages exist too</h2>
+            <p data-i18n="realText"></p>
+          </div>
+        </div>
+        <div class="actions">
+          <button type="button" id="lesson-start-btn" class="btn btn-primary" data-i18n="lessonStart">I'm ready. Start practicing.</button>
+        </div>
+      </div>
+    </section>
+
     <!-- Practice -->
     <section id="screen-practice" class="screen" aria-labelledby="practice-title" hidden>
       <div class="progress-row">
@@ -162,9 +195,19 @@
             <p data-i18n="rememberText">If a message rushes you or asks you to tap a link, stop. Contact the company yourself, using a number or website you already trust.</p>
           </div>
         </div>
+        <section class="learn" aria-labelledby="learn-title">
+          <h2 id="learn-title" data-i18n="learnTitle">Learn more and get help</h2>
+          <ul class="learn-list">
+            <li><p data-i18n="learnForward"></p></li>
+            <li><p><a class="ext" data-i18n="learnReport" data-href="learnReportUrl" href="https://reportfraud.ftc.gov/" target="_blank" rel="noopener noreferrer">Report a scam to the FTC</a></p></li>
+            <li><p><a class="ext" data-i18n="learnGuide" data-href="learnGuideUrl" href="https://consumer.ftc.gov/articles/how-recognize-and-report-spam-text-messages" target="_blank" rel="noopener noreferrer">Read the FTC's guide to spotting scam texts</a></p></li>
+            <li><p data-i18n="learnHelpline"></p><p><a class="btn btn-secondary btn-call" href="tel:+18779083360" data-i18n="learnCall">Call 877-908-3360</a></p></li>
+          </ul>
+        </section>
         <div class="actions actions-center">
           <button type="button" id="again-btn" class="btn btn-primary" data-i18n="practiceAgain">Practice again</button>
           <button type="button" class="btn btn-secondary" data-go="home" data-i18n="backHome">Back to home</button>
+          <button type="button" class="btn btn-secondary" data-go="lesson" data-i18n="reviewSigns">Review the 4 warning signs</button>
         </div>
       </div>
     </section>

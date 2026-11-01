@@ -71,12 +71,14 @@
 
   var screens = {
     home: $("screen-home"),
+    lesson: $("screen-lesson"),
     practice: $("screen-practice"),
     feedback: $("screen-feedback"),
     done: $("screen-done")
   };
   var headings = {
     home: "home-title",
+    lesson: "lesson-title",
     practice: "practice-title",
     feedback: "feedback-title",
     done: "done-title"
@@ -141,6 +143,11 @@
     if (!words) { return; }
     Array.prototype.forEach.call(document.querySelectorAll("[data-i18n]"), function (el) {
       el.textContent = t(el.getAttribute("data-i18n"));
+    });
+    // Links whose address changes with the language (Spanish FTC pages, for example).
+    Array.prototype.forEach.call(document.querySelectorAll("[data-href]"), function (el) {
+      var url = t(el.getAttribute("data-href"));
+      if (/^https:\/\//.test(url)) { el.setAttribute("href", url); }
     });
     $("lang-group").setAttribute("aria-label", t("language"));
     $("size-group").setAttribute("aria-label", t("textSize"));
@@ -420,7 +427,9 @@
     $("size-normal").addEventListener("click", function () { setTextSize("normal"); });
     $("size-large").addEventListener("click", function () { setTextSize("large"); });
 
-    $("start-btn").addEventListener("click", startRound);
+    // First time through, people see the warning signs before practicing.
+    $("start-btn").addEventListener("click", function () { show("lesson"); });
+    $("lesson-start-btn").addEventListener("click", startRound);
     $("again-btn").addEventListener("click", startRound);
     $("next-btn").addEventListener("click", next);
 

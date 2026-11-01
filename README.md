@@ -4,7 +4,11 @@ A free web app where older adults practice spotting scam text messages in a safe
 
 Senior Project, NYU School of Professional Studies, Fall 2026.
 
-## Sprint 2, part 1: language option and home-page intro (this version)
+## Sprint 2, part 1: language option, intro, warning-signs lesson, and help resources (this version)
+
+- A short lesson screen before the first round teaches 4 warning signs (rushes or scares you; wants you to tap a link; you didn't sign up for it; asks for money, gift cards, passwords, or secrecy), the safe way to check, and a reminder that real messages exist too. Added after the first user test, where the tester asked how she could know a message is a scam if she had never seen one
+- A "Learn more and get help" section on the results screen: forward scam texts to 7726, report to the FTC (Spanish users get ReporteFraude.ftc.gov and the FTC's Spanish guide), the FTC guide to spotting scam texts, and the free AARP Fraud Watch Network Helpline (877-908-3360, translation available) with a tap-to-call button
+- The fake delivery scenario's third sign now explains that delivery companies only text about a problem if you signed up for updates, so expecting a package doesn't make a text real (the scenario the first tester missed)
 
 - A "Why practice?" section on the home page explains what scam texts are, how common they are (FTC: $470 million reported lost to text scams in 2024; fake package delivery texts were the most reported kind), and why practicing helps. Added after the first user test, where the tester needed the purpose explained before starting
 

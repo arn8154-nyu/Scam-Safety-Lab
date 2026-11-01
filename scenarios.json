@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "round": "Text messages, round 1",
   "scenarios": [
     {
@@ -13,7 +13,7 @@
       "signs": [
         { "title": "It rushes you.", "detail": "\"Within 24 hours or it will be returned\" is meant to make you act before you think." },
         { "title": "The link looks off.", "detail": "It isn't the delivery company's real website." },
-        { "title": "You don't know the sender.", "detail": "It came from a regular phone number, not the company." }
+        { "title": "You didn't sign up for it.", "detail": "It came from a regular phone number, and delivery companies only text about a problem if you signed up for updates. Expecting a package doesn't make the text real." }
       ],
       "tip": "Don't tap the link. Open the delivery company's app, or type its website yourself, and enter your tracking number there.",
       "translations": {
@@ -22,7 +22,7 @@
           "signs": [
             { "title": "Le presiona para actuar rápido.", "detail": "\"Within 24 hours or it will be returned\" (en 24 horas o será devuelto) busca que actúe antes de pensar." },
             { "title": "El enlace es extraño.", "detail": "No es el sitio web real de la empresa de envíos." },
-            { "title": "No conoce al remitente.", "detail": "Llegó desde un número de teléfono común, no de la empresa." }
+            { "title": "Usted no lo pidió.", "detail": "Llegó desde un número de teléfono común, y las empresas de envíos solo envían mensajes sobre un problema si usted se inscribió para recibir avisos. Esperar un paquete no hace que el mensaje sea real." }
           ],
           "tip": "No toque el enlace. Abra la aplicación de la empresa de envíos, o escriba usted mismo su sitio web, e ingrese allí su número de seguimiento."
         },
@@ -31,7 +31,7 @@
           "signs": [
             { "title": "এটি তাড়াহুড়া করায়।", "detail": "\"Within 24 hours or it will be returned\" (২৪ ঘণ্টার মধ্যে, নইলে ফেরত যাবে) কথাটি আপনাকে ভাবার আগেই কিছু করে ফেলতে চাপ দেয়।" },
             { "title": "লিংকটি সন্দেহজনক।", "detail": "এটি ডেলিভারি কোম্পানির আসল ওয়েবসাইট নয়।" },
-            { "title": "প্রেরককে আপনি চেনেন না।", "detail": "এটি কোম্পানি থেকে নয়, একটি সাধারণ ফোন নম্বর থেকে এসেছে।" }
+            { "title": "আপনি এটি চাননি।", "detail": "এটি একটি সাধারণ ফোন নম্বর থেকে এসেছে, আর ডেলিভারি কোম্পানি তখনই সমস্যার কথা মেসেজে জানায়, যখন আপনি আপডেটের জন্য সাইন আপ করেছেন। পার্সেলের অপেক্ষায় থাকলেই মেসেজটি আসল হয়ে যায় না।" }
           ],
           "tip": "লিংকে চাপ দেবেন না। ডেলিভারি কোম্পানির অ্যাপ খুলুন, অথবা নিজে তাদের ওয়েবসাইটের ঠিকানা লিখুন, তারপর সেখানে আপনার ট্র্যাকিং নম্বর দিন।"
         }
