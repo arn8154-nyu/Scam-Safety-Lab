@@ -204,6 +204,22 @@ h1:focus, h2:focus { outline: none; }
 }
 .message-time { color: var(--muted); font-size: 1rem; }
 
+/* Optional translation of the practice message */
+.translate { display: flex; flex-direction: column; gap: 12px; }
+.translate-btn {
+  min-height: 56px; padding: 0 20px; border-radius: 12px; align-self: flex-start;
+  background: transparent; color: var(--ink); border: 2px solid var(--ink);
+  font-family: var(--font); font-size: 1.15rem; font-weight: 700; cursor: pointer;
+}
+.translate-btn:hover { background: var(--bubble); }
+.translate-panel {
+  background: var(--surface); border: 2px dashed var(--muted); border-radius: var(--radius);
+  padding: 16px; display: flex; flex-direction: column; gap: 10px;
+}
+.translate-label { font-weight: 700; color: var(--muted); font-size: 1.05rem; }
+.translated { font-size: 1.25rem; overflow-wrap: anywhere; }
+.translate-panel .note { font-size: 1.05rem; }
+
 /* Feedback */
 .result {
   display: flex; gap: 16px; align-items: flex-start; padding: 20px;

@@ -8,6 +8,8 @@ Senior Project, NYU School of Professional Studies, Fall 2026.
 
 - Instructions, buttons, feedback, and results can be shown in English, Español, or বাংলা (Bengali)
 - The practice messages stay in English on purpose, the way real scam texts arrive, and the app says so
+- In Spanish or Bengali, a "Translate this message" button can show a translation underneath the English message. It is closed by default and never replaces the English, so people still learn what the English version looks like. Links, phone numbers, and company names stay as they are
+- A note (in the chosen language) explains that scam texts usually arrive in English and suggests using the phone's or computer's translation feature, or a translation app or website, for real messages, copying only the words and never tapping links
 - Language buttons are written in their own language, so anyone can find theirs
 - The choice is remembered in the browser; on a first visit the app uses the device's language if it's Spanish or Bengali
 - Bengali uses Bengali digits and Noto Sans Bengali, since Atkinson Hyperlegible has no Bengali letters
@@ -34,14 +36,14 @@ Plain HTML, CSS, and JavaScript, with no frameworks and no build step. It's host
 | `index.html` | The page structure: home, practice, feedback, and results screens |
 | `styles.css` | Layout, colors, text sizes, and the phone and laptop layouts |
 | `app.js` | Loads the scenarios, runs the practice round, shows feedback, and counts results |
-| `scenarios.json` | The practice messages and their feedback, kept separate from the code. Each scenario has a `translations` section with Spanish and Bengali versions of its signs and tip |
+| `scenarios.json` | The practice messages and their feedback, kept separate from the code. Each scenario has a `translations` section with Spanish and Bengali versions of its message, signs, and tip |
 | `translations.json` | Every word the app shows (buttons, instructions, feedback, results) in English, Spanish, and Bengali |
 | `atkinson-hyperlegible-*.woff2` | Atkinson Hyperlegible, a typeface designed for readers with low vision (license in `OFL-LICENSE.txt`) |
 | `noto-sans-bengali-*.woff2` | Noto Sans Bengali, used only for Bengali letters (license in `NOTO-OFL-LICENSE.txt`) |
 
 ## Adding a scenario
 
-Add an entry to `scenarios.json` with `id`, `channel`, `isScam` (true or false), `category`, `sender`, `time`, `message`, three `signs` (each with a `title` and `detail`), a `tip`, and a `translations` section with `es` and `bn` versions of the signs and tip. All names, numbers, and websites in scenarios are fictional.
+Add an entry to `scenarios.json` with `id`, `channel`, `isScam` (true or false), `category`, `sender`, `time`, `message`, three `signs` (each with a `title` and `detail`), a `tip`, and a `translations` section with `es` and `bn` versions of the message, signs, and tip. All names, numbers, and websites in scenarios are fictional.
 
 ## Privacy and security
 

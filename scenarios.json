@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "round": "Text messages, round 1",
   "scenarios": [
     {
@@ -18,6 +18,7 @@
       "tip": "Don't tap the link. Open the delivery company's app, or type its website yourself, and enter your tracking number there.",
       "translations": {
         "es": {
+          "message": "PostTrack Delivery: Su paquete está retenido porque la dirección está incompleta. Actualícela en 24 horas o será devuelto: posttrack-redeliver.info",
           "signs": [
             { "title": "Le presiona para actuar rápido.", "detail": "\"Within 24 hours or it will be returned\" (en 24 horas o será devuelto) busca que actúe antes de pensar." },
             { "title": "El enlace es extraño.", "detail": "No es el sitio web real de la empresa de envíos." },
@@ -26,6 +27,7 @@
           "tip": "No toque el enlace. Abra la aplicación de la empresa de envíos, o escriba usted mismo su sitio web, e ingrese allí su número de seguimiento."
         },
         "bn": {
+          "message": "PostTrack Delivery: ঠিকানা অসম্পূর্ণ থাকায় আপনার পার্সেলটি আটকে আছে। ২৪ ঘণ্টার মধ্যে ঠিকানা আপডেট করুন, নইলে এটি ফেরত পাঠানো হবে: posttrack-redeliver.info",
           "signs": [
             { "title": "এটি তাড়াহুড়া করায়।", "detail": "\"Within 24 hours or it will be returned\" (২৪ ঘণ্টার মধ্যে, নইলে ফেরত যাবে) কথাটি আপনাকে ভাবার আগেই কিছু করে ফেলতে চাপ দেয়।" },
             { "title": "লিংকটি সন্দেহজনক।", "detail": "এটি ডেলিভারি কোম্পানির আসল ওয়েবসাইট নয়।" },
@@ -51,6 +53,7 @@
       "tip": "Call the office using the number on your appointment card, not a number from a message.",
       "translations": {
         "es": {
+          "message": "Recordatorio: Tiene una cita con el Dr. Patel el jueves 5 de noviembre a las 10:30 a. m. Responda C para confirmar, o llame al consultorio al número que aparece en su tarjeta de cita.",
           "signs": [
             { "title": "Lo esperaba.", "detail": "Es sobre una cita que usted hizo." },
             { "title": "No pide nada riesgoso.", "detail": "Ni dinero, ni contraseñas, ni datos personales." },
@@ -59,6 +62,7 @@
           "tip": "Llame al consultorio usando el número de su tarjeta de cita, no un número que venga en un mensaje."
         },
         "bn": {
+          "message": "মনে করিয়ে দিচ্ছি: বৃহস্পতিবার, ৫ নভেম্বর সকাল ১০:৩০-এ Dr. Patel-এর সাথে আপনার অ্যাপয়েন্টমেন্ট আছে। নিশ্চিত করতে C লিখে উত্তর দিন, অথবা আপনার অ্যাপয়েন্টমেন্ট কার্ডে থাকা নম্বরে অফিসে ফোন করুন।",
           "signs": [
             { "title": "এটি আপনি আশা করছিলেন।", "detail": "এটি আপনার নিজের নেওয়া একটি অ্যাপয়েন্টমেন্ট নিয়ে।" },
             { "title": "এটি ঝুঁকিপূর্ণ কিছু চায় না।", "detail": "টাকা, পাসওয়ার্ড বা ব্যক্তিগত তথ্য কিছুই চায় না।" },
@@ -84,6 +88,7 @@
       "tip": "Don't tap the link. Call the number on the back of your bank card, or open your bank's app yourself, and ask if anything is wrong.",
       "translations": {
         "es": {
+          "message": "ALERTA de Harborview Bank: Su cuenta ha sido bloqueada por actividad inusual. Verifique su identidad ahora en harborview-secure-login.com para evitar el cierre permanente.",
           "signs": [
             { "title": "Le asusta.", "detail": "Amenaza con cerrar su cuenta para que entre en pánico." },
             { "title": "Le empuja hacia un enlace.", "detail": "Quiere que \"verifique\" sus datos en un sitio web que eligió quien lo envió." },
@@ -92,6 +97,7 @@
           "tip": "No toque el enlace. Llame al número que aparece en el reverso de su tarjeta del banco, o abra usted mismo la aplicación de su banco, y pregunte si hay algún problema."
         },
         "bn": {
+          "message": "Harborview Bank সতর্কবার্তা: অস্বাভাবিক কার্যকলাপের কারণে আপনার অ্যাকাউন্ট লক করা হয়েছে। স্থায়ীভাবে বন্ধ হওয়া এড়াতে এখনই harborview-secure-login.com-এ গিয়ে আপনার পরিচয় যাচাই করুন।",
           "signs": [
             { "title": "এটি ভয় দেখায়।", "detail": "আপনার অ্যাকাউন্ট বন্ধ করে দেওয়ার হুমকি দেয়, যাতে আপনি ঘাবড়ে যান।" },
             { "title": "এটি লিংকে যেতে চাপ দেয়।", "detail": "এটি চায় আপনি তাদের বেছে দেওয়া ওয়েবসাইটে গিয়ে আপনার তথ্য \"যাচাই\" করুন।" },
@@ -117,6 +123,7 @@
       "tip": "Call the pharmacy using the number on your prescription bottle.",
       "translations": {
         "es": {
+          "message": "Greenleaf Pharmacy: Su medicamento recetado está listo para recoger en nuestra sucursal de Main St. ¿Preguntas? Llame a su tienda. Responda STOP para dejar de recibir mensajes.",
           "signs": [
             { "title": "Coincide con algo que espera.", "detail": "Usted sabe cuándo tiene un medicamento pendiente de recoger." },
             { "title": "No hay nada que tocar ni pagar.", "detail": "Sin enlace, sin pago y sin fecha límite." },
@@ -125,6 +132,7 @@
           "tip": "Llame a la farmacia usando el número que aparece en el frasco de su medicamento."
         },
         "bn": {
+          "message": "Greenleaf Pharmacy: আপনার প্রেসক্রিপশনের ওষুধ আমাদের Main St শাখায় নেওয়ার জন্য তৈরি। কোনো প্রশ্ন থাকলে আপনার দোকানে ফোন করুন। মেসেজ বন্ধ করতে STOP লিখে উত্তর দিন।",
           "signs": [
             { "title": "এটি আপনার প্রত্যাশার সাথে মেলে।", "detail": "আপনার কোনো ওষুধ নেওয়ার বাকি আছে কি না, তা আপনি জানেন।" },
             { "title": "চাপ দেওয়ার বা টাকা দেওয়ার কিছু নেই।", "detail": "কোনো লিংক নেই, টাকা চাওয়া নেই, সময়সীমাও নেই।" },
@@ -150,6 +158,7 @@
       "tip": "Don't reply or send anything. Call your grandchild, or another family member, using a number you already have.",
       "translations": {
         "es": {
+          "message": "Abuela, soy yo. Perdí mi teléfono, así que estoy usando el de un amigo. Estoy en problemas y necesito $900 para la fianza. Por favor, no le digas a mamá. ¿Puedes comprar tarjetas de regalo de Target y enviarme los números?",
           "signs": [
             { "title": "Es una emergencia.", "detail": "Una crisis repentina le empuja a actuar antes de poder comprobar nada." },
             { "title": "Le pide guardar un secreto.", "detail": "\"Don't tell Mom\" (no le digas a mamá) evita que consulte con alguien que podría ayudar." },
@@ -158,6 +167,7 @@
           "tip": "No responda ni envíe nada. Llame a su nieto o nieta, o a otro familiar, usando un número que ya tiene."
         },
         "bn": {
+          "message": "দাদি, আমি বলছি। আমার ফোন হারিয়ে গেছে, তাই বন্ধুর ফোন থেকে লিখছি। আমি বিপদে পড়েছি, জামিনের জন্য $900 লাগবে। দয়া করে মাকে বোলো না। তুমি কি Target গিফট কার্ড কিনে আমাকে নম্বরগুলো পাঠাতে পারবে?",
           "signs": [
             { "title": "এটি একটি জরুরি অবস্থা।", "detail": "হঠাৎ বিপদের কথা বলে যাচাই করার আগেই আপনাকে কিছু করে ফেলতে চাপ দেয়।" },
             { "title": "এটি কথা গোপন রাখতে বলে।", "detail": "\"Don't tell Mom\" (মাকে বোলো না) কথাটি আপনাকে এমন কারও সাথে কথা বলা থেকে আটকায়, যে সাহায্য করতে পারত।" },
@@ -183,6 +193,7 @@
       "tip": "Open your bank's app yourself, or call the number on the back of your card.",
       "translations": {
         "es": {
+          "message": "Harborview Bank: Su estado de cuenta mensual está listo. Inicie sesión en la aplicación de Harborview para verlo. Nunca le pediremos su contraseña por mensaje de texto.",
           "signs": [
             { "title": "Es algo habitual.", "detail": "Es un aviso que recibe cada mes." },
             { "title": "No hay enlace.", "detail": "Le dice que use la aplicación que ya tiene." },
@@ -191,6 +202,7 @@
           "tip": "Abra usted mismo la aplicación de su banco, o llame al número del reverso de su tarjeta."
         },
         "bn": {
+          "message": "Harborview Bank: আপনার মাসিক স্টেটমেন্ট তৈরি। দেখতে Harborview অ্যাপে লগ ইন করুন। আমরা কখনোই টেক্সট মেসেজে আপনার পাসওয়ার্ড চাইব না।",
           "signs": [
             { "title": "এটি নিয়মিত বিষয়।", "detail": "এই খবর আপনি প্রতি মাসেই পান।" },
             { "title": "কোনো লিংক নেই।", "detail": "এটি আপনার কাছে আগে থেকে থাকা অ্যাপটি ব্যবহার করতে বলে।" },

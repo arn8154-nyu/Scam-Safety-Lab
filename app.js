@@ -5,7 +5,9 @@
    translations can be changed without touching the app.
    Language: instructions and feedback can be shown in English, Spanish, or
    Bengali. The practice messages themselves always stay in English, the way
-   they would arrive on a real phone.
+   they would arrive on a real phone. People reading in Spanish or Bengali
+   can choose to see a translation of the message underneath the English,
+   but it never replaces the English text.
    Security note: every piece of text from the data files is placed on the
    page with textContent, never innerHTML, so nothing in them can run as code.
    Nothing the user chooses is stored or sent anywhere. The only things saved
@@ -26,6 +28,7 @@
   var current = 0;
   var answers = [];        // one entry per message: { isScam, correct }
   var lastChoice = null;   // the choice on the feedback screen, so it can be redrawn
+  var translationOpen = { practice: false, feedback: false };
   var screenNow = "home";
   var loadFailed = false;
 
@@ -196,6 +199,60 @@
     container.appendChild(time);
   }
 
+  /* ---------- Optional translation of the message ---------- */
+
+  // Shows a "Translate this message" button under the English message.
+  // Nothing is translated until the person asks for it.
+  function drawTranslation(slotId, which, scenario) {
+    var slot = $(slotId);
+    slot.textContent = "";
+    var tr = scenario.translations && scenario.translations[lang];
+    if (lang === "en" || !tr || !tr.message) {
+      slot.hidden = true;
+      return;
+    }
+    slot.hidden = false;
+    var open = translationOpen[which];
+    var panelId = slotId + "-panel";
+
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "translate-btn";
+    btn.setAttribute("aria-expanded", String(open));
+    btn.setAttribute("aria-controls", panelId);
+    btn.textContent = t(open ? "hideTranslation" : "translateMessage");
+    btn.addEventListener("click", function () {
+      translationOpen[which] = !translationOpen[which];
+      drawTranslation(slotId, which, scenario);
+      var again = slot.querySelector(".translate-btn");
+      if (again) { again.focus(); }
+    });
+    slot.appendChild(btn);
+
+    var panel = document.createElement("div");
+    panel.className = "translate-panel";
+    panel.id = panelId;
+    panel.hidden = !open;
+
+    var label = document.createElement("p");
+    label.className = "translate-label";
+    label.textContent = t("translationLabel");
+
+    var text = document.createElement("p");
+    text.className = "translated";
+    text.lang = lang;
+    text.textContent = tr.message;
+
+    var note = document.createElement("p");
+    note.className = "note";
+    note.textContent = t("translationNote");
+
+    panel.appendChild(label);
+    panel.appendChild(text);
+    panel.appendChild(note);
+    slot.appendChild(panel);
+  }
+
   /* ---------- Practice round ---------- */
 
   function startRound() {
@@ -213,9 +270,11 @@
     $("practice-count").textContent = countLabel(current);
     $("practice-fill").style.width = ((current + 1) / scenarios.length * 100) + "%";
     fillMessage($("practice-message"), scenario);
+    drawTranslation("practice-translate", "practice", scenario);
   }
 
   function showPractice() {
+    translationOpen.practice = false;
     drawPractice();
     show("practice");
   }
@@ -226,6 +285,7 @@
     var correct = saidScam === scenario.isScam;
     answers.push({ isScam: scenario.isScam, correct: correct });
     lastChoice = choice;
+    translationOpen.feedback = false;
     drawFeedback();
     show("feedback");
   }
@@ -267,6 +327,7 @@
     $("tip-text").textContent = info.tip;
 
     fillMessage($("feedback-message"), scenario);
+    drawTranslation("feedback-translate", "feedback", scenario);
     var last = current === scenarios.length - 1;
     $("next-btn").textContent = t(last ? "seeResults" : "next");
   }
