@@ -1,6 +1,8 @@
-/* Scam-Safety Practice Lab, Sprint 1
+/* Scam-Safety Practice Lab, Sprint 2
    Layout: one column on phones (one task per screen); two columns from 900px wide.
-   Type: Atkinson Hyperlegible, made by the Braille Institute for readers with low vision. */
+   Type: Atkinson Hyperlegible, made by the Braille Institute for readers with low vision.
+   Bengali: Atkinson has no Bengali letters, so Noto Sans Bengali fills in for them.
+   Its unicode-range means it only loads when Bengali text is on the page. */
 
 @font-face {
   font-family: "Atkinson Hyperlegible";
@@ -15,6 +17,22 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans Bengali";
+  src: url("noto-sans-bengali-bengali-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0951-0952, U+0964-0965, U+0980-09FE, U+1CD0, U+1CD2, U+1CD5-1CD6, U+1CD8, U+1CE1, U+1CEA, U+1CED, U+1CF2, U+1CF5-1CF7, U+200C-200D, U+20B9, U+25CC, U+A8F1;
+}
+@font-face {
+  font-family: "Noto Sans Bengali";
+  src: url("noto-sans-bengali-bengali-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0951-0952, U+0964-0965, U+0980-09FE, U+1CD0, U+1CD2, U+1CD5-1CD6, U+1CD8, U+1CE1, U+1CEA, U+1CED, U+1CF2, U+1CF5-1CF7, U+200C-200D, U+20B9, U+25CC, U+A8F1;
 }
 
 :root {
@@ -31,7 +49,7 @@
   --wrong: #8A4B00;     /* "not quite", amber rather than alarm red */
   --wrong-bg: #FBF0E1;
   --focus: #C25E00;
-  --font: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif;
+  --font: "Atkinson Hyperlegible", "Noto Sans Bengali", Arial, Helvetica, sans-serif;
   --radius: 14px;
 }
 @media (prefers-color-scheme: dark) {
@@ -86,6 +104,15 @@ h1:focus, h2:focus { outline: none; }
   gap: 12px;
 }
 .brand { font-weight: 700; font-size: 1.15rem; }
+.controls { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+.langs { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.langs-icon { color: var(--muted); flex-shrink: 0; }
+.lang-btn {
+  min-height: 48px; padding: 0 14px; border-radius: 10px;
+  border: 2px solid var(--ink); background: var(--surface); color: var(--ink);
+  font-family: var(--font); font-size: 1.05rem; font-weight: 700; cursor: pointer;
+}
+.lang-btn[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
 .textsize { display: flex; align-items: center; gap: 8px; }
 .textsize-label { font-size: 1.05rem; color: var(--muted); }
 .size-btn {
@@ -131,6 +158,11 @@ h1:focus, h2:focus { outline: none; }
 .lead { font-size: 1.35rem; max-width: 34em; }
 .meta { color: var(--muted); font-size: 1.15rem; }
 .status { color: var(--wrong); font-size: 1.15rem; }
+.note {
+  font-size: 1.1rem; color: var(--ink); background: var(--surface);
+  border-left: 5px solid var(--accent); border-radius: 6px; padding: 10px 14px;
+}
+.note:empty { display: none; }
 .status:empty { display: none; }
 .how { background: var(--surface); border: 2px solid var(--line); border-radius: var(--radius); padding: 4px 20px; }
 .how summary { min-height: 56px; display: flex; align-items: center; font-weight: 700; cursor: pointer; }
@@ -216,6 +248,11 @@ h1:focus, h2:focus { outline: none; }
   .actions-end .btn { flex: 0 0 auto; }
   .actions-center .btn { flex: 0 0 auto; }
 }
+
+/* Bengali letters need a little more room between lines. */
+html[lang="bn"] body { line-height: 1.65; }
+html[lang="bn"] h1, html[lang="bn"] h2, html[lang="bn"] h3 { line-height: 1.35; }
+html[lang="bn"] .signs li::before { content: counter(sign, bengali); }
 
 @media (prefers-reduced-motion: reduce) {
   .progress-fill { transition: none; }

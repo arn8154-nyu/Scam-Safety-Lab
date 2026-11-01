@@ -4,7 +4,17 @@ A free web app where older adults practice spotting scam text messages in a safe
 
 Senior Project, NYU School of Professional Studies, Fall 2026.
 
-## Sprint 1 (this version)
+## Sprint 2, part 1: language option (this version)
+
+- Instructions, buttons, feedback, and results can be shown in English, Español, or বাংলা (Bengali)
+- The practice messages stay in English on purpose, the way real scam texts arrive, and the app says so
+- Language buttons are written in their own language, so anyone can find theirs
+- The choice is remembered in the browser; on a first visit the app uses the device's language if it's Spanish or Bengali
+- Bengali uses Bengali digits and Noto Sans Bengali, since Atkinson Hyperlegible has no Bengali letters
+- The page's language tag changes with the setting, and the English messages are tagged as English, so screen readers pronounce both correctly
+- Spanish and Bengali translations still need review by native speakers
+
+## Sprint 1
 
 - Six practice text messages: three scams and three safe messages, in alternating order
 - Feedback for all four outcomes (scam caught, scam missed, safe recognized, safe flagged)
@@ -13,7 +23,7 @@ Senior Project, NYU School of Professional Studies, Fall 2026.
 - Phone-first layout that switches to two columns on laptops and tablets
 - Light and dark mode, following the device setting
 
-Coming in later sprints: email and phone-call scenarios with read-aloud, a saved progress tracker, a language option for instructions and feedback, and a full accessibility check.
+Coming next: email and phone-call scenarios with read-aloud, a saved progress tracker, and a full accessibility check.
 
 ## How it's built
 
@@ -24,17 +34,19 @@ Plain HTML, CSS, and JavaScript, with no frameworks and no build step. It's host
 | `index.html` | The page structure: home, practice, feedback, and results screens |
 | `styles.css` | Layout, colors, text sizes, and the phone and laptop layouts |
 | `app.js` | Loads the scenarios, runs the practice round, shows feedback, and counts results |
-| `scenarios.json` | The practice messages and their feedback, kept separate from the code |
+| `scenarios.json` | The practice messages and their feedback, kept separate from the code. Each scenario has a `translations` section with Spanish and Bengali versions of its signs and tip |
+| `translations.json` | Every word the app shows (buttons, instructions, feedback, results) in English, Spanish, and Bengali |
 | `atkinson-hyperlegible-*.woff2` | Atkinson Hyperlegible, a typeface designed for readers with low vision (license in `OFL-LICENSE.txt`) |
+| `noto-sans-bengali-*.woff2` | Noto Sans Bengali, used only for Bengali letters (license in `NOTO-OFL-LICENSE.txt`) |
 
 ## Adding a scenario
 
-Add an entry to `scenarios.json` with `id`, `channel`, `isScam` (true or false), `category`, `sender`, `time`, `message`, three `signs` (each with a `title` and `detail`), and a `tip`. All names, numbers, and websites in scenarios are fictional.
+Add an entry to `scenarios.json` with `id`, `channel`, `isScam` (true or false), `category`, `sender`, `time`, `message`, three `signs` (each with a `title` and `detail`), a `tip`, and a `translations` section with `es` and `bn` versions of the signs and tip. All names, numbers, and websites in scenarios are fictional.
 
 ## Privacy and security
 
 - No accounts, and no personal information is collected.
-- Answers are not saved or sent anywhere. The only thing stored in the browser is the text-size setting.
+- Answers are not saved or sent anywhere. The only things stored in the browser are the text-size and language settings.
 - Fonts are hosted with the app, so the page makes no requests to other websites.
 - A Content Security Policy only allows the app's own files to load.
 - Scenario text is shown with `textContent`, never as HTML, so nothing in the data file can run as code.

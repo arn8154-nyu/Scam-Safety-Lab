@@ -1,23 +1,68 @@
-/* Scam-Safety Practice Lab, Sprint 1
+/* Scam-Safety Practice Lab, Sprint 2 (language option)
    Practice engine for text-message scenarios.
-   Scenarios live in scenarios.json, separate from this code, so new
-   messages can be added without changing the app.
-   Security note: every piece of scenario text is placed on the page with
-   textContent, never innerHTML, so text in the data file can't run as code.
-   Nothing the user chooses is stored or sent anywhere. The only thing saved
-   in the browser is the text-size setting. */
+   Scenarios live in scenarios.json and the app's words live in
+   translations.json, both separate from this code, so messages and
+   translations can be changed without touching the app.
+   Language: instructions and feedback can be shown in English, Spanish, or
+   Bengali. The practice messages themselves always stay in English, the way
+   they would arrive on a real phone.
+   Security note: every piece of text from the data files is placed on the
+   page with textContent, never innerHTML, so nothing in them can run as code.
+   Nothing the user chooses is stored or sent anywhere. The only things saved
+   in the browser are the text-size and language settings. */
 
 (function () {
   "use strict";
 
   var DATA_URL = "scenarios.json";
+  var WORDS_URL = "translations.json";
   var SIZE_KEY = "ssl-text-size";
+  var LANG_KEY = "ssl-language";
+  var LANGS = ["en", "es", "bn"];
 
   var scenarios = [];
+  var words = null;        // everything in translations.json
+  var lang = "en";
   var current = 0;
-  var answers = []; // one entry per message: { isScam, correct }
+  var answers = [];        // one entry per message: { isScam, correct }
+  var lastChoice = null;   // the choice on the feedback screen, so it can be redrawn
+  var screenNow = "home";
+  var loadFailed = false;
 
   function $(id) { return document.getElementById(id); }
+
+  /* ---------- Words and numbers ---------- */
+
+  // Look up a word in the current language, fall back to English, then
+  // fill in any {placeholders}.
+  function t(key, values) {
+    var text = "";
+    if (words) {
+      var set = words[lang] || {};
+      text = set[key] !== undefined ? set[key] : (words.en[key] || "");
+    }
+    if (values) {
+      Object.keys(values).forEach(function (name) {
+        text = text.split("{" + name + "}").join(values[name]);
+      });
+    }
+    return text;
+  }
+
+  // Bengali uses its own digits.
+  var BN_DIGITS = ["০", "১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯"];
+  function num(n) {
+    var s = String(n);
+    if (lang !== "bn") { return s; }
+    return s.replace(/[0-9]/g, function (d) { return BN_DIGITS[Number(d)]; });
+  }
+
+  // The parts of a scenario that get translated: the signs and the tip.
+  function explain(scenario) {
+    var tr = scenario.translations && scenario.translations[lang];
+    if (lang !== "en" && tr) { return { signs: tr.signs, tip: tr.tip }; }
+    return { signs: scenario.signs, tip: scenario.tip };
+  }
 
   /* ---------- Screens ---------- */
 
@@ -34,10 +79,12 @@
     done: "done-title"
   };
 
-  function show(name) {
+  function show(name, keepFocus) {
+    screenNow = name;
     Object.keys(screens).forEach(function (key) {
       screens[key].hidden = key !== name;
     });
+    if (keepFocus) { return; }
     window.scrollTo(0, 0);
     // Move keyboard and screen-reader focus to the new screen's heading.
     var heading = $(headings[name]);
@@ -60,10 +107,74 @@
     setTextSize(saved === "large" ? "large" : "normal");
   }
 
+  /* ---------- Language ---------- */
+
+  // First visit: use the device's language if we have it, otherwise English.
+  function startingLanguage() {
+    var saved = null;
+    try { saved = localStorage.getItem(LANG_KEY); } catch (e) { saved = null; }
+    if (LANGS.indexOf(saved) !== -1) { return saved; }
+    var device = (navigator.languages && navigator.languages[0]) || navigator.language || "en";
+    var code = String(device).toLowerCase().slice(0, 2);
+    return LANGS.indexOf(code) !== -1 ? code : "en";
+  }
+
+  function setLanguage(code, remember) {
+    lang = LANGS.indexOf(code) !== -1 ? code : "en";
+    // Tells screen readers and the browser which language the page is in.
+    document.documentElement.lang = lang;
+    Array.prototype.forEach.call(document.querySelectorAll(".lang-btn"), function (btn) {
+      btn.setAttribute("aria-pressed", String(btn.getAttribute("data-lang") === lang));
+    });
+    if (remember) {
+      try { localStorage.setItem(LANG_KEY, lang); } catch (e) { /* storage blocked: fine */ }
+    }
+    applyWords();
+  }
+
+  // Put the current language's words into every element marked data-i18n,
+  // then redraw whatever screen is showing.
+  function applyWords() {
+    if (!words) { return; }
+    Array.prototype.forEach.call(document.querySelectorAll("[data-i18n]"), function (el) {
+      el.textContent = t(el.getAttribute("data-i18n"));
+    });
+    $("lang-group").setAttribute("aria-label", t("language"));
+    $("size-group").setAttribute("aria-label", t("textSize"));
+    fillHow2();
+    if (scenarios.length) {
+      $("home-count").textContent = t("homeCount", { n: num(scenarios.length) });
+    }
+    if (loadFailed) { $("load-status").textContent = t("loadError"); }
+
+    if (screenNow === "practice") { drawPractice(); }
+    if (screenNow === "feedback") { drawFeedback(); }
+    if (screenNow === "done") { drawDone(); }
+  }
+
+  // "Choose {safe} or {suspicious}." with the two button names in bold.
+  function fillHow2() {
+    var item = $("how2");
+    var parts = t("how2").split(/(\{safe\}|\{suspicious\})/);
+    item.textContent = "";
+    parts.forEach(function (part) {
+      if (part === "{safe}" || part === "{suspicious}") {
+        var strong = document.createElement("strong");
+        strong.textContent = t(part === "{safe}" ? "looksSafe" : "seemsSuspicious");
+        item.appendChild(strong);
+      } else if (part) {
+        item.appendChild(document.createTextNode(part));
+      }
+    });
+  }
+
   /* ---------- Building a message card ---------- */
 
   function fillMessage(container, scenario) {
     container.textContent = "";
+
+    // Everything inside the message card stays in English, like a real phone.
+    container.lang = "en";
 
     var from = document.createElement("p");
     from.className = "message-from";
@@ -94,14 +205,18 @@
   }
 
   function countLabel(index) {
-    return "Message " + (index + 1) + " of " + scenarios.length;
+    return t("messageCount", { i: num(index + 1), n: num(scenarios.length) });
   }
 
-  function showPractice() {
+  function drawPractice() {
     var scenario = scenarios[current];
     $("practice-count").textContent = countLabel(current);
     $("practice-fill").style.width = ((current + 1) / scenarios.length * 100) + "%";
     fillMessage($("practice-message"), scenario);
+  }
+
+  function showPractice() {
+    drawPractice();
     show("practice");
   }
 
@@ -110,7 +225,9 @@
     var saidScam = choice === "suspicious";
     var correct = saidScam === scenario.isScam;
     answers.push({ isScam: scenario.isScam, correct: correct });
-    showFeedback(scenario, choice, correct);
+    lastChoice = choice;
+    drawFeedback();
+    show("feedback");
   }
 
   /* ---------- Feedback ---------- */
@@ -118,27 +235,24 @@
   // Wording depends on two things: was the message a scam, and did the
   // user get it right. Safe messages get their own wording so the app
   // teaches people how to check, not just to distrust everything.
-  var WORDING = {
-    scamRight: { title: "Good catch. This is a scam.", note: "" },
-    scamWrong: { title: "Careful. This one is a scam.", note: "Scams like this can look real. Here's what gives it away." },
-    safeRight: { title: "That's right. This one is safe.", note: "" },
-    safeWrong: { title: "Not quite. This one was safe.", note: "Being careful is a good habit. Here's how you could tell this message was real." }
-  };
-
-  function showFeedback(scenario, choice, correct) {
+  function drawFeedback() {
+    var scenario = scenarios[current];
+    var correct = answers[current].correct;
     var key = (scenario.isScam ? "scam" : "safe") + (correct ? "Right" : "Wrong");
-    var words = WORDING[key];
+    var info = explain(scenario);
 
     $("feedback-count").textContent = countLabel(current);
     $("result-box").classList.toggle("is-wrong", !correct);
-    $("feedback-title").textContent = words.title;
-    $("feedback-choice").textContent = "You chose: " + (choice === "suspicious" ? "Seems suspicious" : "Looks safe");
-    $("feedback-note").textContent = words.note;
+    $("feedback-title").textContent = t(key + "Title");
+    $("feedback-choice").textContent = t("youChose", {
+      choice: t(lastChoice === "suspicious" ? "seemsSuspicious" : "looksSafe")
+    });
+    $("feedback-note").textContent = t(key + "Note");
 
-    $("signs-title").textContent = scenario.isScam ? "Warning signs" : "How you can tell";
+    $("signs-title").textContent = t(scenario.isScam ? "warningSigns" : "howYouCanTell");
     var list = $("signs-list");
     list.textContent = "";
-    scenario.signs.forEach(function (sign) {
+    info.signs.forEach(function (sign) {
       var item = document.createElement("li");
       var text = document.createElement("p");
       var strong = document.createElement("strong");
@@ -149,24 +263,23 @@
       list.appendChild(item);
     });
 
-    $("tip-title").textContent = scenario.isScam ? "What to do instead" : "Still not sure?";
-    $("tip-text").textContent = scenario.tip;
+    $("tip-title").textContent = t(scenario.isScam ? "whatToDo" : "stillNotSure");
+    $("tip-text").textContent = info.tip;
 
     fillMessage($("feedback-message"), scenario);
-    var again = screens.feedback.querySelector(".again");
-    if (again) { again.open = false; }
-
     var last = current === scenarios.length - 1;
-    $("next-btn").textContent = last ? "See my results" : "Next message";
-    show("feedback");
+    $("next-btn").textContent = t(last ? "seeResults" : "next");
   }
 
   function next() {
+    var again = screens.feedback.querySelector(".again");
+    if (again) { again.open = false; }
     if (current < scenarios.length - 1) {
       current += 1;
       showPractice();
     } else {
-      showDone();
+      drawDone();
+      show("done");
     }
   }
 
@@ -175,7 +288,7 @@
   // Scams and safe messages are scored separately, the same way the
   // pre/post quiz will be, so we can see whether people get better at
   // telling them apart and not just more suspicious overall.
-  function showDone() {
+  function drawDone() {
     var total = answers.length;
     var right = 0, scamTotal = 0, scamRight = 0, safeTotal = 0, safeRight = 0;
     answers.forEach(function (a) {
@@ -189,32 +302,46 @@
       }
     });
 
-    $("score-total").textContent = "You got " + right + " of " + total + " right";
-    $("score-scam").textContent = scamRight + " of " + scamTotal;
-    $("score-safe").textContent = safeRight + " of " + safeTotal;
+    $("score-total").textContent = t("scoreTotal", { right: num(right), total: num(total) });
+    $("score-scam").textContent = t("ofN", { a: num(scamRight), b: num(scamTotal) });
+    $("score-safe").textContent = t("ofN", { a: num(safeRight), b: num(safeTotal) });
     $("bar-scam").style.width = (scamTotal ? scamRight / scamTotal * 100 : 0) + "%";
     $("bar-safe").style.width = (safeTotal ? safeRight / safeTotal * 100 : 0) + "%";
-    show("done");
   }
 
-  /* ---------- Loading the scenarios ---------- */
+  /* ---------- Loading the data files ---------- */
 
-  function loadScenarios() {
+  function getJSON(url) {
+    return fetch(url).then(function (response) {
+      if (!response.ok) { throw new Error("HTTP " + response.status); }
+      return response.json();
+    });
+  }
+
+  function loadData() {
     var status = $("load-status");
-    fetch(DATA_URL)
-      .then(function (response) {
-        if (!response.ok) { throw new Error("HTTP " + response.status); }
-        return response.json();
+    // Words load first so the page switches language as early as possible.
+    getJSON(WORDS_URL)
+      .then(function (data) {
+        words = data;
+        applyWords();
       })
+      .catch(function () { words = null; /* English already in the page */ })
+      .then(function () { return getJSON(DATA_URL); })
       .then(function (data) {
         scenarios = (data && data.scenarios) || [];
         if (!scenarios.length) { throw new Error("No scenarios"); }
-        $("home-count").textContent = scenarios.length + " practice messages, about 10 minutes";
+        applyWords();
+        if (!words) {
+          $("home-count").textContent = scenarios.length + " practice messages, about 10 minutes";
+        }
         $("start-btn").disabled = false;
         status.textContent = "";
       })
       .catch(function () {
-        status.textContent = "The practice messages didn't load. Check your internet connection, then refresh the page.";
+        loadFailed = true;
+        status.textContent = words ? t("loadError") :
+          "The practice messages didn't load. Check your internet connection, then refresh the page.";
       });
   }
 
@@ -222,6 +349,13 @@
 
   function init() {
     loadTextSize();
+    lang = startingLanguage();
+    document.documentElement.lang = lang;
+    Array.prototype.forEach.call(document.querySelectorAll(".lang-btn"), function (btn) {
+      btn.setAttribute("aria-pressed", String(btn.getAttribute("data-lang") === lang));
+      btn.addEventListener("click", function () { setLanguage(btn.getAttribute("data-lang"), true); });
+    });
+
     $("size-normal").addEventListener("click", function () { setTextSize("normal"); });
     $("size-large").addEventListener("click", function () { setTextSize("large"); });
 
@@ -236,7 +370,7 @@
       btn.addEventListener("click", function () { show(btn.getAttribute("data-go")); });
     });
 
-    loadScenarios();
+    loadData();
   }
 
   if (document.readyState === "loading") {

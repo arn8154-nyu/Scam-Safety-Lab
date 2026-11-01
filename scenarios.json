@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "round": "Text messages, round 1",
   "scenarios": [
     {
@@ -15,7 +15,25 @@
         { "title": "The link looks off.", "detail": "It isn't the delivery company's real website." },
         { "title": "You don't know the sender.", "detail": "It came from a regular phone number, not the company." }
       ],
-      "tip": "Don't tap the link. Open the delivery company's app, or type its website yourself, and enter your tracking number there."
+      "tip": "Don't tap the link. Open the delivery company's app, or type its website yourself, and enter your tracking number there.",
+      "translations": {
+        "es": {
+          "signs": [
+            { "title": "Le presiona para actuar rápido.", "detail": "\"Within 24 hours or it will be returned\" (en 24 horas o será devuelto) busca que actúe antes de pensar." },
+            { "title": "El enlace es extraño.", "detail": "No es el sitio web real de la empresa de envíos." },
+            { "title": "No conoce al remitente.", "detail": "Llegó desde un número de teléfono común, no de la empresa." }
+          ],
+          "tip": "No toque el enlace. Abra la aplicación de la empresa de envíos, o escriba usted mismo su sitio web, e ingrese allí su número de seguimiento."
+        },
+        "bn": {
+          "signs": [
+            { "title": "এটি তাড়াহুড়া করায়।", "detail": "\"Within 24 hours or it will be returned\" (২৪ ঘণ্টার মধ্যে, নইলে ফেরত যাবে) কথাটি আপনাকে ভাবার আগেই কিছু করে ফেলতে চাপ দেয়।" },
+            { "title": "লিংকটি সন্দেহজনক।", "detail": "এটি ডেলিভারি কোম্পানির আসল ওয়েবসাইট নয়।" },
+            { "title": "প্রেরককে আপনি চেনেন না।", "detail": "এটি কোম্পানি থেকে নয়, একটি সাধারণ ফোন নম্বর থেকে এসেছে।" }
+          ],
+          "tip": "লিংকে চাপ দেবেন না। ডেলিভারি কোম্পানির অ্যাপ খুলুন, অথবা নিজে তাদের ওয়েবসাইটের ঠিকানা লিখুন, তারপর সেখানে আপনার ট্র্যাকিং নম্বর দিন।"
+        }
+      }
     },
     {
       "id": "doctor-reminder",
@@ -30,7 +48,25 @@
         { "title": "It asks for nothing risky.", "detail": "No money, passwords, or personal details." },
         { "title": "There's no link.", "detail": "It points you to a number you already have." }
       ],
-      "tip": "Call the office using the number on your appointment card, not a number from a message."
+      "tip": "Call the office using the number on your appointment card, not a number from a message.",
+      "translations": {
+        "es": {
+          "signs": [
+            { "title": "Lo esperaba.", "detail": "Es sobre una cita que usted hizo." },
+            { "title": "No pide nada riesgoso.", "detail": "Ni dinero, ni contraseñas, ni datos personales." },
+            { "title": "No hay enlace.", "detail": "Le indica un número que usted ya tiene." }
+          ],
+          "tip": "Llame al consultorio usando el número de su tarjeta de cita, no un número que venga en un mensaje."
+        },
+        "bn": {
+          "signs": [
+            { "title": "এটি আপনি আশা করছিলেন।", "detail": "এটি আপনার নিজের নেওয়া একটি অ্যাপয়েন্টমেন্ট নিয়ে।" },
+            { "title": "এটি ঝুঁকিপূর্ণ কিছু চায় না।", "detail": "টাকা, পাসওয়ার্ড বা ব্যক্তিগত তথ্য কিছুই চায় না।" },
+            { "title": "কোনো লিংক নেই।", "detail": "এটি আপনাকে এমন একটি নম্বরে যোগাযোগ করতে বলে, যা আপনার কাছে আগে থেকেই আছে।" }
+          ],
+          "tip": "মেসেজে দেওয়া নম্বর নয়, আপনার অ্যাপয়েন্টমেন্ট কার্ডে থাকা নম্বরে ডাক্তারের অফিসে ফোন করুন।"
+        }
+      }
     },
     {
       "id": "bank-locked",
@@ -45,7 +81,25 @@
         { "title": "It pushes you to a link.", "detail": "It wants you to \"verify\" your information on a website it chose." },
         { "title": "Banks don't work this way.", "detail": "Real banks don't ask you to log in through a link in a text." }
       ],
-      "tip": "Don't tap the link. Call the number on the back of your bank card, or open your bank's app yourself, and ask if anything is wrong."
+      "tip": "Don't tap the link. Call the number on the back of your bank card, or open your bank's app yourself, and ask if anything is wrong.",
+      "translations": {
+        "es": {
+          "signs": [
+            { "title": "Le asusta.", "detail": "Amenaza con cerrar su cuenta para que entre en pánico." },
+            { "title": "Le empuja hacia un enlace.", "detail": "Quiere que \"verifique\" sus datos en un sitio web que eligió quien lo envió." },
+            { "title": "Los bancos no funcionan así.", "detail": "Los bancos reales no le piden iniciar sesión mediante un enlace en un mensaje de texto." }
+          ],
+          "tip": "No toque el enlace. Llame al número que aparece en el reverso de su tarjeta del banco, o abra usted mismo la aplicación de su banco, y pregunte si hay algún problema."
+        },
+        "bn": {
+          "signs": [
+            { "title": "এটি ভয় দেখায়।", "detail": "আপনার অ্যাকাউন্ট বন্ধ করে দেওয়ার হুমকি দেয়, যাতে আপনি ঘাবড়ে যান।" },
+            { "title": "এটি লিংকে যেতে চাপ দেয়।", "detail": "এটি চায় আপনি তাদের বেছে দেওয়া ওয়েবসাইটে গিয়ে আপনার তথ্য \"যাচাই\" করুন।" },
+            { "title": "ব্যাংক এভাবে কাজ করে না।", "detail": "আসল ব্যাংক টেক্সট মেসেজের লিংক দিয়ে লগ ইন করতে বলে না।" }
+          ],
+          "tip": "লিংকে চাপ দেবেন না। আপনার ব্যাংক কার্ডের পেছনে থাকা নম্বরে ফোন করুন, অথবা নিজে ব্যাংকের অ্যাপ খুলুন, এবং জিজ্ঞেস করুন কোনো সমস্যা আছে কি না।"
+        }
+      }
     },
     {
       "id": "pharmacy-pickup",
@@ -60,7 +114,25 @@
         { "title": "There's nothing to tap or pay.", "detail": "No link, no payment, and no deadline." },
         { "title": "It sends you somewhere you know.", "detail": "It points you to a store you already use." }
       ],
-      "tip": "Call the pharmacy using the number on your prescription bottle."
+      "tip": "Call the pharmacy using the number on your prescription bottle.",
+      "translations": {
+        "es": {
+          "signs": [
+            { "title": "Coincide con algo que espera.", "detail": "Usted sabe cuándo tiene un medicamento pendiente de recoger." },
+            { "title": "No hay nada que tocar ni pagar.", "detail": "Sin enlace, sin pago y sin fecha límite." },
+            { "title": "Le envía a un lugar que conoce.", "detail": "Le indica una tienda que usted ya usa." }
+          ],
+          "tip": "Llame a la farmacia usando el número que aparece en el frasco de su medicamento."
+        },
+        "bn": {
+          "signs": [
+            { "title": "এটি আপনার প্রত্যাশার সাথে মেলে।", "detail": "আপনার কোনো ওষুধ নেওয়ার বাকি আছে কি না, তা আপনি জানেন।" },
+            { "title": "চাপ দেওয়ার বা টাকা দেওয়ার কিছু নেই।", "detail": "কোনো লিংক নেই, টাকা চাওয়া নেই, সময়সীমাও নেই।" },
+            { "title": "এটি আপনাকে পরিচিত জায়গায় পাঠায়।", "detail": "এটি এমন একটি দোকানের কথা বলে, যেখানে আপনি আগে থেকেই যান।" }
+          ],
+          "tip": "আপনার ওষুধের বোতলের গায়ে থাকা নম্বরে ফার্মেসিতে ফোন করুন।"
+        }
+      }
     },
     {
       "id": "grandchild-bail",
@@ -75,7 +147,25 @@
         { "title": "It asks you to keep a secret.", "detail": "\"Don't tell Mom\" stops you from asking someone who could help." },
         { "title": "It asks for gift cards.", "detail": "Real people and businesses never ask for gift cards for bail or bills." }
       ],
-      "tip": "Don't reply or send anything. Call your grandchild, or another family member, using a number you already have."
+      "tip": "Don't reply or send anything. Call your grandchild, or another family member, using a number you already have.",
+      "translations": {
+        "es": {
+          "signs": [
+            { "title": "Es una emergencia.", "detail": "Una crisis repentina le empuja a actuar antes de poder comprobar nada." },
+            { "title": "Le pide guardar un secreto.", "detail": "\"Don't tell Mom\" (no le digas a mamá) evita que consulte con alguien que podría ayudar." },
+            { "title": "Pide tarjetas de regalo.", "detail": "Las personas y las empresas reales nunca piden tarjetas de regalo para pagar una fianza o facturas." }
+          ],
+          "tip": "No responda ni envíe nada. Llame a su nieto o nieta, o a otro familiar, usando un número que ya tiene."
+        },
+        "bn": {
+          "signs": [
+            { "title": "এটি একটি জরুরি অবস্থা।", "detail": "হঠাৎ বিপদের কথা বলে যাচাই করার আগেই আপনাকে কিছু করে ফেলতে চাপ দেয়।" },
+            { "title": "এটি কথা গোপন রাখতে বলে।", "detail": "\"Don't tell Mom\" (মাকে বোলো না) কথাটি আপনাকে এমন কারও সাথে কথা বলা থেকে আটকায়, যে সাহায্য করতে পারত।" },
+            { "title": "এটি গিফট কার্ড চায়।", "detail": "আসল মানুষ বা প্রতিষ্ঠান কখনোই জামিন বা বিল দেওয়ার জন্য গিফট কার্ড চায় না।" }
+          ],
+          "tip": "উত্তর দেবেন না, কিছু পাঠাবেনও না। আপনার কাছে আগে থেকে থাকা নম্বরে আপনার নাতি-নাতনি বা পরিবারের অন্য কাউকে ফোন করুন।"
+        }
+      }
     },
     {
       "id": "bank-statement",
@@ -90,7 +180,25 @@
         { "title": "There's no link.", "detail": "It tells you to use the app you already have." },
         { "title": "It asks for nothing.", "detail": "No password, no payment, and no personal details." }
       ],
-      "tip": "Open your bank's app yourself, or call the number on the back of your card."
+      "tip": "Open your bank's app yourself, or call the number on the back of your card.",
+      "translations": {
+        "es": {
+          "signs": [
+            { "title": "Es algo habitual.", "detail": "Es un aviso que recibe cada mes." },
+            { "title": "No hay enlace.", "detail": "Le dice que use la aplicación que ya tiene." },
+            { "title": "No pide nada.", "detail": "Ni contraseña, ni pagos, ni datos personales." }
+          ],
+          "tip": "Abra usted mismo la aplicación de su banco, o llame al número del reverso de su tarjeta."
+        },
+        "bn": {
+          "signs": [
+            { "title": "এটি নিয়মিত বিষয়।", "detail": "এই খবর আপনি প্রতি মাসেই পান।" },
+            { "title": "কোনো লিংক নেই।", "detail": "এটি আপনার কাছে আগে থেকে থাকা অ্যাপটি ব্যবহার করতে বলে।" },
+            { "title": "এটি কিছুই চায় না।", "detail": "পাসওয়ার্ড, টাকা বা ব্যক্তিগত তথ্য কিছুই চায় না।" }
+          ],
+          "tip": "নিজে আপনার ব্যাংকের অ্যাপ খুলুন, অথবা কার্ডের পেছনে থাকা নম্বরে ফোন করুন।"
+        }
+      }
     }
   ]
 }
