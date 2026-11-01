@@ -1,216 +1,446 @@
 {
-  "version": 4,
-  "round": "Text messages, round 1",
-  "scenarios": [
+  "version": 5,
+  "rounds": [
     {
-      "id": "delivery-hold",
-      "channel": "text",
-      "isScam": true,
-      "category": "Fake delivery notice",
-      "sender": "(555) 014-2290",
-      "time": "Today, 9:14 AM",
-      "message": "PostTrack Delivery: Your package is on hold because of an incomplete address. Update it within 24 hours or it will be returned: posttrack-redeliver.info",
-      "signs": [
-        { "title": "It rushes you.", "detail": "\"Within 24 hours or it will be returned\" is meant to make you act before you think." },
-        { "title": "The link looks off.", "detail": "It isn't the delivery company's real website." },
-        { "title": "You didn't sign up for it.", "detail": "It came from a regular phone number, and delivery companies only text about a problem if you signed up for updates. Expecting a package doesn't make the text real." }
-      ],
-      "tip": "Don't tap the link. Open the delivery company's app, or type its website yourself, and enter your tracking number there.",
-      "translations": {
-        "es": {
-          "message": "PostTrack Delivery: Su paquete está retenido porque la dirección está incompleta. Actualícela en 24 horas o será devuelto: posttrack-redeliver.info",
+      "id": "round-1",
+      "title": "Text messages, round 1",
+      "scenarios": [
+        {
+          "id": "delivery-hold",
+          "channel": "text",
+          "isScam": true,
+          "category": "Fake delivery notice",
+          "sender": "(555) 014-2290",
+          "time": "Today, 9:14 AM",
+          "message": "PostTrack Delivery: Your package is on hold because of an incomplete address. Update it within 24 hours or it will be returned: posttrack-redeliver.info",
           "signs": [
-            { "title": "Le presiona para actuar rápido.", "detail": "\"Within 24 hours or it will be returned\" (en 24 horas o será devuelto) busca que actúe antes de pensar." },
-            { "title": "El enlace es extraño.", "detail": "No es el sitio web real de la empresa de envíos." },
-            { "title": "Usted no lo pidió.", "detail": "Llegó desde un número de teléfono común, y las empresas de envíos solo envían mensajes sobre un problema si usted se inscribió para recibir avisos. Esperar un paquete no hace que el mensaje sea real." }
+            { "title": "It rushes you.", "detail": "\"Within 24 hours or it will be returned\" is meant to make you act before you think." },
+            { "title": "The link looks off.", "detail": "It isn't the delivery company's real website." },
+            { "title": "You didn't sign up for it.", "detail": "It came from a regular phone number, and delivery companies only text about a problem if you signed up for updates. Expecting a package doesn't make the text real." }
           ],
-          "tip": "No toque el enlace. Abra la aplicación de la empresa de envíos, o escriba usted mismo su sitio web, e ingrese allí su número de seguimiento."
+          "tip": "Don't tap the link. Open the delivery company's app, or type its website yourself, and enter your tracking number there.",
+          "translations": {
+            "es": {
+              "message": "PostTrack Delivery: Su paquete está retenido porque la dirección está incompleta. Actualícela en 24 horas o será devuelto: posttrack-redeliver.info",
+              "signs": [
+                { "title": "Le presiona para actuar rápido.", "detail": "\"Within 24 hours or it will be returned\" (en 24 horas o será devuelto) busca que actúe antes de pensar." },
+                { "title": "El enlace es extraño.", "detail": "No es el sitio web real de la empresa de envíos." },
+                { "title": "Usted no lo pidió.", "detail": "Llegó desde un número de teléfono común, y las empresas de envíos solo envían mensajes sobre un problema si usted se inscribió para recibir avisos. Esperar un paquete no hace que el mensaje sea real." }
+              ],
+              "tip": "No toque el enlace. Abra la aplicación de la empresa de envíos, o escriba usted mismo su sitio web, e ingrese allí su número de seguimiento."
+            },
+            "bn": {
+              "message": "PostTrack Delivery: ঠিকানা অসম্পূর্ণ থাকায় আপনার পার্সেলটি আটকে আছে। ২৪ ঘণ্টার মধ্যে ঠিকানা আপডেট করুন, নইলে এটি ফেরত পাঠানো হবে: posttrack-redeliver.info",
+              "signs": [
+                { "title": "এটি তাড়াহুড়া করায়।", "detail": "\"Within 24 hours or it will be returned\" (২৪ ঘণ্টার মধ্যে, নইলে ফেরত যাবে) কথাটি আপনাকে ভাবার আগেই কিছু করে ফেলতে চাপ দেয়।" },
+                { "title": "লিংকটি সন্দেহজনক।", "detail": "এটি ডেলিভারি কোম্পানির আসল ওয়েবসাইট নয়।" },
+                { "title": "আপনি এটি চাননি।", "detail": "এটি একটি সাধারণ ফোন নম্বর থেকে এসেছে, আর ডেলিভারি কোম্পানি তখনই সমস্যার কথা মেসেজে জানায়, যখন আপনি আপডেটের জন্য সাইন আপ করেছেন। পার্সেলের অপেক্ষায় থাকলেই মেসেজটি আসল হয়ে যায় না।" }
+              ],
+              "tip": "লিংকে চাপ দেবেন না। ডেলিভারি কোম্পানির অ্যাপ খুলুন, অথবা নিজে তাদের ওয়েবসাইটের ঠিকানা লিখুন, তারপর সেখানে আপনার ট্র্যাকিং নম্বর দিন।"
+            }
+          }
         },
-        "bn": {
-          "message": "PostTrack Delivery: ঠিকানা অসম্পূর্ণ থাকায় আপনার পার্সেলটি আটকে আছে। ২৪ ঘণ্টার মধ্যে ঠিকানা আপডেট করুন, নইলে এটি ফেরত পাঠানো হবে: posttrack-redeliver.info",
+        {
+          "id": "doctor-reminder",
+          "channel": "text",
+          "isScam": false,
+          "category": "Appointment reminder",
+          "sender": "Dr. Patel's Office",
+          "time": "Yesterday, 4:02 PM",
+          "message": "Reminder: You have an appointment with Dr. Patel on Thu, Nov 5 at 10:30 AM. Reply C to confirm, or call the office at the number on your appointment card.",
           "signs": [
-            { "title": "এটি তাড়াহুড়া করায়।", "detail": "\"Within 24 hours or it will be returned\" (২৪ ঘণ্টার মধ্যে, নইলে ফেরত যাবে) কথাটি আপনাকে ভাবার আগেই কিছু করে ফেলতে চাপ দেয়।" },
-            { "title": "লিংকটি সন্দেহজনক।", "detail": "এটি ডেলিভারি কোম্পানির আসল ওয়েবসাইট নয়।" },
-            { "title": "আপনি এটি চাননি।", "detail": "এটি একটি সাধারণ ফোন নম্বর থেকে এসেছে, আর ডেলিভারি কোম্পানি তখনই সমস্যার কথা মেসেজে জানায়, যখন আপনি আপডেটের জন্য সাইন আপ করেছেন। পার্সেলের অপেক্ষায় থাকলেই মেসেজটি আসল হয়ে যায় না।" }
+            { "title": "You expected it.", "detail": "It's about an appointment you made." },
+            { "title": "It asks for nothing risky.", "detail": "No money, passwords, or personal details." },
+            { "title": "There's no link.", "detail": "It points you to a number you already have." }
           ],
-          "tip": "লিংকে চাপ দেবেন না। ডেলিভারি কোম্পানির অ্যাপ খুলুন, অথবা নিজে তাদের ওয়েবসাইটের ঠিকানা লিখুন, তারপর সেখানে আপনার ট্র্যাকিং নম্বর দিন।"
+          "tip": "Call the office using the number on your appointment card, not a number from a message.",
+          "translations": {
+            "es": {
+              "message": "Recordatorio: Tiene una cita con el Dr. Patel el jueves 5 de noviembre a las 10:30 a. m. Responda C para confirmar, o llame al consultorio al número que aparece en su tarjeta de cita.",
+              "signs": [
+                { "title": "Lo esperaba.", "detail": "Es sobre una cita que usted hizo." },
+                { "title": "No pide nada riesgoso.", "detail": "Ni dinero, ni contraseñas, ni datos personales." },
+                { "title": "No hay enlace.", "detail": "Le indica un número que usted ya tiene." }
+              ],
+              "tip": "Llame al consultorio usando el número de su tarjeta de cita, no un número que venga en un mensaje."
+            },
+            "bn": {
+              "message": "মনে করিয়ে দিচ্ছি: বৃহস্পতিবার, ৫ নভেম্বর সকাল ১০:৩০-এ Dr. Patel-এর সাথে আপনার অ্যাপয়েন্টমেন্ট আছে। নিশ্চিত করতে C লিখে উত্তর দিন, অথবা আপনার অ্যাপয়েন্টমেন্ট কার্ডে থাকা নম্বরে অফিসে ফোন করুন।",
+              "signs": [
+                { "title": "এটি আপনি আশা করছিলেন।", "detail": "এটি আপনার নিজের নেওয়া একটি অ্যাপয়েন্টমেন্ট নিয়ে।" },
+                { "title": "এটি ঝুঁকিপূর্ণ কিছু চায় না।", "detail": "টাকা, পাসওয়ার্ড বা ব্যক্তিগত তথ্য কিছুই চায় না।" },
+                { "title": "কোনো লিংক নেই।", "detail": "এটি আপনাকে এমন একটি নম্বরে যোগাযোগ করতে বলে, যা আপনার কাছে আগে থেকেই আছে।" }
+              ],
+              "tip": "মেসেজে দেওয়া নম্বর নয়, আপনার অ্যাপয়েন্টমেন্ট কার্ডে থাকা নম্বরে ডাক্তারের অফিসে ফোন করুন।"
+            }
+          }
+        },
+        {
+          "id": "bank-locked",
+          "channel": "text",
+          "isScam": true,
+          "category": "Fake bank alert",
+          "sender": "(555) 271-8830",
+          "time": "Today, 7:48 AM",
+          "message": "Harborview Bank ALERT: Your account has been locked due to unusual activity. Verify your identity now at harborview-secure-login.com to avoid permanent closure.",
+          "signs": [
+            { "title": "It scares you.", "detail": "It threatens to close your account so you'll panic." },
+            { "title": "It pushes you to a link.", "detail": "It wants you to \"verify\" your information on a website it chose." },
+            { "title": "Banks don't work this way.", "detail": "Real banks don't ask you to log in through a link in a text." }
+          ],
+          "tip": "Don't tap the link. Call the number on the back of your bank card, or open your bank's app yourself, and ask if anything is wrong.",
+          "translations": {
+            "es": {
+              "message": "ALERTA de Harborview Bank: Su cuenta ha sido bloqueada por actividad inusual. Verifique su identidad ahora en harborview-secure-login.com para evitar el cierre permanente.",
+              "signs": [
+                { "title": "Le asusta.", "detail": "Amenaza con cerrar su cuenta para que entre en pánico." },
+                { "title": "Le empuja hacia un enlace.", "detail": "Quiere que \"verifique\" sus datos en un sitio web que eligió quien lo envió." },
+                { "title": "Los bancos no funcionan así.", "detail": "Los bancos reales no le piden iniciar sesión mediante un enlace en un mensaje de texto." }
+              ],
+              "tip": "No toque el enlace. Llame al número que aparece en el reverso de su tarjeta del banco, o abra usted mismo la aplicación de su banco, y pregunte si hay algún problema."
+            },
+            "bn": {
+              "message": "Harborview Bank সতর্কবার্তা: অস্বাভাবিক কার্যকলাপের কারণে আপনার অ্যাকাউন্ট লক করা হয়েছে। স্থায়ীভাবে বন্ধ হওয়া এড়াতে এখনই harborview-secure-login.com-এ গিয়ে আপনার পরিচয় যাচাই করুন।",
+              "signs": [
+                { "title": "এটি ভয় দেখায়।", "detail": "আপনার অ্যাকাউন্ট বন্ধ করে দেওয়ার হুমকি দেয়, যাতে আপনি ঘাবড়ে যান।" },
+                { "title": "এটি লিংকে যেতে চাপ দেয়।", "detail": "এটি চায় আপনি তাদের বেছে দেওয়া ওয়েবসাইটে গিয়ে আপনার তথ্য \"যাচাই\" করুন।" },
+                { "title": "ব্যাংক এভাবে কাজ করে না।", "detail": "আসল ব্যাংক টেক্সট মেসেজের লিংক দিয়ে লগ ইন করতে বলে না।" }
+              ],
+              "tip": "লিংকে চাপ দেবেন না। আপনার ব্যাংক কার্ডের পেছনে থাকা নম্বরে ফোন করুন, অথবা নিজে ব্যাংকের অ্যাপ খুলুন, এবং জিজ্ঞেস করুন কোনো সমস্যা আছে কি না।"
+            }
+          }
+        },
+        {
+          "id": "pharmacy-pickup",
+          "channel": "text",
+          "isScam": false,
+          "category": "Pharmacy notice",
+          "sender": "Greenleaf Pharmacy",
+          "time": "Today, 11:30 AM",
+          "message": "Greenleaf Pharmacy: Your prescription is ready for pickup at our Main St location. Questions? Call your store. Reply STOP to opt out.",
+          "signs": [
+            { "title": "It matches something you expect.", "detail": "You know when you have a prescription waiting." },
+            { "title": "There's nothing to tap or pay.", "detail": "No link, no payment, and no deadline." },
+            { "title": "It sends you somewhere you know.", "detail": "It points you to a store you already use." }
+          ],
+          "tip": "Call the pharmacy using the number on your prescription bottle.",
+          "translations": {
+            "es": {
+              "message": "Greenleaf Pharmacy: Su medicamento recetado está listo para recoger en nuestra sucursal de Main St. ¿Preguntas? Llame a su tienda. Responda STOP para dejar de recibir mensajes.",
+              "signs": [
+                { "title": "Coincide con algo que espera.", "detail": "Usted sabe cuándo tiene un medicamento pendiente de recoger." },
+                { "title": "No hay nada que tocar ni pagar.", "detail": "Sin enlace, sin pago y sin fecha límite." },
+                { "title": "Le envía a un lugar que conoce.", "detail": "Le indica una tienda que usted ya usa." }
+              ],
+              "tip": "Llame a la farmacia usando el número que aparece en el frasco de su medicamento."
+            },
+            "bn": {
+              "message": "Greenleaf Pharmacy: আপনার প্রেসক্রিপশনের ওষুধ আমাদের Main St শাখায় নেওয়ার জন্য তৈরি। কোনো প্রশ্ন থাকলে আপনার দোকানে ফোন করুন। মেসেজ বন্ধ করতে STOP লিখে উত্তর দিন।",
+              "signs": [
+                { "title": "এটি আপনার প্রত্যাশার সাথে মেলে।", "detail": "আপনার কোনো ওষুধ নেওয়ার বাকি আছে কি না, তা আপনি জানেন।" },
+                { "title": "চাপ দেওয়ার বা টাকা দেওয়ার কিছু নেই।", "detail": "কোনো লিংক নেই, টাকা চাওয়া নেই, সময়সীমাও নেই।" },
+                { "title": "এটি আপনাকে পরিচিত জায়গায় পাঠায়।", "detail": "এটি এমন একটি দোকানের কথা বলে, যেখানে আপনি আগে থেকেই যান।" }
+              ],
+              "tip": "আপনার ওষুধের বোতলের গায়ে থাকা নম্বরে ফার্মেসিতে ফোন করুন।"
+            }
+          }
+        },
+        {
+          "id": "grandchild-bail",
+          "channel": "text",
+          "isScam": true,
+          "category": "Family emergency",
+          "sender": "(555) 908-4417",
+          "time": "Today, 10:21 PM",
+          "message": "Grandma it's me. I lost my phone so I'm using my friend's. I'm in trouble and need $900 for bail. Please don't tell Mom. Can you buy Target gift cards and send me the numbers?",
+          "signs": [
+            { "title": "It's an emergency.", "detail": "A sudden crisis pushes you to act before you can check." },
+            { "title": "It asks you to keep a secret.", "detail": "\"Don't tell Mom\" stops you from asking someone who could help." },
+            { "title": "It asks for gift cards.", "detail": "Real people and businesses never ask for gift cards for bail or bills." }
+          ],
+          "tip": "Don't reply or send anything. Call your grandchild, or another family member, using a number you already have.",
+          "translations": {
+            "es": {
+              "message": "Abuela, soy yo. Perdí mi teléfono, así que estoy usando el de un amigo. Estoy en problemas y necesito $900 para la fianza. Por favor, no le digas a mamá. ¿Puedes comprar tarjetas de regalo de Target y enviarme los números?",
+              "signs": [
+                { "title": "Es una emergencia.", "detail": "Una crisis repentina le empuja a actuar antes de poder comprobar nada." },
+                { "title": "Le pide guardar un secreto.", "detail": "\"Don't tell Mom\" (no le digas a mamá) evita que consulte con alguien que podría ayudar." },
+                { "title": "Pide tarjetas de regalo.", "detail": "Las personas y las empresas reales nunca piden tarjetas de regalo para pagar una fianza o facturas." }
+              ],
+              "tip": "No responda ni envíe nada. Llame a su nieto o nieta, o a otro familiar, usando un número que ya tiene."
+            },
+            "bn": {
+              "message": "দাদি, আমি বলছি। আমার ফোন হারিয়ে গেছে, তাই বন্ধুর ফোন থেকে লিখছি। আমি বিপদে পড়েছি, জামিনের জন্য $900 লাগবে। দয়া করে মাকে বোলো না। তুমি কি Target গিফট কার্ড কিনে আমাকে নম্বরগুলো পাঠাতে পারবে?",
+              "signs": [
+                { "title": "এটি একটি জরুরি অবস্থা।", "detail": "হঠাৎ বিপদের কথা বলে যাচাই করার আগেই আপনাকে কিছু করে ফেলতে চাপ দেয়।" },
+                { "title": "এটি কথা গোপন রাখতে বলে।", "detail": "\"Don't tell Mom\" (মাকে বোলো না) কথাটি আপনাকে এমন কারও সাথে কথা বলা থেকে আটকায়, যে সাহায্য করতে পারত।" },
+                { "title": "এটি গিফট কার্ড চায়।", "detail": "আসল মানুষ বা প্রতিষ্ঠান কখনোই জামিন বা বিল দেওয়ার জন্য গিফট কার্ড চায় না।" }
+              ],
+              "tip": "উত্তর দেবেন না, কিছু পাঠাবেনও না। আপনার কাছে আগে থেকে থাকা নম্বরে আপনার নাতি-নাতনি বা পরিবারের অন্য কাউকে ফোন করুন।"
+            }
+          }
+        },
+        {
+          "id": "bank-statement",
+          "channel": "text",
+          "isScam": false,
+          "category": "Bank notice",
+          "sender": "Harborview Bank",
+          "time": "Monday, 8:00 AM",
+          "message": "Harborview Bank: Your monthly statement is ready. Log in to the Harborview app to view it. We will never ask for your password by text.",
+          "signs": [
+            { "title": "It's routine.", "detail": "It's news you get every month." },
+            { "title": "There's no link.", "detail": "It tells you to use the app you already have." },
+            { "title": "It asks for nothing.", "detail": "No password, no payment, and no personal details." }
+          ],
+          "tip": "Open your bank's app yourself, or call the number on the back of your card.",
+          "translations": {
+            "es": {
+              "message": "Harborview Bank: Su estado de cuenta mensual está listo. Inicie sesión en la aplicación de Harborview para verlo. Nunca le pediremos su contraseña por mensaje de texto.",
+              "signs": [
+                { "title": "Es algo habitual.", "detail": "Es un aviso que recibe cada mes." },
+                { "title": "No hay enlace.", "detail": "Le dice que use la aplicación que ya tiene." },
+                { "title": "No pide nada.", "detail": "Ni contraseña, ni pagos, ni datos personales." }
+              ],
+              "tip": "Abra usted mismo la aplicación de su banco, o llame al número del reverso de su tarjeta."
+            },
+            "bn": {
+              "message": "Harborview Bank: আপনার মাসিক স্টেটমেন্ট তৈরি। দেখতে Harborview অ্যাপে লগ ইন করুন। আমরা কখনোই টেক্সট মেসেজে আপনার পাসওয়ার্ড চাইব না।",
+              "signs": [
+                { "title": "এটি নিয়মিত বিষয়।", "detail": "এই খবর আপনি প্রতি মাসেই পান।" },
+                { "title": "কোনো লিংক নেই।", "detail": "এটি আপনার কাছে আগে থেকে থাকা অ্যাপটি ব্যবহার করতে বলে।" },
+                { "title": "এটি কিছুই চায় না।", "detail": "পাসওয়ার্ড, টাকা বা ব্যক্তিগত তথ্য কিছুই চায় না।" }
+              ],
+              "tip": "নিজে আপনার ব্যাংকের অ্যাপ খুলুন, অথবা কার্ডের পেছনে থাকা নম্বরে ফোন করুন।"
+            }
+          }
         }
-      }
+      ]
     },
     {
-      "id": "doctor-reminder",
-      "channel": "text",
-      "isScam": false,
-      "category": "Appointment reminder",
-      "sender": "Dr. Patel's Office",
-      "time": "Yesterday, 4:02 PM",
-      "message": "Reminder: You have an appointment with Dr. Patel on Thu, Nov 5 at 10:30 AM. Reply C to confirm, or call the office at the number on your appointment card.",
-      "signs": [
-        { "title": "You expected it.", "detail": "It's about an appointment you made." },
-        { "title": "It asks for nothing risky.", "detail": "No money, passwords, or personal details." },
-        { "title": "There's no link.", "detail": "It points you to a number you already have." }
-      ],
-      "tip": "Call the office using the number on your appointment card, not a number from a message.",
-      "translations": {
-        "es": {
-          "message": "Recordatorio: Tiene una cita con el Dr. Patel el jueves 5 de noviembre a las 10:30 a. m. Responda C para confirmar, o llame al consultorio al número que aparece en su tarjeta de cita.",
+      "id": "round-2",
+      "title": "Text messages, round 2",
+      "scenarios": [
+        {
+          "id": "toll-unpaid",
+          "channel": "text",
+          "isScam": true,
+          "category": "Fake unpaid toll",
+          "sender": "(555) 302-7719",
+          "time": "Today, 8:05 AM",
+          "message": "MetroPass Tolls: You have an unpaid toll balance of $6.99. Pay by Nov 6 to avoid a $50 late fee and a hold on your driver's license: metropass-tollpay.com",
           "signs": [
-            { "title": "Lo esperaba.", "detail": "Es sobre una cita que usted hizo." },
-            { "title": "No pide nada riesgoso.", "detail": "Ni dinero, ni contraseñas, ni datos personales." },
-            { "title": "No hay enlace.", "detail": "Le indica un número que usted ya tiene." }
+            { "title": "A small bill with a big threat.", "detail": "$6.99 sounds easy to pay, and the threat about your license is meant to scare you into paying fast." },
+            { "title": "The link isn't official.", "detail": "It isn't your toll agency's real website. Real toll bills tell you to log in to your account or use the number on your statement." },
+            { "title": "You don't know the sender.", "detail": "It came from a regular phone number, not a toll agency you signed up with." }
           ],
-          "tip": "Llame al consultorio usando el número de su tarjeta de cita, no un número que venga en un mensaje."
+          "tip": "Don't tap the link. If you think you might owe a toll, go to your toll agency's website yourself, or call the number on your toll statement.",
+          "translations": {
+            "es": {
+              "message": "MetroPass Tolls: Tiene un saldo de peaje sin pagar de $6.99. Pague antes del 6 de noviembre para evitar un cargo por mora de $50 y un bloqueo de su licencia de conducir: metropass-tollpay.com",
+              "signs": [
+                { "title": "Una cuenta pequeña con una gran amenaza.", "detail": "$6.99 parece fácil de pagar, y la amenaza sobre su licencia busca asustarle para que pague rápido." },
+                { "title": "El enlace no es oficial.", "detail": "No es el sitio web real de su agencia de peaje. Las facturas reales de peaje le piden entrar a su cuenta o usar el número de su estado de cuenta." },
+                { "title": "No conoce al remitente.", "detail": "Llegó desde un número de teléfono común, no de una agencia de peaje con la que usted se inscribió." }
+              ],
+              "tip": "No toque el enlace. Si cree que podría deber un peaje, entre usted mismo al sitio web de su agencia de peaje, o llame al número de su estado de cuenta."
+            },
+            "bn": {
+              "message": "MetroPass Tolls: আপনার $6.99 টোল বকেয়া আছে। $50 বিলম্ব ফি এবং ড্রাইভিং লাইসেন্স আটকে যাওয়া এড়াতে ৬ নভেম্বরের মধ্যে পরিশোধ করুন: metropass-tollpay.com",
+              "signs": [
+                { "title": "ছোট বিল, বড় হুমকি।", "detail": "$6.99 সহজেই দিয়ে দেওয়া যায় মনে হয়, আর লাইসেন্সের হুমকি দেওয়া হয়েছে যাতে আপনি ভয় পেয়ে তাড়াতাড়ি টাকা দেন।" },
+                { "title": "লিংকটি আসল নয়।", "detail": "এটি আপনার টোল সংস্থার আসল ওয়েবসাইট নয়। আসল টোল বিলে আপনার অ্যাকাউন্টে লগ ইন করতে বা স্টেটমেন্টে থাকা নম্বর ব্যবহার করতে বলা হয়।" },
+                { "title": "প্রেরককে আপনি চেনেন না।", "detail": "এটি একটি সাধারণ ফোন নম্বর থেকে এসেছে, এমন কোনো টোল সংস্থা থেকে নয় যেখানে আপনি সাইন আপ করেছেন।" }
+              ],
+              "tip": "লিংকে চাপ দেবেন না। টোল বকেয়া থাকতে পারে মনে হলে নিজে আপনার টোল সংস্থার ওয়েবসাইটে যান, অথবা টোল স্টেটমেন্টে থাকা নম্বরে ফোন করুন।"
+            }
+          }
         },
-        "bn": {
-          "message": "মনে করিয়ে দিচ্ছি: বৃহস্পতিবার, ৫ নভেম্বর সকাল ১০:৩০-এ Dr. Patel-এর সাথে আপনার অ্যাপয়েন্টমেন্ট আছে। নিশ্চিত করতে C লিখে উত্তর দিন, অথবা আপনার অ্যাপয়েন্টমেন্ট কার্ডে থাকা নম্বরে অফিসে ফোন করুন।",
+        {
+          "id": "package-delivered",
+          "channel": "text",
+          "isScam": false,
+          "category": "Real delivery update",
+          "sender": "PostTrack (72345)",
+          "time": "Today, 2:15 PM",
+          "context": "You ordered something online and signed up for PostTrack text updates with your tracking number.",
+          "message": "PostTrack: Your package 9400 1118 9922 3456 7811 00 was delivered at 2:14 PM in or at your mailbox. Reply STOP to cancel updates.",
           "signs": [
-            { "title": "এটি আপনি আশা করছিলেন।", "detail": "এটি আপনার নিজের নেওয়া একটি অ্যাপয়েন্টমেন্ট নিয়ে।" },
-            { "title": "এটি ঝুঁকিপূর্ণ কিছু চায় না।", "detail": "টাকা, পাসওয়ার্ড বা ব্যক্তিগত তথ্য কিছুই চায় না।" },
-            { "title": "কোনো লিংক নেই।", "detail": "এটি আপনাকে এমন একটি নম্বরে যোগাযোগ করতে বলে, যা আপনার কাছে আগে থেকেই আছে।" }
+            { "title": "You signed up for it.", "detail": "You asked for updates with your tracking number, and the message shows that number." },
+            { "title": "It only gives news.", "detail": "It doesn't ask you to fix, pay, or update anything." },
+            { "title": "There's no link.", "detail": "There's nothing to tap. You can check your package in the company's app if you want." }
           ],
-          "tip": "মেসেজে দেওয়া নম্বর নয়, আপনার অ্যাপয়েন্টমেন্ট কার্ডে থাকা নম্বরে ডাক্তারের অফিসে ফোন করুন।"
-        }
-      }
-    },
-    {
-      "id": "bank-locked",
-      "channel": "text",
-      "isScam": true,
-      "category": "Fake bank alert",
-      "sender": "(555) 271-8830",
-      "time": "Today, 7:48 AM",
-      "message": "Harborview Bank ALERT: Your account has been locked due to unusual activity. Verify your identity now at harborview-secure-login.com to avoid permanent closure.",
-      "signs": [
-        { "title": "It scares you.", "detail": "It threatens to close your account so you'll panic." },
-        { "title": "It pushes you to a link.", "detail": "It wants you to \"verify\" your information on a website it chose." },
-        { "title": "Banks don't work this way.", "detail": "Real banks don't ask you to log in through a link in a text." }
-      ],
-      "tip": "Don't tap the link. Call the number on the back of your bank card, or open your bank's app yourself, and ask if anything is wrong.",
-      "translations": {
-        "es": {
-          "message": "ALERTA de Harborview Bank: Su cuenta ha sido bloqueada por actividad inusual. Verifique su identidad ahora en harborview-secure-login.com para evitar el cierre permanente.",
-          "signs": [
-            { "title": "Le asusta.", "detail": "Amenaza con cerrar su cuenta para que entre en pánico." },
-            { "title": "Le empuja hacia un enlace.", "detail": "Quiere que \"verifique\" sus datos en un sitio web que eligió quien lo envió." },
-            { "title": "Los bancos no funcionan así.", "detail": "Los bancos reales no le piden iniciar sesión mediante un enlace en un mensaje de texto." }
-          ],
-          "tip": "No toque el enlace. Llame al número que aparece en el reverso de su tarjeta del banco, o abra usted mismo la aplicación de su banco, y pregunte si hay algún problema."
+          "tip": "Compare this with the fake delivery text: same kind of company, but this one is expected, shows your tracking number, and asks for nothing. If you're unsure, check the tracking number in the company's app.",
+          "translations": {
+            "es": {
+              "context": "Usted compró algo por internet y se inscribió para recibir avisos de PostTrack por mensaje de texto con su número de seguimiento.",
+              "message": "PostTrack: Su paquete 9400 1118 9922 3456 7811 00 fue entregado a las 2:14 p. m. en su buzón o junto a él. Responda STOP para cancelar los avisos.",
+              "signs": [
+                { "title": "Usted lo pidió.", "detail": "Pidió avisos con su número de seguimiento, y el mensaje muestra ese número." },
+                { "title": "Solo da una noticia.", "detail": "No le pide arreglar, pagar ni actualizar nada." },
+                { "title": "No hay enlace.", "detail": "No hay nada que tocar. Si quiere, puede revisar su paquete en la aplicación de la empresa." }
+              ],
+              "tip": "Compárelo con el mensaje falso de entrega: es el mismo tipo de empresa, pero este se esperaba, muestra su número de seguimiento y no pide nada. Si tiene dudas, revise el número de seguimiento en la aplicación de la empresa."
+            },
+            "bn": {
+              "context": "আপনি অনলাইনে কিছু অর্ডার করেছেন এবং ট্র্যাকিং নম্বর দিয়ে PostTrack-এর টেক্সট আপডেটের জন্য সাইন আপ করেছেন।",
+              "message": "PostTrack: আপনার পার্সেল 9400 1118 9922 3456 7811 00 দুপুর ২:১৪-তে আপনার মেইলবক্সে বা তার পাশে পৌঁছে দেওয়া হয়েছে। আপডেট বন্ধ করতে STOP লিখে উত্তর দিন।",
+              "signs": [
+                { "title": "আপনি এটি চেয়েছিলেন।", "detail": "আপনি ট্র্যাকিং নম্বর দিয়ে আপডেট চেয়েছিলেন, আর মেসেজে সেই নম্বরটি আছে।" },
+                { "title": "এটি শুধু খবর দেয়।", "detail": "এটি আপনাকে কিছু ঠিক করতে, টাকা দিতে বা আপডেট করতে বলে না।" },
+                { "title": "কোনো লিংক নেই।", "detail": "চাপ দেওয়ার কিছু নেই। চাইলে কোম্পানির অ্যাপে আপনার পার্সেলের খবর দেখতে পারেন।" }
+              ],
+              "tip": "ভুয়া ডেলিভারি মেসেজটির সাথে তুলনা করুন: একই ধরনের কোম্পানি, কিন্তু এটি প্রত্যাশিত, এতে আপনার ট্র্যাকিং নম্বর আছে, আর এটি কিছুই চায় না। সন্দেহ হলে কোম্পানির অ্যাপে ট্র্যাকিং নম্বরটি দেখে নিন।"
+            }
+          }
         },
-        "bn": {
-          "message": "Harborview Bank সতর্কবার্তা: অস্বাভাবিক কার্যকলাপের কারণে আপনার অ্যাকাউন্ট লক করা হয়েছে। স্থায়ীভাবে বন্ধ হওয়া এড়াতে এখনই harborview-secure-login.com-এ গিয়ে আপনার পরিচয় যাচাই করুন।",
+        {
+          "id": "signin-code",
+          "channel": "text",
+          "isScam": false,
+          "category": "Sign-in code you asked for",
+          "sender": "Harborview Bank (40512)",
+          "time": "Today, 6:41 PM",
+          "context": "You just opened your bank's app and are signing in.",
+          "message": "Harborview Bank: Your sign-in code is 482913. It expires in 10 minutes. Don't share this code with anyone. We will never call you to ask for it.",
           "signs": [
-            { "title": "এটি ভয় দেখায়।", "detail": "আপনার অ্যাকাউন্ট বন্ধ করে দেওয়ার হুমকি দেয়, যাতে আপনি ঘাবড়ে যান।" },
-            { "title": "এটি লিংকে যেতে চাপ দেয়।", "detail": "এটি চায় আপনি তাদের বেছে দেওয়া ওয়েবসাইটে গিয়ে আপনার তথ্য \"যাচাই\" করুন।" },
-            { "title": "ব্যাংক এভাবে কাজ করে না।", "detail": "আসল ব্যাংক টেক্সট মেসেজের লিংক দিয়ে লগ ইন করতে বলে না।" }
+            { "title": "You just asked for it.", "detail": "It arrived right when you were signing in to the app yourself." },
+            { "title": "It warns you to keep it secret.", "detail": "Real codes tell you never to share them. Scammers ask you to read the code to them." },
+            { "title": "The time limit is normal here.", "detail": "A code that expires is a safety feature for something you started. It isn't pressure to do something new." }
           ],
-          "tip": "লিংকে চাপ দেবেন না। আপনার ব্যাংক কার্ডের পেছনে থাকা নম্বরে ফোন করুন, অথবা নিজে ব্যাংকের অ্যাপ খুলুন, এবং জিজ্ঞেস করুন কোনো সমস্যা আছে কি না।"
-        }
-      }
-    },
-    {
-      "id": "pharmacy-pickup",
-      "channel": "text",
-      "isScam": false,
-      "category": "Pharmacy notice",
-      "sender": "Greenleaf Pharmacy",
-      "time": "Today, 11:30 AM",
-      "message": "Greenleaf Pharmacy: Your prescription is ready for pickup at our Main St location. Questions? Call your store. Reply STOP to opt out.",
-      "signs": [
-        { "title": "It matches something you expect.", "detail": "You know when you have a prescription waiting." },
-        { "title": "There's nothing to tap or pay.", "detail": "No link, no payment, and no deadline." },
-        { "title": "It sends you somewhere you know.", "detail": "It points you to a store you already use." }
-      ],
-      "tip": "Call the pharmacy using the number on your prescription bottle.",
-      "translations": {
-        "es": {
-          "message": "Greenleaf Pharmacy: Su medicamento recetado está listo para recoger en nuestra sucursal de Main St. ¿Preguntas? Llame a su tienda. Responda STOP para dejar de recibir mensajes.",
-          "signs": [
-            { "title": "Coincide con algo que espera.", "detail": "Usted sabe cuándo tiene un medicamento pendiente de recoger." },
-            { "title": "No hay nada que tocar ni pagar.", "detail": "Sin enlace, sin pago y sin fecha límite." },
-            { "title": "Le envía a un lugar que conoce.", "detail": "Le indica una tienda que usted ya usa." }
-          ],
-          "tip": "Llame a la farmacia usando el número que aparece en el frasco de su medicamento."
+          "tip": "Only type the code into the app you opened yourself. If you ever get a code you didn't ask for, don't share it. Someone may be trying to get into your account.",
+          "translations": {
+            "es": {
+              "context": "Acaba de abrir la aplicación de su banco y está iniciando sesión.",
+              "message": "Harborview Bank: Su código para iniciar sesión es 482913. Vence en 10 minutos. No comparta este código con nadie. Nunca le llamaremos para pedírselo.",
+              "signs": [
+                { "title": "Usted acaba de pedirlo.", "detail": "Llegó justo cuando usted mismo estaba iniciando sesión en la aplicación." },
+                { "title": "Le advierte que no lo comparta.", "detail": "Los códigos reales le dicen que nunca los comparta. Los estafadores le piden que se los lea." },
+                { "title": "Aquí el límite de tiempo es normal.", "detail": "Un código que vence es una medida de seguridad para algo que usted empezó. No es una presión para hacer algo nuevo." }
+              ],
+              "tip": "Escriba el código solo en la aplicación que usted mismo abrió. Si alguna vez recibe un código que no pidió, no lo comparta. Alguien podría estar intentando entrar en su cuenta."
+            },
+            "bn": {
+              "context": "আপনি এইমাত্র আপনার ব্যাংকের অ্যাপ খুলে লগ ইন করছেন।",
+              "message": "Harborview Bank: আপনার লগ ইন কোড 482913। কোডটির মেয়াদ ১০ মিনিট। এই কোড কাউকে দেবেন না। আমরা কখনোই ফোন করে এটি চাইব না।",
+              "signs": [
+                { "title": "আপনি এইমাত্র এটি চেয়েছেন।", "detail": "আপনি নিজে যখন অ্যাপে লগ ইন করছিলেন, ঠিক তখনই এটি এসেছে।" },
+                { "title": "এটি কোড গোপন রাখতে বলে।", "detail": "আসল কোডের মেসেজে কাউকে কোড না দিতে বলা হয়। প্রতারকেরা কোডটি পড়ে শোনাতে বলে।" },
+                { "title": "এখানে সময়সীমা স্বাভাবিক।", "detail": "কোডের মেয়াদ থাকা আপনার নিজের শুরু করা কাজের জন্য একটি নিরাপত্তা ব্যবস্থা। এটি নতুন কিছু করার চাপ নয়।" }
+              ],
+              "tip": "শুধু নিজে খোলা অ্যাপেই কোডটি লিখুন। কখনো না চাওয়া কোড এলে কাউকে দেবেন না। হয়তো কেউ আপনার অ্যাকাউন্টে ঢোকার চেষ্টা করছে।"
+            }
+          }
         },
-        "bn": {
-          "message": "Greenleaf Pharmacy: আপনার প্রেসক্রিপশনের ওষুধ আমাদের Main St শাখায় নেওয়ার জন্য তৈরি। কোনো প্রশ্ন থাকলে আপনার দোকানে ফোন করুন। মেসেজ বন্ধ করতে STOP লিখে উত্তর দিন।",
+        {
+          "id": "fake-order",
+          "channel": "text",
+          "isScam": true,
+          "category": "Fake purchase alert",
+          "sender": "(555) 863-0154",
+          "time": "Yesterday, 9:37 PM",
+          "message": "ShopNow: Your order of a laptop for $1,249.99 has been placed and will ship today. If you did not make this purchase, call our fraud team now at (555) 410-2286.",
           "signs": [
-            { "title": "এটি আপনার প্রত্যাশার সাথে মেলে।", "detail": "আপনার কোনো ওষুধ নেওয়ার বাকি আছে কি না, তা আপনি জানেন।" },
-            { "title": "চাপ দেওয়ার বা টাকা দেওয়ার কিছু নেই।", "detail": "কোনো লিংক নেই, টাকা চাওয়া নেই, সময়সীমাও নেই।" },
-            { "title": "এটি আপনাকে পরিচিত জায়গায় পাঠায়।", "detail": "এটি এমন একটি দোকানের কথা বলে, যেখানে আপনি আগে থেকেই যান।" }
+            { "title": "It scares you about money.", "detail": "A big purchase you didn't make is meant to make you panic and call right away." },
+            { "title": "It gives you a number to call.", "detail": "The number in the message goes to the scammer, who may ask for your card or account details." },
+            { "title": "You can check without the message.", "detail": "Real orders show up in the store's app or website, which you can open yourself." }
           ],
-          "tip": "আপনার ওষুধের বোতলের গায়ে থাকা নম্বরে ফার্মেসিতে ফোন করুন।"
-        }
-      }
-    },
-    {
-      "id": "grandchild-bail",
-      "channel": "text",
-      "isScam": true,
-      "category": "Family emergency",
-      "sender": "(555) 908-4417",
-      "time": "Today, 10:21 PM",
-      "message": "Grandma it's me. I lost my phone so I'm using my friend's. I'm in trouble and need $900 for bail. Please don't tell Mom. Can you buy Target gift cards and send me the numbers?",
-      "signs": [
-        { "title": "It's an emergency.", "detail": "A sudden crisis pushes you to act before you can check." },
-        { "title": "It asks you to keep a secret.", "detail": "\"Don't tell Mom\" stops you from asking someone who could help." },
-        { "title": "It asks for gift cards.", "detail": "Real people and businesses never ask for gift cards for bail or bills." }
-      ],
-      "tip": "Don't reply or send anything. Call your grandchild, or another family member, using a number you already have.",
-      "translations": {
-        "es": {
-          "message": "Abuela, soy yo. Perdí mi teléfono, así que estoy usando el de un amigo. Estoy en problemas y necesito $900 para la fianza. Por favor, no le digas a mamá. ¿Puedes comprar tarjetas de regalo de Target y enviarme los números?",
-          "signs": [
-            { "title": "Es una emergencia.", "detail": "Una crisis repentina le empuja a actuar antes de poder comprobar nada." },
-            { "title": "Le pide guardar un secreto.", "detail": "\"Don't tell Mom\" (no le digas a mamá) evita que consulte con alguien que podría ayudar." },
-            { "title": "Pide tarjetas de regalo.", "detail": "Las personas y las empresas reales nunca piden tarjetas de regalo para pagar una fianza o facturas." }
-          ],
-          "tip": "No responda ni envíe nada. Llame a su nieto o nieta, o a otro familiar, usando un número que ya tiene."
+          "tip": "Don't call the number in the message. Open the store's app or website yourself and look at your orders. If you're still worried, call the number on the back of your card.",
+          "translations": {
+            "es": {
+              "message": "ShopNow: Su pedido de una computadora portátil por $1,249.99 fue realizado y se enviará hoy. Si usted no hizo esta compra, llame ahora a nuestro equipo de fraude al (555) 410-2286.",
+              "signs": [
+                { "title": "Le asusta con dinero.", "detail": "Una compra grande que usted no hizo busca que entre en pánico y llame de inmediato." },
+                { "title": "Le da un número para llamar.", "detail": "El número del mensaje es del estafador, que puede pedirle los datos de su tarjeta o de su cuenta." },
+                { "title": "Puede comprobarlo sin el mensaje.", "detail": "Los pedidos reales aparecen en la aplicación o el sitio web de la tienda, que usted puede abrir por su cuenta." }
+              ],
+              "tip": "No llame al número del mensaje. Abra usted mismo la aplicación o el sitio web de la tienda y revise sus pedidos. Si todavía le preocupa, llame al número del reverso de su tarjeta."
+            },
+            "bn": {
+              "message": "ShopNow: আপনার $1,249.99 দামের একটি ল্যাপটপের অর্ডার দেওয়া হয়েছে এবং আজই পাঠানো হবে। এই কেনাকাটা আপনি না করে থাকলে এখনই আমাদের ফ্রড টিমকে (555) 410-2286 নম্বরে ফোন করুন।",
+              "signs": [
+                { "title": "এটি টাকার ভয় দেখায়।", "detail": "আপনি করেননি এমন বড় কেনাকাটার কথা বলে আপনাকে ঘাবড়ে দিয়ে সঙ্গে সঙ্গে ফোন করাতে চায়।" },
+                { "title": "এটি ফোন করার নম্বর দেয়।", "detail": "মেসেজের নম্বরটি প্রতারকের, যে আপনার কার্ড বা অ্যাকাউন্টের তথ্য চাইতে পারে।" },
+                { "title": "মেসেজ ছাড়াই যাচাই করা যায়।", "detail": "আসল অর্ডার দোকানের অ্যাপ বা ওয়েবসাইটে দেখা যায়, যা আপনি নিজেই খুলতে পারেন।" }
+              ],
+              "tip": "মেসেজের নম্বরে ফোন করবেন না। নিজে দোকানের অ্যাপ বা ওয়েবসাইট খুলে আপনার অর্ডারগুলো দেখুন। তারপরও চিন্তা হলে কার্ডের পেছনে থাকা নম্বরে ফোন করুন।"
+            }
+          }
         },
-        "bn": {
-          "message": "দাদি, আমি বলছি। আমার ফোন হারিয়ে গেছে, তাই বন্ধুর ফোন থেকে লিখছি। আমি বিপদে পড়েছি, জামিনের জন্য $900 লাগবে। দয়া করে মাকে বোলো না। তুমি কি Target গিফট কার্ড কিনে আমাকে নম্বরগুলো পাঠাতে পারবে?",
+        {
+          "id": "daughter-late",
+          "channel": "text",
+          "isScam": false,
+          "category": "Family member you know",
+          "sender": "Maya",
+          "time": "Today, 6:58 PM",
+          "context": "Your daughter Maya is saved in your phone's contacts. You made dinner plans with her for tonight.",
+          "message": "Hi Mom, running about 20 minutes late. I'll be at your place around 7:20. Want me to pick up anything on the way?",
           "signs": [
-            { "title": "এটি একটি জরুরি অবস্থা।", "detail": "হঠাৎ বিপদের কথা বলে যাচাই করার আগেই আপনাকে কিছু করে ফেলতে চাপ দেয়।" },
-            { "title": "এটি কথা গোপন রাখতে বলে।", "detail": "\"Don't tell Mom\" (মাকে বোলো না) কথাটি আপনাকে এমন কারও সাথে কথা বলা থেকে আটকায়, যে সাহায্য করতে পারত।" },
-            { "title": "এটি গিফট কার্ড চায়।", "detail": "আসল মানুষ বা প্রতিষ্ঠান কখনোই জামিন বা বিল দেওয়ার জন্য গিফট কার্ড চায় না।" }
+            { "title": "It comes from a saved contact.", "detail": "It shows her name, from the number you already have for her." },
+            { "title": "It matches your plans.", "detail": "You knew she was coming tonight." },
+            { "title": "It asks for nothing risky.", "detail": "No money, no gift cards, no secrets, and no new phone number." }
           ],
-          "tip": "উত্তর দেবেন না, কিছু পাঠাবেনও না। আপনার কাছে আগে থেকে থাকা নম্বরে আপনার নাতি-নাতনি বা পরিবারের অন্য কাউকে ফোন করুন।"
-        }
-      }
-    },
-    {
-      "id": "bank-statement",
-      "channel": "text",
-      "isScam": false,
-      "category": "Bank notice",
-      "sender": "Harborview Bank",
-      "time": "Monday, 8:00 AM",
-      "message": "Harborview Bank: Your monthly statement is ready. Log in to the Harborview app to view it. We will never ask for your password by text.",
-      "signs": [
-        { "title": "It's routine.", "detail": "It's news you get every month." },
-        { "title": "There's no link.", "detail": "It tells you to use the app you already have." },
-        { "title": "It asks for nothing.", "detail": "No password, no payment, and no personal details." }
-      ],
-      "tip": "Open your bank's app yourself, or call the number on the back of your card.",
-      "translations": {
-        "es": {
-          "message": "Harborview Bank: Su estado de cuenta mensual está listo. Inicie sesión en la aplicación de Harborview para verlo. Nunca le pediremos su contraseña por mensaje de texto.",
-          "signs": [
-            { "title": "Es algo habitual.", "detail": "Es un aviso que recibe cada mes." },
-            { "title": "No hay enlace.", "detail": "Le dice que use la aplicación que ya tiene." },
-            { "title": "No pide nada.", "detail": "Ni contraseña, ni pagos, ni datos personales." }
-          ],
-          "tip": "Abra usted mismo la aplicación de su banco, o llame al número del reverso de su tarjeta."
+          "tip": "Compare this with the \"grandchild in trouble\" text: that one came from an unknown number and asked for money and secrecy. If a family member ever asks for money in a text, call them at the number you already have.",
+          "translations": {
+            "es": {
+              "context": "Su hija Maya está guardada en los contactos de su teléfono. Usted quedó en cenar con ella esta noche.",
+              "message": "Hola, mamá. Voy unos 20 minutos tarde. Llego a tu casa como a las 7:20. ¿Quieres que pase a comprar algo en el camino?",
+              "signs": [
+                { "title": "Viene de un contacto guardado.", "detail": "Muestra su nombre, desde el número que usted ya tiene de ella." },
+                { "title": "Coincide con sus planes.", "detail": "Usted sabía que ella vendría esta noche." },
+                { "title": "No pide nada riesgoso.", "detail": "Ni dinero, ni tarjetas de regalo, ni secretos, ni un número de teléfono nuevo." }
+              ],
+              "tip": "Compárelo con el mensaje del «nieto en problemas»: ese llegó desde un número desconocido y pedía dinero y secreto. Si un familiar alguna vez le pide dinero por mensaje, llámelo al número que usted ya tiene."
+            },
+            "bn": {
+              "context": "আপনার মেয়ে মায়ার নম্বর ফোনে সেভ করা আছে। আজ রাতে তার সাথে আপনার খাওয়ার পরিকল্পনা আছে।",
+              "message": "হাই মা, প্রায় ২০ মিনিট দেরি হবে। ৭:২০-এর দিকে তোমার বাসায় পৌঁছাব। আসার পথে কিছু নিয়ে আসব?",
+              "signs": [
+                { "title": "এটি সেভ করা নম্বর থেকে এসেছে।", "detail": "এতে তার নাম দেখা যাচ্ছে, আপনার কাছে আগে থেকে থাকা নম্বর থেকে।" },
+                { "title": "এটি আপনার পরিকল্পনার সাথে মেলে।", "detail": "আপনি জানতেন সে আজ রাতে আসবে।" },
+                { "title": "এটি ঝুঁকিপূর্ণ কিছু চায় না।", "detail": "টাকা, গিফট কার্ড, গোপনীয়তা বা নতুন ফোন নম্বর কিছুই চায় না।" }
+              ],
+              "tip": "“নাতি বিপদে পড়েছে” মেসেজটির সাথে তুলনা করুন: সেটি অচেনা নম্বর থেকে এসেছিল এবং টাকা ও গোপনীয়তা চেয়েছিল। পরিবারের কেউ কখনো মেসেজে টাকা চাইলে, আপনার কাছে আগে থেকে থাকা নম্বরে তাকে ফোন করুন।"
+            }
+          }
         },
-        "bn": {
-          "message": "Harborview Bank: আপনার মাসিক স্টেটমেন্ট তৈরি। দেখতে Harborview অ্যাপে লগ ইন করুন। আমরা কখনোই টেক্সট মেসেজে আপনার পাসওয়ার্ড চাইব না।",
+        {
+          "id": "prize-giftcard",
+          "channel": "text",
+          "isScam": true,
+          "category": "Fake prize",
+          "sender": "(555) 627-3081",
+          "time": "Saturday, 11:12 AM",
+          "message": "FreshMart: Congratulations! You won a $500 gift card in our customer drawing. Claim it within 48 hours at freshmart-rewards.net. A $4.95 shipping fee applies.",
           "signs": [
-            { "title": "এটি নিয়মিত বিষয়।", "detail": "এই খবর আপনি প্রতি মাসেই পান।" },
-            { "title": "কোনো লিংক নেই।", "detail": "এটি আপনার কাছে আগে থেকে থাকা অ্যাপটি ব্যবহার করতে বলে।" },
-            { "title": "এটি কিছুই চায় না।", "detail": "পাসওয়ার্ড, টাকা বা ব্যক্তিগত তথ্য কিছুই চায় না।" }
+            { "title": "You won something you never entered.", "detail": "A prize out of nowhere is a common trick. Did you enter a drawing?" },
+            { "title": "You have to pay to get it.", "detail": "A real prize doesn't cost money. The small fee is how they get your card number." },
+            { "title": "It rushes you to a link.", "detail": "\"Within 48 hours\" and a strange website push you to act before you check." }
           ],
-          "tip": "নিজে আপনার ব্যাংকের অ্যাপ খুলুন, অথবা কার্ডের পেছনে থাকা নম্বরে ফোন করুন।"
+          "tip": "Don't tap the link or pay any fee. If you want to know whether a store is running a contest, check its official website or ask at the store.",
+          "translations": {
+            "es": {
+              "message": "FreshMart: ¡Felicidades! Ganó una tarjeta de regalo de $500 en nuestro sorteo para clientes. Reclámela en 48 horas en freshmart-rewards.net. Se aplica un cargo de envío de $4.95.",
+              "signs": [
+                { "title": "Ganó algo en lo que nunca participó.", "detail": "Un premio que aparece de la nada es un truco común. ¿Participó en algún sorteo?" },
+                { "title": "Tiene que pagar para recibirlo.", "detail": "Un premio real no cuesta dinero. El cargo pequeño es la forma de obtener el número de su tarjeta." },
+                { "title": "Le apura hacia un enlace.", "detail": "\"Within 48 hours\" (en 48 horas) y un sitio web extraño le empujan a actuar antes de comprobar." }
+              ],
+              "tip": "No toque el enlace ni pague ningún cargo. Si quiere saber si una tienda tiene un concurso, revise su sitio web oficial o pregunte en la tienda."
+            },
+            "bn": {
+              "message": "FreshMart: অভিনন্দন! আমাদের গ্রাহক লটারিতে আপনি $500-এর একটি গিফট কার্ড জিতেছেন। ৪৮ ঘণ্টার মধ্যে freshmart-rewards.net-এ গিয়ে এটি নিন। $4.95 শিপিং ফি দিতে হবে।",
+              "signs": [
+                { "title": "আপনি কখনো অংশ নেননি এমন কিছু জিতেছেন।", "detail": "হঠাৎ পুরস্কার পাওয়ার কথা একটি পরিচিত কৌশল। আপনি কি কোনো লটারিতে অংশ নিয়েছিলেন?" },
+                { "title": "পুরস্কার নিতে টাকা দিতে হবে।", "detail": "আসল পুরস্কারে টাকা লাগে না। ছোট এই ফি দিয়েই তারা আপনার কার্ডের নম্বর নেয়।" },
+                { "title": "এটি লিংকে যেতে তাড়া দেয়।", "detail": "\"Within 48 hours\" (৪৮ ঘণ্টার মধ্যে) আর অদ্ভুত ওয়েবসাইট আপনাকে যাচাই করার আগেই কিছু করতে চাপ দেয়।" }
+              ],
+              "tip": "লিংকে চাপ দেবেন না, কোনো ফি-ও দেবেন না। কোনো দোকান সত্যিই প্রতিযোগিতা চালাচ্ছে কি না জানতে চাইলে তাদের আসল ওয়েবসাইট দেখুন বা দোকানে গিয়ে জিজ্ঞেস করুন।"
+            }
+          }
         }
-      }
+      ]
     }
   ]
 }

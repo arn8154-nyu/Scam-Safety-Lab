@@ -198,6 +198,11 @@ h1:focus, h2:focus { outline: none; }
   align-self: flex-start; font-size: 1rem; font-weight: 700; padding: 6px 14px;
   border: 2px solid var(--ink); border-radius: 999px;
 }
+.context {
+  font-size: 1.15rem; background: var(--right-bg); color: var(--ink);
+  border-left: 5px solid var(--right); border-radius: 6px; padding: 10px 14px;
+}
+.context strong { margin-right: 6px; }
 .message-card {
   background: var(--surface); border: 2px solid var(--ink); border-radius: var(--radius);
   padding: 18px; display: flex; flex-direction: column; gap: 12px;

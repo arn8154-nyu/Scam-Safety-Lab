@@ -22,7 +22,9 @@
   var LANG_KEY = "ssl-language";
   var LANGS = ["en", "es", "bn"];
 
-  var scenarios = [];
+  var rounds = [];         // each round is a set of practice messages
+  var roundIndex = 0;
+  var scenarios = [];      // the messages in the current round
   var words = null;        // everything in translations.json
   var lang = "en";
   var current = 0;
@@ -152,9 +154,7 @@
     $("lang-group").setAttribute("aria-label", t("language"));
     $("size-group").setAttribute("aria-label", t("textSize"));
     fillHow2();
-    if (scenarios.length) {
-      $("home-count").textContent = t("homeCount", { n: num(scenarios.length) });
-    }
+    drawHomeRounds();
     if (loadFailed) { $("load-status").textContent = t("loadError"); }
 
     if (screenNow === "practice") { drawPractice(); }
@@ -204,6 +204,34 @@
     container.appendChild(from);
     container.appendChild(bubble);
     container.appendChild(time);
+  }
+
+  /* ---------- Rounds ---------- */
+
+  function drawHomeRounds() {
+    if (!rounds.length) { return; }
+    var n = rounds[0].scenarios.length;
+    $("home-count").textContent = t("homeCount", { rounds: num(rounds.length), n: num(n) });
+    var btn = $("round2-btn");
+    btn.hidden = rounds.length < 2;
+    if (rounds.length >= 2) {
+      btn.textContent = t("roundStart", { r: num(2), n: num(rounds[1].scenarios.length) });
+    }
+  }
+
+  /* ---------- Situation note (some safe messages depend on what you know) ---------- */
+
+  function drawContext(scenario) {
+    var box = $("practice-context");
+    var tr = scenario.translations && scenario.translations[lang];
+    var text = (lang !== "en" && tr && tr.context) ? tr.context : scenario.context;
+    box.textContent = "";
+    if (!text) { box.hidden = true; return; }
+    var label = document.createElement("strong");
+    label.textContent = t("contextLabel");
+    box.appendChild(label);
+    box.appendChild(document.createTextNode(text));
+    box.hidden = false;
   }
 
   /* ---------- Optional translation of the message ---------- */
@@ -262,20 +290,23 @@
 
   /* ---------- Practice round ---------- */
 
-  function startRound() {
+  function startRound(index) {
+    roundIndex = typeof index === "number" ? index : roundIndex;
+    scenarios = rounds[roundIndex].scenarios;
     current = 0;
     answers = [];
     showPractice();
   }
 
   function countLabel(index) {
-    return t("messageCount", { i: num(index + 1), n: num(scenarios.length) });
+    return t("roundMessageCount", { r: num(roundIndex + 1), i: num(index + 1), n: num(scenarios.length) });
   }
 
   function drawPractice() {
     var scenario = scenarios[current];
     $("practice-count").textContent = countLabel(current);
     $("practice-fill").style.width = ((current + 1) / scenarios.length * 100) + "%";
+    drawContext(scenario);
     fillMessage($("practice-message"), scenario);
     drawTranslation("practice-translate", "practice", scenario);
   }
@@ -370,6 +401,16 @@
       }
     });
 
+    $("done-title").textContent = t("doneTitle", { r: num(roundIndex + 1) });
+    var nextBtn = $("next-round-btn");
+    var hasNext = roundIndex + 1 < rounds.length;
+    nextBtn.hidden = !hasNext;
+    if (hasNext) {
+      nextBtn.textContent = t("nextRound", { r: num(roundIndex + 2), n: num(rounds[roundIndex + 1].scenarios.length) });
+    }
+    // When there's a next round, "practice again" becomes the secondary choice.
+    $("again-btn").className = "btn " + (hasNext ? "btn-secondary" : "btn-primary");
+
     $("score-total").textContent = t("scoreTotal", { right: num(right), total: num(total) });
     $("score-scam").textContent = t("ofN", { a: num(scamRight), b: num(scamTotal) });
     $("score-safe").textContent = t("ofN", { a: num(safeRight), b: num(safeTotal) });
@@ -397,13 +438,16 @@
       .catch(function () { words = null; /* English already in the page */ })
       .then(function () { return getJSON(DATA_URL); })
       .then(function (data) {
-        scenarios = (data && data.scenarios) || [];
-        if (!scenarios.length) { throw new Error("No scenarios"); }
+        rounds = (data && data.rounds) || [];
+        if (!rounds.length && data && data.scenarios) { rounds = [{ scenarios: data.scenarios }]; }
+        if (!rounds.length || !rounds[0].scenarios.length) { throw new Error("No scenarios"); }
+        scenarios = rounds[0].scenarios;
         applyWords();
         if (!words) {
           $("home-count").textContent = scenarios.length + " practice messages, about 10 minutes";
         }
         $("start-btn").disabled = false;
+        $("round2-btn").disabled = false;
         status.textContent = "";
       })
       .catch(function () {
@@ -429,8 +473,10 @@
 
     // First time through, people see the warning signs before practicing.
     $("start-btn").addEventListener("click", function () { show("lesson"); });
-    $("lesson-start-btn").addEventListener("click", startRound);
-    $("again-btn").addEventListener("click", startRound);
+    $("lesson-start-btn").addEventListener("click", function () { startRound(0); });
+    $("round2-btn").addEventListener("click", function () { startRound(1); });
+    $("again-btn").addEventListener("click", function () { startRound(roundIndex); });
+    $("next-round-btn").addEventListener("click", function () { startRound(roundIndex + 1); });
     $("next-btn").addEventListener("click", next);
 
     Array.prototype.forEach.call(document.querySelectorAll("[data-answer]"), function (btn) {

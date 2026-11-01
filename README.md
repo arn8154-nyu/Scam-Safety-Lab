@@ -4,7 +4,11 @@ A free web app where older adults practice spotting scam text messages in a safe
 
 Senior Project, NYU School of Professional Studies, Fall 2026.
 
-## Sprint 2, part 1: language option, intro, warning-signs lesson, and help resources (this version)
+## Sprint 2, part 1: language option, intro, warning-signs lesson, help resources, and round 2 (this version)
+
+- Round 2 adds 6 new texts (3 scams, 3 safe, not in a fixed alternating order): a fake unpaid toll, a real delivery update the user signed up for, a sign-in code the user asked for, a fake purchase alert with a number to call, a text from a saved family contact, and a fake prize with a "shipping fee." Two of the safe ones are built to compare directly with round 1 scams (real vs. fake delivery; daughter vs. "grandchild in trouble")
+- Some safe messages are only safe because of what the person already knows, so scenarios can include a "Situation" note shown above the message (for example, "You just opened your bank's app and are signing in")
+- After round 1, the results screen offers the next round; the home page also has a button to go straight to round 2
 
 - A short lesson screen before the first round teaches 4 warning signs (rushes or scares you; wants you to tap a link; you didn't sign up for it; asks for money, gift cards, passwords, or secrecy), the safe way to check, and a reminder that real messages exist too. Added after the first user test, where the tester asked how she could know a message is a scam if she had never seen one
 - A "Learn more and get help" section on the results screen: forward scam texts to 7726, report to the FTC (Spanish users get ReporteFraude.ftc.gov and the FTC's Spanish guide), the FTC guide to spotting scam texts, and the free AARP Fraud Watch Network Helpline (877-908-3360, translation available) with a tap-to-call button
@@ -42,14 +46,14 @@ Plain HTML, CSS, and JavaScript, with no frameworks and no build step. It's host
 | `index.html` | The page structure: home, practice, feedback, and results screens |
 | `styles.css` | Layout, colors, text sizes, and the phone and laptop layouts |
 | `app.js` | Loads the scenarios, runs the practice round, shows feedback, and counts results |
-| `scenarios.json` | The practice messages and their feedback, kept separate from the code. Each scenario has a `translations` section with Spanish and Bengali versions of its message, signs, and tip |
+| `scenarios.json` | The practice messages and their feedback, grouped into rounds and kept separate from the code. Each scenario has a `translations` section with Spanish and Bengali versions of its message, signs, and tip |
 | `translations.json` | Every word the app shows (buttons, instructions, feedback, results) in English, Spanish, and Bengali |
 | `atkinson-hyperlegible-*.woff2` | Atkinson Hyperlegible, a typeface designed for readers with low vision (license in `OFL-LICENSE.txt`) |
 | `noto-sans-bengali-*.woff2` | Noto Sans Bengali, used only for Bengali letters (license in `NOTO-OFL-LICENSE.txt`) |
 
 ## Adding a scenario
 
-Add an entry to `scenarios.json` with `id`, `channel`, `isScam` (true or false), `category`, `sender`, `time`, `message`, three `signs` (each with a `title` and `detail`), a `tip`, and a `translations` section with `es` and `bn` versions of the message, signs, and tip. All names, numbers, and websites in scenarios are fictional.
+Add an entry to a round's `scenarios` list in `scenarios.json` with `id`, `channel`, `isScam` (true or false), `category`, `sender`, `time`, `message`, three `signs` (each with a `title` and `detail`), a `tip`, an optional `context` (the situation the person is in), and a `translations` section with `es` and `bn` versions of the message, signs, tip, and context. All names, numbers, and websites in scenarios are fictional.
 
 ## Privacy and security
 
