@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "note": "Words for the app's buttons, instructions, and feedback. Practice messages stay in English on purpose. Spanish and Bengali need review by a native speaker.",
   "en": {
     "langName": "English",
@@ -54,7 +54,12 @@
     "translateMessage": "",
     "hideTranslation": "",
     "translationLabel": "",
-    "translationNote": ""
+    "translationNote": "",
+    "whyTitle": "Why practice?",
+    "why1": "Scam texts pretend to be from a bank, a delivery company, or even a family member, to trick you into sending money or personal information.",
+    "why2": "They are very common. In 2024, people in the U.S. reported losing $470 million to scams that started with a text message. Fake package delivery texts were the most reported kind.",
+    "why3": "Practicing here, with made-up messages, helps you spot the warning signs and check a message safely before a real one reaches your phone.",
+    "whySource": "Source: Federal Trade Commission (FTC), 2025."
   },
   "es": {
     "langName": "Español",
@@ -109,7 +114,12 @@
     "translateMessage": "Traducir este mensaje",
     "hideTranslation": "Ocultar la traducción",
     "translationLabel": "Traducción al español",
-    "translationNote": "Recuerde: un mensaje real le llegaría en inglés. Si le cuesta leerlo, use la función de traducir de su teléfono, o una aplicación o sitio web de traducción. Copie solo el texto y no toque ningún enlace."
+    "translationNote": "Recuerde: un mensaje real le llegaría en inglés. Si le cuesta leerlo, use la función de traducir de su teléfono, o una aplicación o sitio web de traducción. Copie solo el texto y no toque ningún enlace.",
+    "whyTitle": "¿Por qué practicar?",
+    "why1": "Los mensajes de estafa fingen venir de un banco, una empresa de envíos o incluso un familiar, para engañarle y que envíe dinero o datos personales.",
+    "why2": "Son muy comunes. En 2024, las personas en EE. UU. reportaron haber perdido $470 millones en estafas que comenzaron con un mensaje de texto. Los mensajes falsos sobre entregas de paquetes fueron los más reportados.",
+    "why3": "Practicar aquí, con mensajes inventados, le ayuda a reconocer las señales de alerta y a comprobar un mensaje de forma segura antes de que uno real llegue a su teléfono.",
+    "whySource": "Fuente: Comisión Federal de Comercio (FTC), 2025."
   },
   "bn": {
     "langName": "বাংলা",
@@ -164,6 +174,11 @@
     "translateMessage": "মেসেজটি অনুবাদ করুন",
     "hideTranslation": "অনুবাদ লুকান",
     "translationLabel": "বাংলা অনুবাদ",
-    "translationNote": "মনে রাখবেন: আসল মেসেজ ইংরেজিতেই আসবে। পড়তে কষ্ট হলে ফোনের অনুবাদ সুবিধা, অথবা কোনো অনুবাদ অ্যাপ বা ওয়েবসাইট ব্যবহার করুন। শুধু লেখাটুকু কপি করুন, কোনো লিংকে চাপ দেবেন না।"
+    "translationNote": "মনে রাখবেন: আসল মেসেজ ইংরেজিতেই আসবে। পড়তে কষ্ট হলে ফোনের অনুবাদ সুবিধা, অথবা কোনো অনুবাদ অ্যাপ বা ওয়েবসাইট ব্যবহার করুন। শুধু লেখাটুকু কপি করুন, কোনো লিংকে চাপ দেবেন না।",
+    "whyTitle": "কেন অনুশীলন করবেন?",
+    "why1": "প্রতারণার মেসেজ এমনভাবে লেখা হয় যেন এটি কোনো ব্যাংক, ডেলিভারি কোম্পানি, এমনকি পরিবারের কারও কাছ থেকে এসেছে। উদ্দেশ্য হলো আপনাকে ধোঁকা দিয়ে টাকা বা ব্যক্তিগত তথ্য নেওয়া।",
+    "why2": "এ ধরনের মেসেজ খুবই সাধারণ। ২০২৪ সালে যুক্তরাষ্ট্রের মানুষ জানিয়েছেন, টেক্সট মেসেজ দিয়ে শুরু হওয়া প্রতারণায় তাঁরা ৪৭ কোটি ডলার হারিয়েছেন। সবচেয়ে বেশি অভিযোগ এসেছে ভুয়া পার্সেল ডেলিভারির মেসেজ নিয়ে।",
+    "why3": "এখানে বানানো মেসেজ দিয়ে অনুশীলন করলে আপনি সতর্কতার লক্ষণগুলো চিনতে পারবেন, আর আসল মেসেজ আসার আগেই সেটি নিরাপদে যাচাই করা শিখবেন।",
+    "whySource": "সূত্র: ফেডারেল ট্রেড কমিশন (FTC), ২০২৫।"
   }
 }

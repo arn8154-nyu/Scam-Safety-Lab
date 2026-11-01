@@ -4,7 +4,9 @@ A free web app where older adults practice spotting scam text messages in a safe
 
 Senior Project, NYU School of Professional Studies, Fall 2026.
 
-## Sprint 2, part 1: language option (this version)
+## Sprint 2, part 1: language option and home-page intro (this version)
+
+- A "Why practice?" section on the home page explains what scam texts are, how common they are (FTC: $470 million reported lost to text scams in 2024; fake package delivery texts were the most reported kind), and why practicing helps. Added after the first user test, where the tester needed the purpose explained before starting
 
 - Instructions, buttons, feedback, and results can be shown in English, Español, or বাংলা (Bengali)
 - The practice messages stay in English on purpose, the way real scam texts arrive, and the app says so

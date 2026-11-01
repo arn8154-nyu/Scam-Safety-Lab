@@ -168,6 +168,12 @@ h1:focus, h2:focus { outline: none; }
 .how summary { min-height: 56px; display: flex; align-items: center; font-weight: 700; cursor: pointer; }
 .how[open] { padding-bottom: 18px; }
 .how-steps { padding-left: 1.4em; display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
+.why {
+  background: var(--surface); border: 2px solid var(--line); border-radius: var(--radius);
+  padding: 18px 20px; display: flex; flex-direction: column; gap: 10px;
+}
+.why h2 { font-size: 1.45rem; }
+.why-source { color: var(--muted); font-size: 1rem; }
 .home-art { display: flex; justify-content: center; }
 .phone {
   width: 100%; max-width: 300px; border: 3px solid var(--ink); border-radius: 32px;
