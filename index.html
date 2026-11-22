@@ -4,8 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
-<meta name="description" content="Practice spotting scam text messages in a safe place. Free, no account needed. Instructions in English, Spanish, and Bengali.">
+<meta name="description" content="Practice spotting scam texts, emails, and phone calls in a safe place. Free, no account needed. Instructions in English, Spanish, and Bengali.">
 <title>Scam-Safety Practice Lab</title>
+<link rel="icon" href="data:,">
 <link rel="stylesheet" href="styles.css">
 <script src="app.js" defer></script>
 </head>
@@ -46,10 +47,28 @@
             <p class="why-source" data-i18n="whySource">Source: Federal Trade Commission (FTC), 2025.</p>
           </section>
           <p class="note" data-i18n="englishNote"></p>
-          <p class="meta" id="home-count">12 practice messages, about 15 minutes</p>
-          <div class="actions">
-            <button type="button" id="start-btn" class="btn btn-primary" disabled data-i18n="start">Start practicing</button>
-          </div>
+          <section class="choose" aria-labelledby="choose-title">
+            <h2 id="choose-title" data-i18n="chooseTitle">What would you like to practice?</h2>
+            <div class="kind-list">
+              <button type="button" class="kind-btn" data-kind="text" disabled>
+                <svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>
+                <span class="kind-text"><span class="kind-name" data-i18n="typeTexts">Text messages</span><span class="kind-count" id="count-text"></span></span>
+              </button>
+              <button type="button" class="kind-btn" data-kind="email" disabled>
+                <svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+                <span class="kind-text"><span class="kind-name" data-i18n="typeEmails">Emails</span><span class="kind-count" id="count-email"></span></span>
+              </button>
+              <button type="button" class="kind-btn" data-kind="call" disabled>
+                <svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+                <span class="kind-text"><span class="kind-name" data-i18n="typeCalls">Phone calls</span><span class="kind-count" id="count-call"></span></span>
+              </button>
+              <button type="button" class="kind-btn" data-kind="mix" disabled>
+                <svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M4 20L21 3"/><path d="M21 16v5h-5"/><path d="M15 15l6 6"/><path d="M4 4l5 5"/></svg>
+                <span class="kind-text"><span class="kind-name" data-i18n="typeMix">A mix of all three</span><span class="kind-count" id="count-mix"></span></span>
+              </button>
+            </div>
+            <p class="meta" data-i18n="homeTime">Each one takes about 10 to 15 minutes.</p>
+          </section>
           <p class="status" id="load-status" role="status"></p>
           <details class="how">
             <summary data-i18n="howSummary">How does this work?</summary>
@@ -60,6 +79,7 @@
             </ol>
             <p data-i18n="howNote">There is no timer, and nothing you choose is saved or shared.</p>
           </details>
+          <p class="fineprint" data-i18n="brandNote"></p>
         </div>
         <div class="home-art" aria-hidden="true">
           <div class="phone">
@@ -118,14 +138,15 @@
       </div>
       <div class="split">
         <div class="split-main">
-          <p class="chip" data-i18n="chipText">Text message</p>
-          <p class="note" data-i18n="practiceNote"></p>
+          <p class="chip" id="practice-chip">Text message</p>
+          <p class="note" id="practice-note"></p>
           <p class="context" id="practice-context" hidden></p>
           <div class="message-card" id="practice-message"></div>
+          <div class="listen" id="practice-listen" hidden></div>
           <div class="translate" id="practice-translate" hidden></div>
         </div>
         <div class="split-side">
-          <h2 id="practice-title" tabindex="-1" data-i18n="question">Is this message safe or suspicious?</h2>
+          <h2 id="practice-title" tabindex="-1">Is this message safe or suspicious?</h2>
           <div class="choice-list">
             <button type="button" class="btn btn-choice" data-answer="safe" data-i18n="looksSafe">Looks safe</button>
             <button type="button" class="btn btn-choice" data-answer="suspicious" data-i18n="seemsSuspicious">Seems suspicious</button>
@@ -166,12 +187,13 @@
           <details class="again">
             <summary data-i18n="showAgain">Show the message again</summary>
             <div class="message-card" id="feedback-message"></div>
+            <div class="listen" id="feedback-listen" hidden></div>
             <div class="translate" id="feedback-translate" hidden></div>
           </details>
         </div>
       </div>
       <div class="actions actions-end">
-        <button type="button" id="next-btn" class="btn btn-primary">Next message</button>
+        <button type="button" id="next-btn" class="btn btn-primary">Next</button>
       </div>
     </section>
 

@@ -1,6 +1,6 @@
 {
-  "version": 6,
-  "note": "Set 1 is the main practice (12 messages). Set 2 holds 12 new messages, offered only through the retry button on the results page.",
+  "version": 3,
+  "note": "set-1 is the main text-message practice (12). set-2 holds 12 new text messages, offered through the retry button. emails (8) and calls (8) are their own practice sets. The mix draws 4 of each kind, always 6 scams and 6 safe.",
   "sets": [
     {
       "id": "set-1",
@@ -14,27 +14,54 @@
           "time": "Today, 9:14 AM",
           "message": "PostTrack Delivery: Your package is on hold because of an incomplete address. Update it within 24 hours or it will be returned: posttrack-redeliver.info",
           "signs": [
-            { "title": "It rushes you.", "detail": "\"Within 24 hours or it will be returned\" is meant to make you act before you think." },
-            { "title": "The link looks off.", "detail": "It isn't the delivery company's real website." },
-            { "title": "You didn't sign up for it.", "detail": "It came from a regular phone number, and delivery companies only text about a problem if you signed up for updates. Expecting a package doesn't make the text real." }
+            {
+              "title": "It rushes you.",
+              "detail": "\"Within 24 hours or it will be returned\" is meant to make you act before you think."
+            },
+            {
+              "title": "The link looks off.",
+              "detail": "It isn't the delivery company's real website."
+            },
+            {
+              "title": "You didn't sign up for it.",
+              "detail": "It came from a regular phone number, and delivery companies only text about a problem if you signed up for updates. Expecting a package doesn't make the text real."
+            }
           ],
           "tip": "Don't tap the link. Open the delivery company's app, or type its website yourself, and enter your tracking number there.",
           "translations": {
             "es": {
               "message": "PostTrack Delivery: Su paquete está retenido porque la dirección está incompleta. Actualícela en 24 horas o será devuelto: posttrack-redeliver.info",
               "signs": [
-                { "title": "Le presiona para actuar rápido.", "detail": "\"Within 24 hours or it will be returned\" (en 24 horas o será devuelto) busca que actúe antes de pensar." },
-                { "title": "El enlace es extraño.", "detail": "No es el sitio web real de la empresa de envíos." },
-                { "title": "Usted no lo pidió.", "detail": "Llegó desde un número de teléfono común, y las empresas de envíos solo envían mensajes sobre un problema si usted se inscribió para recibir avisos. Esperar un paquete no hace que el mensaje sea real." }
+                {
+                  "title": "Le presiona para actuar rápido.",
+                  "detail": "\"Within 24 hours or it will be returned\" (en 24 horas o será devuelto) busca que actúe antes de pensar."
+                },
+                {
+                  "title": "El enlace es extraño.",
+                  "detail": "No es el sitio web real de la empresa de envíos."
+                },
+                {
+                  "title": "Usted no lo pidió.",
+                  "detail": "Llegó desde un número de teléfono común, y las empresas de envíos solo envían mensajes sobre un problema si usted se inscribió para recibir avisos. Esperar un paquete no hace que el mensaje sea real."
+                }
               ],
               "tip": "No toque el enlace. Abra la aplicación de la empresa de envíos, o escriba usted mismo su sitio web, e ingrese allí su número de seguimiento."
             },
             "bn": {
               "message": "PostTrack Delivery: ঠিকানা অসম্পূর্ণ থাকায় আপনার পার্সেলটি আটকে আছে। ২৪ ঘণ্টার মধ্যে ঠিকানা আপডেট করুন, নইলে এটি ফেরত পাঠানো হবে: posttrack-redeliver.info",
               "signs": [
-                { "title": "এটি তাড়াহুড়া করায়।", "detail": "\"Within 24 hours or it will be returned\" (২৪ ঘণ্টার মধ্যে, নইলে ফেরত যাবে) কথাটি আপনাকে ভাবার আগেই কিছু করে ফেলতে চাপ দেয়।" },
-                { "title": "লিংকটি সন্দেহজনক।", "detail": "এটি ডেলিভারি কোম্পানির আসল ওয়েবসাইট নয়।" },
-                { "title": "আপনি এটি চাননি।", "detail": "এটি একটি সাধারণ ফোন নম্বর থেকে এসেছে, আর ডেলিভারি কোম্পানি তখনই সমস্যার কথা মেসেজে জানায়, যখন আপনি আপডেটের জন্য সাইন আপ করেছেন। পার্সেলের অপেক্ষায় থাকলেই মেসেজটি আসল হয়ে যায় না।" }
+                {
+                  "title": "এটি তাড়াহুড়া করায়।",
+                  "detail": "\"Within 24 hours or it will be returned\" (২৪ ঘণ্টার মধ্যে, নইলে ফেরত যাবে) কথাটি আপনাকে ভাবার আগেই কিছু করে ফেলতে চাপ দেয়।"
+                },
+                {
+                  "title": "লিংকটি সন্দেহজনক।",
+                  "detail": "এটি ডেলিভারি কোম্পানির আসল ওয়েবসাইট নয়।"
+                },
+                {
+                  "title": "আপনি এটি চাননি।",
+                  "detail": "এটি একটি সাধারণ ফোন নম্বর থেকে এসেছে, আর ডেলিভারি কোম্পানি তখনই সমস্যার কথা মেসেজে জানায়, যখন আপনি আপডেটের জন্য সাইন আপ করেছেন। পার্সেলের অপেক্ষায় থাকলেই মেসেজটি আসল হয়ে যায় না।"
+                }
               ],
               "tip": "লিংকে চাপ দেবেন না। ডেলিভারি কোম্পানির অ্যাপ খুলুন, অথবা নিজে তাদের ওয়েবসাইটের ঠিকানা লিখুন, তারপর সেখানে আপনার ট্র্যাকিং নম্বর দিন।"
             }
@@ -49,27 +76,54 @@
           "time": "Yesterday, 4:02 PM",
           "message": "Reminder: You have an appointment with Dr. Patel on Thu, Nov 5 at 10:30 AM. Reply C to confirm, or call the office at the number on your appointment card.",
           "signs": [
-            { "title": "You expected it.", "detail": "It's about an appointment you made." },
-            { "title": "It asks for nothing risky.", "detail": "No money, passwords, or personal details." },
-            { "title": "There's no link.", "detail": "It points you to a number you already have." }
+            {
+              "title": "You expected it.",
+              "detail": "It's about an appointment you made."
+            },
+            {
+              "title": "It asks for nothing risky.",
+              "detail": "No money, passwords, or personal details."
+            },
+            {
+              "title": "There's no link.",
+              "detail": "It points you to a number you already have."
+            }
           ],
           "tip": "Call the office using the number on your appointment card, not a number from a message.",
           "translations": {
             "es": {
               "message": "Recordatorio: Tiene una cita con el Dr. Patel el jueves 5 de noviembre a las 10:30 a. m. Responda C para confirmar, o llame al consultorio al número que aparece en su tarjeta de cita.",
               "signs": [
-                { "title": "Lo esperaba.", "detail": "Es sobre una cita que usted hizo." },
-                { "title": "No pide nada riesgoso.", "detail": "Ni dinero, ni contraseñas, ni datos personales." },
-                { "title": "No hay enlace.", "detail": "Le indica un número que usted ya tiene." }
+                {
+                  "title": "Lo esperaba.",
+                  "detail": "Es sobre una cita que usted hizo."
+                },
+                {
+                  "title": "No pide nada riesgoso.",
+                  "detail": "Ni dinero, ni contraseñas, ni datos personales."
+                },
+                {
+                  "title": "No hay enlace.",
+                  "detail": "Le indica un número que usted ya tiene."
+                }
               ],
               "tip": "Llame al consultorio usando el número de su tarjeta de cita, no un número que venga en un mensaje."
             },
             "bn": {
               "message": "মনে করিয়ে দিচ্ছি: বৃহস্পতিবার, ৫ নভেম্বর সকাল ১০:৩০-এ Dr. Patel-এর সাথে আপনার অ্যাপয়েন্টমেন্ট আছে। নিশ্চিত করতে C লিখে উত্তর দিন, অথবা আপনার অ্যাপয়েন্টমেন্ট কার্ডে থাকা নম্বরে অফিসে ফোন করুন।",
               "signs": [
-                { "title": "এটি আপনি আশা করছিলেন।", "detail": "এটি আপনার নিজের নেওয়া একটি অ্যাপয়েন্টমেন্ট নিয়ে।" },
-                { "title": "এটি ঝুঁকিপূর্ণ কিছু চায় না।", "detail": "টাকা, পাসওয়ার্ড বা ব্যক্তিগত তথ্য কিছুই চায় না।" },
-                { "title": "কোনো লিংক নেই।", "detail": "এটি আপনাকে এমন একটি নম্বরে যোগাযোগ করতে বলে, যা আপনার কাছে আগে থেকেই আছে।" }
+                {
+                  "title": "এটি আপনি আশা করছিলেন।",
+                  "detail": "এটি আপনার নিজের নেওয়া একটি অ্যাপয়েন্টমেন্ট নিয়ে।"
+                },
+                {
+                  "title": "এটি ঝুঁকিপূর্ণ কিছু চায় না।",
+                  "detail": "টাকা, পাসওয়ার্ড বা ব্যক্তিগত তথ্য কিছুই চায় না।"
+                },
+                {
+                  "title": "কোনো লিংক নেই।",
+                  "detail": "এটি আপনাকে এমন একটি নম্বরে যোগাযোগ করতে বলে, যা আপনার কাছে আগে থেকেই আছে।"
+                }
               ],
               "tip": "মেসেজে দেওয়া নম্বর নয়, আপনার অ্যাপয়েন্টমেন্ট কার্ডে থাকা নম্বরে ডাক্তারের অফিসে ফোন করুন।"
             }
@@ -84,27 +138,54 @@
           "time": "Today, 8:05 AM",
           "message": "MetroPass Tolls: You have an unpaid toll balance of $6.99. Pay by Nov 6 to avoid a $50 late fee and a hold on your driver's license: metropass-tollpay.com",
           "signs": [
-            { "title": "A small bill with a big threat.", "detail": "$6.99 sounds easy to pay, and the threat about your license is meant to scare you into paying fast." },
-            { "title": "The link isn't official.", "detail": "It isn't your toll agency's real website. Real toll bills tell you to log in to your account or use the number on your statement." },
-            { "title": "You don't know the sender.", "detail": "It came from a regular phone number, not a toll agency you signed up with." }
+            {
+              "title": "A small bill with a big threat.",
+              "detail": "$6.99 sounds easy to pay, and the threat about your license is meant to scare you into paying fast."
+            },
+            {
+              "title": "The link isn't official.",
+              "detail": "It isn't your toll agency's real website. Real toll bills tell you to log in to your account or use the number on your statement."
+            },
+            {
+              "title": "You don't know the sender.",
+              "detail": "It came from a regular phone number, not a toll agency you signed up with."
+            }
           ],
           "tip": "Don't tap the link. If you think you might owe a toll, go to your toll agency's website yourself, or call the number on your toll statement.",
           "translations": {
             "es": {
               "message": "MetroPass Tolls: Tiene un saldo de peaje sin pagar de $6.99. Pague antes del 6 de noviembre para evitar un cargo por mora de $50 y un bloqueo de su licencia de conducir: metropass-tollpay.com",
               "signs": [
-                { "title": "Una cuenta pequeña con una gran amenaza.", "detail": "$6.99 parece fácil de pagar, y la amenaza sobre su licencia busca asustarle para que pague rápido." },
-                { "title": "El enlace no es oficial.", "detail": "No es el sitio web real de su agencia de peaje. Las facturas reales de peaje le piden entrar a su cuenta o usar el número de su estado de cuenta." },
-                { "title": "No conoce al remitente.", "detail": "Llegó desde un número de teléfono común, no de una agencia de peaje con la que usted se inscribió." }
+                {
+                  "title": "Una cuenta pequeña con una gran amenaza.",
+                  "detail": "$6.99 parece fácil de pagar, y la amenaza sobre su licencia busca asustarle para que pague rápido."
+                },
+                {
+                  "title": "El enlace no es oficial.",
+                  "detail": "No es el sitio web real de su agencia de peaje. Las facturas reales de peaje le piden entrar a su cuenta o usar el número de su estado de cuenta."
+                },
+                {
+                  "title": "No conoce al remitente.",
+                  "detail": "Llegó desde un número de teléfono común, no de una agencia de peaje con la que usted se inscribió."
+                }
               ],
               "tip": "No toque el enlace. Si cree que podría deber un peaje, entre usted mismo al sitio web de su agencia de peaje, o llame al número de su estado de cuenta."
             },
             "bn": {
               "message": "MetroPass Tolls: আপনার $6.99 টোল বকেয়া আছে। $50 বিলম্ব ফি এবং ড্রাইভিং লাইসেন্স আটকে যাওয়া এড়াতে ৬ নভেম্বরের মধ্যে পরিশোধ করুন: metropass-tollpay.com",
               "signs": [
-                { "title": "ছোট বিল, বড় হুমকি।", "detail": "$6.99 সহজেই দিয়ে দেওয়া যায় মনে হয়, আর লাইসেন্সের হুমকি দেওয়া হয়েছে যাতে আপনি ভয় পেয়ে তাড়াতাড়ি টাকা দেন।" },
-                { "title": "লিংকটি আসল নয়।", "detail": "এটি আপনার টোল সংস্থার আসল ওয়েবসাইট নয়। আসল টোল বিলে আপনার অ্যাকাউন্টে লগ ইন করতে বা স্টেটমেন্টে থাকা নম্বর ব্যবহার করতে বলা হয়।" },
-                { "title": "প্রেরককে আপনি চেনেন না।", "detail": "এটি একটি সাধারণ ফোন নম্বর থেকে এসেছে, এমন কোনো টোল সংস্থা থেকে নয় যেখানে আপনি সাইন আপ করেছেন।" }
+                {
+                  "title": "ছোট বিল, বড় হুমকি।",
+                  "detail": "$6.99 সহজেই দিয়ে দেওয়া যায় মনে হয়, আর লাইসেন্সের হুমকি দেওয়া হয়েছে যাতে আপনি ভয় পেয়ে তাড়াতাড়ি টাকা দেন।"
+                },
+                {
+                  "title": "লিংকটি আসল নয়।",
+                  "detail": "এটি আপনার টোল সংস্থার আসল ওয়েবসাইট নয়। আসল টোল বিলে আপনার অ্যাকাউন্টে লগ ইন করতে বা স্টেটমেন্টে থাকা নম্বর ব্যবহার করতে বলা হয়।"
+                },
+                {
+                  "title": "প্রেরককে আপনি চেনেন না।",
+                  "detail": "এটি একটি সাধারণ ফোন নম্বর থেকে এসেছে, এমন কোনো টোল সংস্থা থেকে নয় যেখানে আপনি সাইন আপ করেছেন।"
+                }
               ],
               "tip": "লিংকে চাপ দেবেন না। টোল বকেয়া থাকতে পারে মনে হলে নিজে আপনার টোল সংস্থার ওয়েবসাইটে যান, অথবা টোল স্টেটমেন্টে থাকা নম্বরে ফোন করুন।"
             }
@@ -120,9 +201,18 @@
           "context": "You ordered something online and signed up for PostTrack text updates with your tracking number.",
           "message": "PostTrack: Your package 9400 1118 9922 3456 7811 00 was delivered at 2:14 PM in or at your mailbox. Reply STOP to cancel updates.",
           "signs": [
-            { "title": "You signed up for it.", "detail": "You asked for updates with your tracking number, and the message shows that number." },
-            { "title": "It only gives news.", "detail": "It doesn't ask you to fix, pay, or update anything." },
-            { "title": "There's no link.", "detail": "There's nothing to tap. You can check your package in the company's app if you want." }
+            {
+              "title": "You signed up for it.",
+              "detail": "You asked for updates with your tracking number, and the message shows that number."
+            },
+            {
+              "title": "It only gives news.",
+              "detail": "It doesn't ask you to fix, pay, or update anything."
+            },
+            {
+              "title": "There's no link.",
+              "detail": "There's nothing to tap. You can check your package in the company's app if you want."
+            }
           ],
           "tip": "Compare this with the fake delivery text: same kind of company, but this one is expected, shows your tracking number, and asks for nothing. If you're unsure, check the tracking number in the company's app.",
           "translations": {
@@ -130,9 +220,18 @@
               "context": "Usted compró algo por internet y se inscribió para recibir avisos de PostTrack por mensaje de texto con su número de seguimiento.",
               "message": "PostTrack: Su paquete 9400 1118 9922 3456 7811 00 fue entregado a las 2:14 p. m. en su buzón o junto a él. Responda STOP para cancelar los avisos.",
               "signs": [
-                { "title": "Usted lo pidió.", "detail": "Pidió avisos con su número de seguimiento, y el mensaje muestra ese número." },
-                { "title": "Solo da una noticia.", "detail": "No le pide arreglar, pagar ni actualizar nada." },
-                { "title": "No hay enlace.", "detail": "No hay nada que tocar. Si quiere, puede revisar su paquete en la aplicación de la empresa." }
+                {
+                  "title": "Usted lo pidió.",
+                  "detail": "Pidió avisos con su número de seguimiento, y el mensaje muestra ese número."
+                },
+                {
+                  "title": "Solo da una noticia.",
+                  "detail": "No le pide arreglar, pagar ni actualizar nada."
+                },
+                {
+                  "title": "No hay enlace.",
+                  "detail": "No hay nada que tocar. Si quiere, puede revisar su paquete en la aplicación de la empresa."
+                }
               ],
               "tip": "Compárelo con el mensaje falso de entrega: es el mismo tipo de empresa, pero este se esperaba, muestra su número de seguimiento y no pide nada. Si tiene dudas, revise el número de seguimiento en la aplicación de la empresa."
             },
@@ -140,9 +239,18 @@
               "context": "আপনি অনলাইনে কিছু অর্ডার করেছেন এবং ট্র্যাকিং নম্বর দিয়ে PostTrack-এর টেক্সট আপডেটের জন্য সাইন আপ করেছেন।",
               "message": "PostTrack: আপনার পার্সেল 9400 1118 9922 3456 7811 00 দুপুর ২:১৪-তে আপনার মেইলবক্সে বা তার পাশে পৌঁছে দেওয়া হয়েছে। আপডেট বন্ধ করতে STOP লিখে উত্তর দিন।",
               "signs": [
-                { "title": "আপনি এটি চেয়েছিলেন।", "detail": "আপনি ট্র্যাকিং নম্বর দিয়ে আপডেট চেয়েছিলেন, আর মেসেজে সেই নম্বরটি আছে।" },
-                { "title": "এটি শুধু খবর দেয়।", "detail": "এটি আপনাকে কিছু ঠিক করতে, টাকা দিতে বা আপডেট করতে বলে না।" },
-                { "title": "কোনো লিংক নেই।", "detail": "চাপ দেওয়ার কিছু নেই। চাইলে কোম্পানির অ্যাপে আপনার পার্সেলের খবর দেখতে পারেন।" }
+                {
+                  "title": "আপনি এটি চেয়েছিলেন।",
+                  "detail": "আপনি ট্র্যাকিং নম্বর দিয়ে আপডেট চেয়েছিলেন, আর মেসেজে সেই নম্বরটি আছে।"
+                },
+                {
+                  "title": "এটি শুধু খবর দেয়।",
+                  "detail": "এটি আপনাকে কিছু ঠিক করতে, টাকা দিতে বা আপডেট করতে বলে না।"
+                },
+                {
+                  "title": "কোনো লিংক নেই।",
+                  "detail": "চাপ দেওয়ার কিছু নেই। চাইলে কোম্পানির অ্যাপে আপনার পার্সেলের খবর দেখতে পারেন।"
+                }
               ],
               "tip": "ভুয়া ডেলিভারি মেসেজটির সাথে তুলনা করুন: একই ধরনের কোম্পানি, কিন্তু এটি প্রত্যাশিত, এতে আপনার ট্র্যাকিং নম্বর আছে, আর এটি কিছুই চায় না। সন্দেহ হলে কোম্পানির অ্যাপে ট্র্যাকিং নম্বরটি দেখে নিন।"
             }
@@ -155,29 +263,56 @@
           "category": "Fake bank alert",
           "sender": "(555) 271-8830",
           "time": "Today, 7:48 AM",
-          "message": "Harborview Bank ALERT: Your account has been locked due to unusual activity. Verify your identity now at harborview-secure-login.com to avoid permanent closure.",
+          "message": "Chase ALERT: Your account has been locked due to unusual activity. Verify your identity now at chase-account-verify.info to avoid permanent closure.",
           "signs": [
-            { "title": "It scares you.", "detail": "It threatens to close your account so you'll panic." },
-            { "title": "It pushes you to a link.", "detail": "It wants you to \"verify\" your information on a website it chose." },
-            { "title": "Banks don't work this way.", "detail": "Real banks don't ask you to log in through a link in a text." }
+            {
+              "title": "It scares you.",
+              "detail": "It threatens to close your account so you'll panic."
+            },
+            {
+              "title": "It pushes you to a link.",
+              "detail": "It wants you to \"verify\" your information on a website it chose."
+            },
+            {
+              "title": "Banks don't work this way.",
+              "detail": "Real banks don't ask you to log in through a link in a text."
+            }
           ],
           "tip": "Don't tap the link. Call the number on the back of your bank card, or open your bank's app yourself, and ask if anything is wrong.",
           "translations": {
             "es": {
-              "message": "ALERTA de Harborview Bank: Su cuenta ha sido bloqueada por actividad inusual. Verifique su identidad ahora en harborview-secure-login.com para evitar el cierre permanente.",
+              "message": "ALERTA de Chase: Su cuenta ha sido bloqueada por actividad inusual. Verifique su identidad ahora en chase-account-verify.info para evitar el cierre permanente.",
               "signs": [
-                { "title": "Le asusta.", "detail": "Amenaza con cerrar su cuenta para que entre en pánico." },
-                { "title": "Le empuja hacia un enlace.", "detail": "Quiere que \"verifique\" sus datos en un sitio web que eligió quien lo envió." },
-                { "title": "Los bancos no funcionan así.", "detail": "Los bancos reales no le piden iniciar sesión mediante un enlace en un mensaje de texto." }
+                {
+                  "title": "Le asusta.",
+                  "detail": "Amenaza con cerrar su cuenta para que entre en pánico."
+                },
+                {
+                  "title": "Le empuja hacia un enlace.",
+                  "detail": "Quiere que \"verifique\" sus datos en un sitio web que eligió quien lo envió."
+                },
+                {
+                  "title": "Los bancos no funcionan así.",
+                  "detail": "Los bancos reales no le piden iniciar sesión mediante un enlace en un mensaje de texto."
+                }
               ],
               "tip": "No toque el enlace. Llame al número que aparece en el reverso de su tarjeta del banco, o abra usted mismo la aplicación de su banco, y pregunte si hay algún problema."
             },
             "bn": {
-              "message": "Harborview Bank সতর্কবার্তা: অস্বাভাবিক কার্যকলাপের কারণে আপনার অ্যাকাউন্ট লক করা হয়েছে। স্থায়ীভাবে বন্ধ হওয়া এড়াতে এখনই harborview-secure-login.com-এ গিয়ে আপনার পরিচয় যাচাই করুন।",
+              "message": "Chase সতর্কবার্তা: অস্বাভাবিক কার্যকলাপের কারণে আপনার অ্যাকাউন্ট লক করা হয়েছে। স্থায়ীভাবে বন্ধ হওয়া এড়াতে এখনই chase-account-verify.info-এ গিয়ে আপনার পরিচয় যাচাই করুন।",
               "signs": [
-                { "title": "এটি ভয় দেখায়।", "detail": "আপনার অ্যাকাউন্ট বন্ধ করে দেওয়ার হুমকি দেয়, যাতে আপনি ঘাবড়ে যান।" },
-                { "title": "এটি লিংকে যেতে চাপ দেয়।", "detail": "এটি চায় আপনি তাদের বেছে দেওয়া ওয়েবসাইটে গিয়ে আপনার তথ্য \"যাচাই\" করুন।" },
-                { "title": "ব্যাংক এভাবে কাজ করে না।", "detail": "আসল ব্যাংক টেক্সট মেসেজের লিংক দিয়ে লগ ইন করতে বলে না।" }
+                {
+                  "title": "এটি ভয় দেখায়।",
+                  "detail": "আপনার অ্যাকাউন্ট বন্ধ করে দেওয়ার হুমকি দেয়, যাতে আপনি ঘাবড়ে যান।"
+                },
+                {
+                  "title": "এটি লিংকে যেতে চাপ দেয়।",
+                  "detail": "এটি চায় আপনি তাদের বেছে দেওয়া ওয়েবসাইটে গিয়ে আপনার তথ্য \"যাচাই\" করুন।"
+                },
+                {
+                  "title": "ব্যাংক এভাবে কাজ করে না।",
+                  "detail": "আসল ব্যাংক টেক্সট মেসেজের লিংক দিয়ে লগ ইন করতে বলে না।"
+                }
               ],
               "tip": "লিংকে চাপ দেবেন না। আপনার ব্যাংক কার্ডের পেছনে থাকা নম্বরে ফোন করুন, অথবা নিজে ব্যাংকের অ্যাপ খুলুন, এবং জিজ্ঞেস করুন কোনো সমস্যা আছে কি না।"
             }
@@ -188,34 +323,61 @@
           "channel": "text",
           "isScam": false,
           "category": "Sign-in code you asked for",
-          "sender": "Harborview Bank (40512)",
+          "sender": "Chase (28107)",
           "time": "Today, 6:41 PM",
           "context": "You just opened your bank's app and are signing in.",
-          "message": "Harborview Bank: Your sign-in code is 482913. It expires in 10 minutes. Don't share this code with anyone. We will never call you to ask for it.",
+          "message": "Chase: Your sign-in code is 482913. It expires in 10 minutes. Don't share this code with anyone. We will never call you to ask for it.",
           "signs": [
-            { "title": "You just asked for it.", "detail": "It arrived right when you were signing in to the app yourself." },
-            { "title": "It warns you to keep it secret.", "detail": "Real codes tell you never to share them. Scammers ask you to read the code to them." },
-            { "title": "The time limit is normal here.", "detail": "A code that expires is a safety feature for something you started. It isn't pressure to do something new." }
+            {
+              "title": "You just asked for it.",
+              "detail": "It arrived right when you were signing in to the app yourself."
+            },
+            {
+              "title": "It warns you to keep it secret.",
+              "detail": "Real codes tell you never to share them. Scammers ask you to read the code to them."
+            },
+            {
+              "title": "The time limit is normal here.",
+              "detail": "A code that expires is a safety feature for something you started. It isn't pressure to do something new."
+            }
           ],
           "tip": "Only type the code into the app you opened yourself. If you ever get a code you didn't ask for, don't share it. Someone may be trying to get into your account.",
           "translations": {
             "es": {
               "context": "Acaba de abrir la aplicación de su banco y está iniciando sesión.",
-              "message": "Harborview Bank: Su código para iniciar sesión es 482913. Vence en 10 minutos. No comparta este código con nadie. Nunca le llamaremos para pedírselo.",
+              "message": "Chase: Su código para iniciar sesión es 482913. Vence en 10 minutos. No comparta este código con nadie. Nunca le llamaremos para pedírselo.",
               "signs": [
-                { "title": "Usted acaba de pedirlo.", "detail": "Llegó justo cuando usted mismo estaba iniciando sesión en la aplicación." },
-                { "title": "Le advierte que no lo comparta.", "detail": "Los códigos reales le dicen que nunca los comparta. Los estafadores le piden que se los lea." },
-                { "title": "Aquí el límite de tiempo es normal.", "detail": "Un código que vence es una medida de seguridad para algo que usted empezó. No es una presión para hacer algo nuevo." }
+                {
+                  "title": "Usted acaba de pedirlo.",
+                  "detail": "Llegó justo cuando usted mismo estaba iniciando sesión en la aplicación."
+                },
+                {
+                  "title": "Le advierte que no lo comparta.",
+                  "detail": "Los códigos reales le dicen que nunca los comparta. Los estafadores le piden que se los lea."
+                },
+                {
+                  "title": "Aquí el límite de tiempo es normal.",
+                  "detail": "Un código que vence es una medida de seguridad para algo que usted empezó. No es una presión para hacer algo nuevo."
+                }
               ],
               "tip": "Escriba el código solo en la aplicación que usted mismo abrió. Si alguna vez recibe un código que no pidió, no lo comparta. Alguien podría estar intentando entrar en su cuenta."
             },
             "bn": {
               "context": "আপনি এইমাত্র আপনার ব্যাংকের অ্যাপ খুলে লগ ইন করছেন।",
-              "message": "Harborview Bank: আপনার লগ ইন কোড 482913। কোডটির মেয়াদ ১০ মিনিট। এই কোড কাউকে দেবেন না। আমরা কখনোই ফোন করে এটি চাইব না।",
+              "message": "Chase: আপনার লগ ইন কোড 482913। কোডটির মেয়াদ ১০ মিনিট। এই কোড কাউকে দেবেন না। আমরা কখনোই ফোন করে এটি চাইব না।",
               "signs": [
-                { "title": "আপনি এইমাত্র এটি চেয়েছেন।", "detail": "আপনি নিজে যখন অ্যাপে লগ ইন করছিলেন, ঠিক তখনই এটি এসেছে।" },
-                { "title": "এটি কোড গোপন রাখতে বলে।", "detail": "আসল কোডের মেসেজে কাউকে কোড না দিতে বলা হয়। প্রতারকেরা কোডটি পড়ে শোনাতে বলে।" },
-                { "title": "এখানে সময়সীমা স্বাভাবিক।", "detail": "কোডের মেয়াদ থাকা আপনার নিজের শুরু করা কাজের জন্য একটি নিরাপত্তা ব্যবস্থা। এটি নতুন কিছু করার চাপ নয়।" }
+                {
+                  "title": "আপনি এইমাত্র এটি চেয়েছেন।",
+                  "detail": "আপনি নিজে যখন অ্যাপে লগ ইন করছিলেন, ঠিক তখনই এটি এসেছে।"
+                },
+                {
+                  "title": "এটি কোড গোপন রাখতে বলে।",
+                  "detail": "আসল কোডের মেসেজে কাউকে কোড না দিতে বলা হয়। প্রতারকেরা কোডটি পড়ে শোনাতে বলে।"
+                },
+                {
+                  "title": "এখানে সময়সীমা স্বাভাবিক।",
+                  "detail": "কোডের মেয়াদ থাকা আপনার নিজের শুরু করা কাজের জন্য একটি নিরাপত্তা ব্যবস্থা। এটি নতুন কিছু করার চাপ নয়।"
+                }
               ],
               "tip": "শুধু নিজে খোলা অ্যাপেই কোডটি লিখুন। কখনো না চাওয়া কোড এলে কাউকে দেবেন না। হয়তো কেউ আপনার অ্যাকাউন্টে ঢোকার চেষ্টা করছে।"
             }
@@ -226,31 +388,58 @@
           "channel": "text",
           "isScam": false,
           "category": "Pharmacy notice",
-          "sender": "Greenleaf Pharmacy",
+          "sender": "CVS Pharmacy (287898)",
           "time": "Today, 11:30 AM",
-          "message": "Greenleaf Pharmacy: Your prescription is ready for pickup at our Main St location. Questions? Call your store. Reply STOP to opt out.",
+          "message": "CVS Pharmacy: Your prescription is ready for pickup at our Main St location. Questions? Call your store. Reply STOP to opt out.",
           "signs": [
-            { "title": "It matches something you expect.", "detail": "You know when you have a prescription waiting." },
-            { "title": "There's nothing to tap or pay.", "detail": "No link, no payment, and no deadline." },
-            { "title": "It sends you somewhere you know.", "detail": "It points you to a store you already use." }
+            {
+              "title": "It matches something you expect.",
+              "detail": "You know when you have a prescription waiting."
+            },
+            {
+              "title": "There's nothing to tap or pay.",
+              "detail": "No link, no payment, and no deadline."
+            },
+            {
+              "title": "It sends you somewhere you know.",
+              "detail": "It points you to a store you already use."
+            }
           ],
           "tip": "Call the pharmacy using the number on your prescription bottle.",
           "translations": {
             "es": {
-              "message": "Greenleaf Pharmacy: Su medicamento recetado está listo para recoger en nuestra sucursal de Main St. ¿Preguntas? Llame a su tienda. Responda STOP para dejar de recibir mensajes.",
+              "message": "CVS Pharmacy: Su medicamento recetado está listo para recoger en nuestra sucursal de Main St. ¿Preguntas? Llame a su tienda. Responda STOP para dejar de recibir mensajes.",
               "signs": [
-                { "title": "Coincide con algo que espera.", "detail": "Usted sabe cuándo tiene un medicamento pendiente de recoger." },
-                { "title": "No hay nada que tocar ni pagar.", "detail": "Sin enlace, sin pago y sin fecha límite." },
-                { "title": "Le envía a un lugar que conoce.", "detail": "Le indica una tienda que usted ya usa." }
+                {
+                  "title": "Coincide con algo que espera.",
+                  "detail": "Usted sabe cuándo tiene un medicamento pendiente de recoger."
+                },
+                {
+                  "title": "No hay nada que tocar ni pagar.",
+                  "detail": "Sin enlace, sin pago y sin fecha límite."
+                },
+                {
+                  "title": "Le envía a un lugar que conoce.",
+                  "detail": "Le indica una tienda que usted ya usa."
+                }
               ],
               "tip": "Llame a la farmacia usando el número que aparece en el frasco de su medicamento."
             },
             "bn": {
-              "message": "Greenleaf Pharmacy: আপনার প্রেসক্রিপশনের ওষুধ আমাদের Main St শাখায় নেওয়ার জন্য তৈরি। কোনো প্রশ্ন থাকলে আপনার দোকানে ফোন করুন। মেসেজ বন্ধ করতে STOP লিখে উত্তর দিন।",
+              "message": "CVS Pharmacy: আপনার প্রেসক্রিপশনের ওষুধ আমাদের Main St শাখায় নেওয়ার জন্য তৈরি। কোনো প্রশ্ন থাকলে আপনার দোকানে ফোন করুন। মেসেজ বন্ধ করতে STOP লিখে উত্তর দিন।",
               "signs": [
-                { "title": "এটি আপনার প্রত্যাশার সাথে মেলে।", "detail": "আপনার কোনো ওষুধ নেওয়ার বাকি আছে কি না, তা আপনি জানেন।" },
-                { "title": "চাপ দেওয়ার বা টাকা দেওয়ার কিছু নেই।", "detail": "কোনো লিংক নেই, টাকা চাওয়া নেই, সময়সীমাও নেই।" },
-                { "title": "এটি আপনাকে পরিচিত জায়গায় পাঠায়।", "detail": "এটি এমন একটি দোকানের কথা বলে, যেখানে আপনি আগে থেকেই যান।" }
+                {
+                  "title": "এটি আপনার প্রত্যাশার সাথে মেলে।",
+                  "detail": "আপনার কোনো ওষুধ নেওয়ার বাকি আছে কি না, তা আপনি জানেন।"
+                },
+                {
+                  "title": "চাপ দেওয়ার বা টাকা দেওয়ার কিছু নেই।",
+                  "detail": "কোনো লিংক নেই, টাকা চাওয়া নেই, সময়সীমাও নেই।"
+                },
+                {
+                  "title": "এটি আপনাকে পরিচিত জায়গায় পাঠায়।",
+                  "detail": "এটি এমন একটি দোকানের কথা বলে, যেখানে আপনি আগে থেকেই যান।"
+                }
               ],
               "tip": "আপনার ওষুধের বোতলের গায়ে থাকা নম্বরে ফার্মেসিতে ফোন করুন।"
             }
@@ -265,27 +454,54 @@
           "time": "Yesterday, 9:37 PM",
           "message": "ShopNow: Your order of a laptop for $1,249.99 has been placed and will ship today. If you did not make this purchase, call our fraud team now at (555) 410-2286.",
           "signs": [
-            { "title": "It scares you about money.", "detail": "A big purchase you didn't make is meant to make you panic and call right away." },
-            { "title": "It gives you a number to call.", "detail": "The number in the message goes to the scammer, who may ask for your card or account details." },
-            { "title": "You can check without the message.", "detail": "Real orders show up in the store's app or website, which you can open yourself." }
+            {
+              "title": "It scares you about money.",
+              "detail": "A big purchase you didn't make is meant to make you panic and call right away."
+            },
+            {
+              "title": "It gives you a number to call.",
+              "detail": "The number in the message goes to the scammer, who may ask for your card or account details."
+            },
+            {
+              "title": "You can check without the message.",
+              "detail": "Real orders show up in the store's app or website, which you can open yourself."
+            }
           ],
           "tip": "Don't call the number in the message. Open the store's app or website yourself and look at your orders. If you're still worried, call the number on the back of your card.",
           "translations": {
             "es": {
               "message": "ShopNow: Su pedido de una computadora portátil por $1,249.99 fue realizado y se enviará hoy. Si usted no hizo esta compra, llame ahora a nuestro equipo de fraude al (555) 410-2286.",
               "signs": [
-                { "title": "Le asusta con dinero.", "detail": "Una compra grande que usted no hizo busca que entre en pánico y llame de inmediato." },
-                { "title": "Le da un número para llamar.", "detail": "El número del mensaje es del estafador, que puede pedirle los datos de su tarjeta o de su cuenta." },
-                { "title": "Puede comprobarlo sin el mensaje.", "detail": "Los pedidos reales aparecen en la aplicación o el sitio web de la tienda, que usted puede abrir por su cuenta." }
+                {
+                  "title": "Le asusta con dinero.",
+                  "detail": "Una compra grande que usted no hizo busca que entre en pánico y llame de inmediato."
+                },
+                {
+                  "title": "Le da un número para llamar.",
+                  "detail": "El número del mensaje es del estafador, que puede pedirle los datos de su tarjeta o de su cuenta."
+                },
+                {
+                  "title": "Puede comprobarlo sin el mensaje.",
+                  "detail": "Los pedidos reales aparecen en la aplicación o el sitio web de la tienda, que usted puede abrir por su cuenta."
+                }
               ],
               "tip": "No llame al número del mensaje. Abra usted mismo la aplicación o el sitio web de la tienda y revise sus pedidos. Si todavía le preocupa, llame al número del reverso de su tarjeta."
             },
             "bn": {
               "message": "ShopNow: আপনার $1,249.99 দামের একটি ল্যাপটপের অর্ডার দেওয়া হয়েছে এবং আজই পাঠানো হবে। এই কেনাকাটা আপনি না করে থাকলে এখনই আমাদের ফ্রড টিমকে (555) 410-2286 নম্বরে ফোন করুন।",
               "signs": [
-                { "title": "এটি টাকার ভয় দেখায়।", "detail": "আপনি করেননি এমন বড় কেনাকাটার কথা বলে আপনাকে ঘাবড়ে দিয়ে সঙ্গে সঙ্গে ফোন করাতে চায়।" },
-                { "title": "এটি ফোন করার নম্বর দেয়।", "detail": "মেসেজের নম্বরটি প্রতারকের, যে আপনার কার্ড বা অ্যাকাউন্টের তথ্য চাইতে পারে।" },
-                { "title": "মেসেজ ছাড়াই যাচাই করা যায়।", "detail": "আসল অর্ডার দোকানের অ্যাপ বা ওয়েবসাইটে দেখা যায়, যা আপনি নিজেই খুলতে পারেন।" }
+                {
+                  "title": "এটি টাকার ভয় দেখায়।",
+                  "detail": "আপনি করেননি এমন বড় কেনাকাটার কথা বলে আপনাকে ঘাবড়ে দিয়ে সঙ্গে সঙ্গে ফোন করাতে চায়।"
+                },
+                {
+                  "title": "এটি ফোন করার নম্বর দেয়।",
+                  "detail": "মেসেজের নম্বরটি প্রতারকের, যে আপনার কার্ড বা অ্যাকাউন্টের তথ্য চাইতে পারে।"
+                },
+                {
+                  "title": "মেসেজ ছাড়াই যাচাই করা যায়।",
+                  "detail": "আসল অর্ডার দোকানের অ্যাপ বা ওয়েবসাইটে দেখা যায়, যা আপনি নিজেই খুলতে পারেন।"
+                }
               ],
               "tip": "মেসেজের নম্বরে ফোন করবেন না। নিজে দোকানের অ্যাপ বা ওয়েবসাইট খুলে আপনার অর্ডারগুলো দেখুন। তারপরও চিন্তা হলে কার্ডের পেছনে থাকা নম্বরে ফোন করুন।"
             }
@@ -300,27 +516,54 @@
           "time": "Today, 10:21 PM",
           "message": "Grandma it's me. I lost my phone so I'm using my friend's. I'm in trouble and need $900 for bail. Please don't tell Mom. Can you buy Target gift cards and send me the numbers?",
           "signs": [
-            { "title": "It's an emergency.", "detail": "A sudden crisis pushes you to act before you can check." },
-            { "title": "It asks you to keep a secret.", "detail": "\"Don't tell Mom\" stops you from asking someone who could help." },
-            { "title": "It asks for gift cards.", "detail": "Real people and businesses never ask for gift cards for bail or bills." }
+            {
+              "title": "It's an emergency.",
+              "detail": "A sudden crisis pushes you to act before you can check."
+            },
+            {
+              "title": "It asks you to keep a secret.",
+              "detail": "\"Don't tell Mom\" stops you from asking someone who could help."
+            },
+            {
+              "title": "It asks for gift cards.",
+              "detail": "Real people and businesses never ask for gift cards for bail or bills."
+            }
           ],
           "tip": "Don't reply or send anything. Call your grandchild, or another family member, using a number you already have.",
           "translations": {
             "es": {
               "message": "Abuela, soy yo. Perdí mi teléfono, así que estoy usando el de un amigo. Estoy en problemas y necesito $900 para la fianza. Por favor, no le digas a mamá. ¿Puedes comprar tarjetas de regalo de Target y enviarme los números?",
               "signs": [
-                { "title": "Es una emergencia.", "detail": "Una crisis repentina le empuja a actuar antes de poder comprobar nada." },
-                { "title": "Le pide guardar un secreto.", "detail": "\"Don't tell Mom\" (no le digas a mamá) evita que consulte con alguien que podría ayudar." },
-                { "title": "Pide tarjetas de regalo.", "detail": "Las personas y las empresas reales nunca piden tarjetas de regalo para pagar una fianza o facturas." }
+                {
+                  "title": "Es una emergencia.",
+                  "detail": "Una crisis repentina le empuja a actuar antes de poder comprobar nada."
+                },
+                {
+                  "title": "Le pide guardar un secreto.",
+                  "detail": "\"Don't tell Mom\" (no le digas a mamá) evita que consulte con alguien que podría ayudar."
+                },
+                {
+                  "title": "Pide tarjetas de regalo.",
+                  "detail": "Las personas y las empresas reales nunca piden tarjetas de regalo para pagar una fianza o facturas."
+                }
               ],
               "tip": "No responda ni envíe nada. Llame a su nieto o nieta, o a otro familiar, usando un número que ya tiene."
             },
             "bn": {
               "message": "দাদি, আমি বলছি। আমার ফোন হারিয়ে গেছে, তাই বন্ধুর ফোন থেকে লিখছি। আমি বিপদে পড়েছি, জামিনের জন্য $900 লাগবে। দয়া করে মাকে বোলো না। তুমি কি Target গিফট কার্ড কিনে আমাকে নম্বরগুলো পাঠাতে পারবে?",
               "signs": [
-                { "title": "এটি একটি জরুরি অবস্থা।", "detail": "হঠাৎ বিপদের কথা বলে যাচাই করার আগেই আপনাকে কিছু করে ফেলতে চাপ দেয়।" },
-                { "title": "এটি কথা গোপন রাখতে বলে।", "detail": "\"Don't tell Mom\" (মাকে বোলো না) কথাটি আপনাকে এমন কারও সাথে কথা বলা থেকে আটকায়, যে সাহায্য করতে পারত।" },
-                { "title": "এটি গিফট কার্ড চায়।", "detail": "আসল মানুষ বা প্রতিষ্ঠান কখনোই জামিন বা বিল দেওয়ার জন্য গিফট কার্ড চায় না।" }
+                {
+                  "title": "এটি একটি জরুরি অবস্থা।",
+                  "detail": "হঠাৎ বিপদের কথা বলে যাচাই করার আগেই আপনাকে কিছু করে ফেলতে চাপ দেয়।"
+                },
+                {
+                  "title": "এটি কথা গোপন রাখতে বলে।",
+                  "detail": "\"Don't tell Mom\" (মাকে বোলো না) কথাটি আপনাকে এমন কারও সাথে কথা বলা থেকে আটকায়, যে সাহায্য করতে পারত।"
+                },
+                {
+                  "title": "এটি গিফট কার্ড চায়।",
+                  "detail": "আসল মানুষ বা প্রতিষ্ঠান কখনোই জামিন বা বিল দেওয়ার জন্য গিফট কার্ড চায় না।"
+                }
               ],
               "tip": "উত্তর দেবেন না, কিছু পাঠাবেনও না। আপনার কাছে আগে থেকে থাকা নম্বরে আপনার নাতি-নাতনি বা পরিবারের অন্য কাউকে ফোন করুন।"
             }
@@ -336,9 +579,18 @@
           "context": "Your daughter Maya is saved in your phone's contacts. You made dinner plans with her for tonight.",
           "message": "Hi Mom, running about 20 minutes late. I'll be at your place around 7:20. Want me to pick up anything on the way?",
           "signs": [
-            { "title": "It comes from a saved contact.", "detail": "It shows her name, from the number you already have for her." },
-            { "title": "It matches your plans.", "detail": "You knew she was coming tonight." },
-            { "title": "It asks for nothing risky.", "detail": "No money, no gift cards, no secrets, and no new phone number." }
+            {
+              "title": "It comes from a saved contact.",
+              "detail": "It shows her name, from the number you already have for her."
+            },
+            {
+              "title": "It matches your plans.",
+              "detail": "You knew she was coming tonight."
+            },
+            {
+              "title": "It asks for nothing risky.",
+              "detail": "No money, no gift cards, no secrets, and no new phone number."
+            }
           ],
           "tip": "Compare this with the \"grandchild in trouble\" text: that one came from an unknown number and asked for money and secrecy. If a family member ever asks for money in a text, call them at the number you already have.",
           "translations": {
@@ -346,9 +598,18 @@
               "context": "Su hija Maya está guardada en los contactos de su teléfono. Usted quedó en cenar con ella esta noche.",
               "message": "Hola, mamá. Voy unos 20 minutos tarde. Llego a tu casa como a las 7:20. ¿Quieres que pase a comprar algo en el camino?",
               "signs": [
-                { "title": "Viene de un contacto guardado.", "detail": "Muestra su nombre, desde el número que usted ya tiene de ella." },
-                { "title": "Coincide con sus planes.", "detail": "Usted sabía que ella vendría esta noche." },
-                { "title": "No pide nada riesgoso.", "detail": "Ni dinero, ni tarjetas de regalo, ni secretos, ni un número de teléfono nuevo." }
+                {
+                  "title": "Viene de un contacto guardado.",
+                  "detail": "Muestra su nombre, desde el número que usted ya tiene de ella."
+                },
+                {
+                  "title": "Coincide con sus planes.",
+                  "detail": "Usted sabía que ella vendría esta noche."
+                },
+                {
+                  "title": "No pide nada riesgoso.",
+                  "detail": "Ni dinero, ni tarjetas de regalo, ni secretos, ni un número de teléfono nuevo."
+                }
               ],
               "tip": "Compárelo con el mensaje del «nieto en problemas»: ese llegó desde un número desconocido y pedía dinero y secreto. Si un familiar alguna vez le pide dinero por mensaje, llámelo al número que usted ya tiene."
             },
@@ -356,9 +617,18 @@
               "context": "আপনার মেয়ে মায়ার নম্বর ফোনে সেভ করা আছে। আজ রাতে তার সাথে আপনার খাওয়ার পরিকল্পনা আছে।",
               "message": "হাই মা, প্রায় ২০ মিনিট দেরি হবে। ৭:২০-এর দিকে তোমার বাসায় পৌঁছাব। আসার পথে কিছু নিয়ে আসব?",
               "signs": [
-                { "title": "এটি সেভ করা নম্বর থেকে এসেছে।", "detail": "এতে তার নাম দেখা যাচ্ছে, আপনার কাছে আগে থেকে থাকা নম্বর থেকে।" },
-                { "title": "এটি আপনার পরিকল্পনার সাথে মেলে।", "detail": "আপনি জানতেন সে আজ রাতে আসবে।" },
-                { "title": "এটি ঝুঁকিপূর্ণ কিছু চায় না।", "detail": "টাকা, গিফট কার্ড, গোপনীয়তা বা নতুন ফোন নম্বর কিছুই চায় না।" }
+                {
+                  "title": "এটি সেভ করা নম্বর থেকে এসেছে।",
+                  "detail": "এতে তার নাম দেখা যাচ্ছে, আপনার কাছে আগে থেকে থাকা নম্বর থেকে।"
+                },
+                {
+                  "title": "এটি আপনার পরিকল্পনার সাথে মেলে।",
+                  "detail": "আপনি জানতেন সে আজ রাতে আসবে।"
+                },
+                {
+                  "title": "এটি ঝুঁকিপূর্ণ কিছু চায় না।",
+                  "detail": "টাকা, গিফট কার্ড, গোপনীয়তা বা নতুন ফোন নম্বর কিছুই চায় না।"
+                }
               ],
               "tip": "“নাতি বিপদে পড়েছে” মেসেজটির সাথে তুলনা করুন: সেটি অচেনা নম্বর থেকে এসেছিল এবং টাকা ও গোপনীয়তা চেয়েছিল। পরিবারের কেউ কখনো মেসেজে টাকা চাইলে, আপনার কাছে আগে থেকে থাকা নম্বরে তাকে ফোন করুন।"
             }
@@ -373,27 +643,54 @@
           "time": "Saturday, 11:12 AM",
           "message": "FreshMart: Congratulations! You won a $500 gift card in our customer drawing. Claim it within 48 hours at freshmart-rewards.net. A $4.95 shipping fee applies.",
           "signs": [
-            { "title": "You won something you never entered.", "detail": "A prize out of nowhere is a common trick. Did you enter a drawing?" },
-            { "title": "You have to pay to get it.", "detail": "A real prize doesn't cost money. The small fee is how they get your card number." },
-            { "title": "It rushes you to a link.", "detail": "\"Within 48 hours\" and a strange website push you to act before you check." }
+            {
+              "title": "You won something you never entered.",
+              "detail": "A prize out of nowhere is a common trick. Did you enter a drawing?"
+            },
+            {
+              "title": "You have to pay to get it.",
+              "detail": "A real prize doesn't cost money. The small fee is how they get your card number."
+            },
+            {
+              "title": "It rushes you to a link.",
+              "detail": "\"Within 48 hours\" and a strange website push you to act before you check."
+            }
           ],
           "tip": "Don't tap the link or pay any fee. If you want to know whether a store is running a contest, check its official website or ask at the store.",
           "translations": {
             "es": {
               "message": "FreshMart: ¡Felicidades! Ganó una tarjeta de regalo de $500 en nuestro sorteo para clientes. Reclámela en 48 horas en freshmart-rewards.net. Se aplica un cargo de envío de $4.95.",
               "signs": [
-                { "title": "Ganó algo en lo que nunca participó.", "detail": "Un premio que aparece de la nada es un truco común. ¿Participó en algún sorteo?" },
-                { "title": "Tiene que pagar para recibirlo.", "detail": "Un premio real no cuesta dinero. El cargo pequeño es la forma de obtener el número de su tarjeta." },
-                { "title": "Le apura hacia un enlace.", "detail": "\"Within 48 hours\" (en 48 horas) y un sitio web extraño le empujan a actuar antes de comprobar." }
+                {
+                  "title": "Ganó algo en lo que nunca participó.",
+                  "detail": "Un premio que aparece de la nada es un truco común. ¿Participó en algún sorteo?"
+                },
+                {
+                  "title": "Tiene que pagar para recibirlo.",
+                  "detail": "Un premio real no cuesta dinero. El cargo pequeño es la forma de obtener el número de su tarjeta."
+                },
+                {
+                  "title": "Le apura hacia un enlace.",
+                  "detail": "\"Within 48 hours\" (en 48 horas) y un sitio web extraño le empujan a actuar antes de comprobar."
+                }
               ],
               "tip": "No toque el enlace ni pague ningún cargo. Si quiere saber si una tienda tiene un concurso, revise su sitio web oficial o pregunte en la tienda."
             },
             "bn": {
               "message": "FreshMart: অভিনন্দন! আমাদের গ্রাহক লটারিতে আপনি $500-এর একটি গিফট কার্ড জিতেছেন। ৪৮ ঘণ্টার মধ্যে freshmart-rewards.net-এ গিয়ে এটি নিন। $4.95 শিপিং ফি দিতে হবে।",
               "signs": [
-                { "title": "আপনি কখনো অংশ নেননি এমন কিছু জিতেছেন।", "detail": "হঠাৎ পুরস্কার পাওয়ার কথা একটি পরিচিত কৌশল। আপনি কি কোনো লটারিতে অংশ নিয়েছিলেন?" },
-                { "title": "পুরস্কার নিতে টাকা দিতে হবে।", "detail": "আসল পুরস্কারে টাকা লাগে না। ছোট এই ফি দিয়েই তারা আপনার কার্ডের নম্বর নেয়।" },
-                { "title": "এটি লিংকে যেতে তাড়া দেয়।", "detail": "\"Within 48 hours\" (৪৮ ঘণ্টার মধ্যে) আর অদ্ভুত ওয়েবসাইট আপনাকে যাচাই করার আগেই কিছু করতে চাপ দেয়।" }
+                {
+                  "title": "আপনি কখনো অংশ নেননি এমন কিছু জিতেছেন।",
+                  "detail": "হঠাৎ পুরস্কার পাওয়ার কথা একটি পরিচিত কৌশল। আপনি কি কোনো লটারিতে অংশ নিয়েছিলেন?"
+                },
+                {
+                  "title": "পুরস্কার নিতে টাকা দিতে হবে।",
+                  "detail": "আসল পুরস্কারে টাকা লাগে না। ছোট এই ফি দিয়েই তারা আপনার কার্ডের নম্বর নেয়।"
+                },
+                {
+                  "title": "এটি লিংকে যেতে তাড়া দেয়।",
+                  "detail": "\"Within 48 hours\" (৪৮ ঘণ্টার মধ্যে) আর অদ্ভুত ওয়েবসাইট আপনাকে যাচাই করার আগেই কিছু করতে চাপ দেয়।"
+                }
               ],
               "tip": "লিংকে চাপ দেবেন না, কোনো ফি-ও দেবেন না। কোনো দোকান সত্যিই প্রতিযোগিতা চালাচ্ছে কি না জানতে চাইলে তাদের আসল ওয়েবসাইট দেখুন বা দোকানে গিয়ে জিজ্ঞেস করুন।"
             }
@@ -404,37 +701,65 @@
           "channel": "text",
           "isScam": false,
           "category": "Bank notice",
-          "sender": "Harborview Bank",
+          "sender": "Chase",
           "time": "Monday, 8:00 AM",
-          "message": "Harborview Bank: Your monthly statement is ready. Log in to the Harborview app to view it. We will never ask for your password by text.",
+          "message": "Chase: Your monthly statement is ready. Log in to the Chase app to view it. We will never ask for your password by text.",
           "signs": [
-            { "title": "It's routine.", "detail": "It's news you get every month." },
-            { "title": "There's no link.", "detail": "It tells you to use the app you already have." },
-            { "title": "It asks for nothing.", "detail": "No password, no payment, and no personal details." }
+            {
+              "title": "It's routine.",
+              "detail": "It's news you get every month."
+            },
+            {
+              "title": "There's no link.",
+              "detail": "It tells you to use the app you already have."
+            },
+            {
+              "title": "It asks for nothing.",
+              "detail": "No password, no payment, and no personal details."
+            }
           ],
           "tip": "Open your bank's app yourself, or call the number on the back of your card.",
           "translations": {
             "es": {
-              "message": "Harborview Bank: Su estado de cuenta mensual está listo. Inicie sesión en la aplicación de Harborview para verlo. Nunca le pediremos su contraseña por mensaje de texto.",
+              "message": "Chase: Su estado de cuenta mensual está listo. Inicie sesión en la aplicación de Chase para verlo. Nunca le pediremos su contraseña por mensaje de texto.",
               "signs": [
-                { "title": "Es algo habitual.", "detail": "Es un aviso que recibe cada mes." },
-                { "title": "No hay enlace.", "detail": "Le dice que use la aplicación que ya tiene." },
-                { "title": "No pide nada.", "detail": "Ni contraseña, ni pagos, ni datos personales." }
+                {
+                  "title": "Es algo habitual.",
+                  "detail": "Es un aviso que recibe cada mes."
+                },
+                {
+                  "title": "No hay enlace.",
+                  "detail": "Le dice que use la aplicación que ya tiene."
+                },
+                {
+                  "title": "No pide nada.",
+                  "detail": "Ni contraseña, ni pagos, ni datos personales."
+                }
               ],
               "tip": "Abra usted mismo la aplicación de su banco, o llame al número del reverso de su tarjeta."
             },
             "bn": {
-              "message": "Harborview Bank: আপনার মাসিক স্টেটমেন্ট তৈরি। দেখতে Harborview অ্যাপে লগ ইন করুন। আমরা কখনোই টেক্সট মেসেজে আপনার পাসওয়ার্ড চাইব না।",
+              "message": "Chase: আপনার মাসিক স্টেটমেন্ট তৈরি। দেখতে Chase অ্যাপে লগ ইন করুন। আমরা কখনোই টেক্সট মেসেজে আপনার পাসওয়ার্ড চাইব না।",
               "signs": [
-                { "title": "এটি নিয়মিত বিষয়।", "detail": "এই খবর আপনি প্রতি মাসেই পান।" },
-                { "title": "কোনো লিংক নেই।", "detail": "এটি আপনার কাছে আগে থেকে থাকা অ্যাপটি ব্যবহার করতে বলে।" },
-                { "title": "এটি কিছুই চায় না।", "detail": "পাসওয়ার্ড, টাকা বা ব্যক্তিগত তথ্য কিছুই চায় না।" }
+                {
+                  "title": "এটি নিয়মিত বিষয়।",
+                  "detail": "এই খবর আপনি প্রতি মাসেই পান।"
+                },
+                {
+                  "title": "কোনো লিংক নেই।",
+                  "detail": "এটি আপনার কাছে আগে থেকে থাকা অ্যাপটি ব্যবহার করতে বলে।"
+                },
+                {
+                  "title": "এটি কিছুই চায় না।",
+                  "detail": "পাসওয়ার্ড, টাকা বা ব্যক্তিগত তথ্য কিছুই চায় না।"
+                }
               ],
               "tip": "নিজে আপনার ব্যাংকের অ্যাপ খুলুন, অথবা কার্ডের পেছনে থাকা নম্বরে ফোন করুন।"
             }
           }
         }
-      ]
+      ],
+      "channel": "text"
     },
     {
       "id": "set-2",
@@ -448,27 +773,54 @@
           "time": "Today, 10:32 AM",
           "message": "ParcelPoint: We tried to deliver your package today but no one was home. A $1.99 redelivery fee is required. Schedule a new delivery here: parcelpoint-redelivery.co",
           "signs": [
-            { "title": "It asks for a small fee.", "detail": "Asking for $1.99 seems harmless, but the real goal is your card number." },
-            { "title": "The link isn't the company's website.", "detail": "Real delivery companies leave a notice or let you reschedule in their own app." },
-            { "title": "You didn't sign up for it.", "detail": "It came from a regular phone number, and you never asked this company for texts." }
+            {
+              "title": "It asks for a small fee.",
+              "detail": "Asking for $1.99 seems harmless, but the real goal is your card number."
+            },
+            {
+              "title": "The link isn't the company's website.",
+              "detail": "Real delivery companies leave a notice or let you reschedule in their own app."
+            },
+            {
+              "title": "You didn't sign up for it.",
+              "detail": "It came from a regular phone number, and you never asked this company for texts."
+            }
           ],
           "tip": "Don't tap the link or pay. Check your tracking number in the store's or delivery company's app, or look for a paper notice at your door.",
           "translations": {
             "es": {
               "message": "ParcelPoint: Intentamos entregar su paquete hoy, pero no había nadie en casa. Se requiere un cargo de $1.99 por volver a entregarlo. Programe una nueva entrega aquí: parcelpoint-redelivery.co",
               "signs": [
-                { "title": "Pide un cargo pequeño.", "detail": "Pedir $1.99 parece inofensivo, pero el verdadero objetivo es el número de su tarjeta." },
-                { "title": "El enlace no es el sitio de la empresa.", "detail": "Las empresas de envíos reales dejan un aviso o le permiten reprogramar en su propia aplicación." },
-                { "title": "Usted no lo pidió.", "detail": "Llegó desde un número de teléfono común, y usted nunca le pidió mensajes a esta empresa." }
+                {
+                  "title": "Pide un cargo pequeño.",
+                  "detail": "Pedir $1.99 parece inofensivo, pero el verdadero objetivo es el número de su tarjeta."
+                },
+                {
+                  "title": "El enlace no es el sitio de la empresa.",
+                  "detail": "Las empresas de envíos reales dejan un aviso o le permiten reprogramar en su propia aplicación."
+                },
+                {
+                  "title": "Usted no lo pidió.",
+                  "detail": "Llegó desde un número de teléfono común, y usted nunca le pidió mensajes a esta empresa."
+                }
               ],
               "tip": "No toque el enlace ni pague. Revise su número de seguimiento en la aplicación de la tienda o de la empresa de envíos, o busque un aviso en papel en su puerta."
             },
             "bn": {
               "message": "ParcelPoint: আজ আপনার পার্সেল পৌঁছে দিতে গিয়েছিলাম, কিন্তু বাসায় কেউ ছিল না। আবার পৌঁছে দেওয়ার জন্য $1.99 ফি দিতে হবে। নতুন ডেলিভারির সময় এখানে ঠিক করুন: parcelpoint-redelivery.co",
               "signs": [
-                { "title": "এটি ছোট একটি ফি চায়।", "detail": "$1.99 চাওয়া নিরীহ মনে হয়, কিন্তু আসল উদ্দেশ্য আপনার কার্ডের নম্বর নেওয়া।" },
-                { "title": "লিংকটি কোম্পানির ওয়েবসাইট নয়।", "detail": "আসল ডেলিভারি কোম্পানি দরজায় নোটিশ রেখে যায় বা তাদের নিজের অ্যাপে নতুন সময় ঠিক করতে দেয়।" },
-                { "title": "আপনি এটি চাননি।", "detail": "এটি একটি সাধারণ ফোন নম্বর থেকে এসেছে, আর আপনি কখনো এই কোম্পানির কাছে মেসেজ চাননি।" }
+                {
+                  "title": "এটি ছোট একটি ফি চায়।",
+                  "detail": "$1.99 চাওয়া নিরীহ মনে হয়, কিন্তু আসল উদ্দেশ্য আপনার কার্ডের নম্বর নেওয়া।"
+                },
+                {
+                  "title": "লিংকটি কোম্পানির ওয়েবসাইট নয়।",
+                  "detail": "আসল ডেলিভারি কোম্পানি দরজায় নোটিশ রেখে যায় বা তাদের নিজের অ্যাপে নতুন সময় ঠিক করতে দেয়।"
+                },
+                {
+                  "title": "আপনি এটি চাননি।",
+                  "detail": "এটি একটি সাধারণ ফোন নম্বর থেকে এসেছে, আর আপনি কখনো এই কোম্পানির কাছে মেসেজ চাননি।"
+                }
               ],
               "tip": "লিংকে চাপ দেবেন না, টাকাও দেবেন না। দোকান বা ডেলিভারি কোম্পানির অ্যাপে আপনার ট্র্যাকিং নম্বর দেখুন, অথবা দরজায় কাগজের নোটিশ আছে কি না দেখুন।"
             }
@@ -484,9 +836,18 @@
           "context": "You ordered a pair of shoes from ShopNow two days ago.",
           "message": "ShopNow: Your order #4471 is out for delivery and should arrive by 8 PM today. You can track it in the ShopNow app.",
           "signs": [
-            { "title": "It matches a real order.", "detail": "You did order something from this store." },
-            { "title": "It points to the app you already use.", "detail": "There's no link. It tells you to check in the store's own app." },
-            { "title": "It asks for nothing.", "detail": "No payment, no fee, and no personal details." }
+            {
+              "title": "It matches a real order.",
+              "detail": "You did order something from this store."
+            },
+            {
+              "title": "It points to the app you already use.",
+              "detail": "There's no link. It tells you to check in the store's own app."
+            },
+            {
+              "title": "It asks for nothing.",
+              "detail": "No payment, no fee, and no personal details."
+            }
           ],
           "tip": "Compare this with the ShopNow text about a laptop you never bought: same store name, but this one matches your order and doesn't ask you to call anyone. When in doubt, open the app yourself.",
           "translations": {
@@ -494,9 +855,18 @@
               "context": "Hace dos días usted pidió un par de zapatos a ShopNow.",
               "message": "ShopNow: Su pedido n.º 4471 está en camino y debería llegar hoy antes de las 8 p. m. Puede seguirlo en la aplicación de ShopNow.",
               "signs": [
-                { "title": "Coincide con un pedido real.", "detail": "Usted sí pidió algo a esta tienda." },
-                { "title": "Le indica la aplicación que ya usa.", "detail": "No hay enlace. Le dice que revise en la aplicación de la tienda." },
-                { "title": "No pide nada.", "detail": "Ni pagos, ni cargos, ni datos personales." }
+                {
+                  "title": "Coincide con un pedido real.",
+                  "detail": "Usted sí pidió algo a esta tienda."
+                },
+                {
+                  "title": "Le indica la aplicación que ya usa.",
+                  "detail": "No hay enlace. Le dice que revise en la aplicación de la tienda."
+                },
+                {
+                  "title": "No pide nada.",
+                  "detail": "Ni pagos, ni cargos, ni datos personales."
+                }
               ],
               "tip": "Compárelo con el mensaje de ShopNow sobre una computadora que usted nunca compró: es el mismo nombre de tienda, pero este coincide con su pedido y no le pide llamar a nadie. Si tiene dudas, abra la aplicación usted mismo."
             },
@@ -504,9 +874,18 @@
               "context": "দুই দিন আগে আপনি ShopNow থেকে এক জোড়া জুতা অর্ডার করেছেন।",
               "message": "ShopNow: আপনার অর্ডার #4471 ডেলিভারির পথে আছে এবং আজ রাত ৮টার মধ্যে পৌঁছানোর কথা। ShopNow অ্যাপে এটি ট্র্যাক করতে পারেন।",
               "signs": [
-                { "title": "এটি একটি আসল অর্ডারের সাথে মেলে।", "detail": "আপনি সত্যিই এই দোকান থেকে কিছু অর্ডার করেছেন।" },
-                { "title": "এটি আপনার পরিচিত অ্যাপ দেখতে বলে।", "detail": "কোনো লিংক নেই। দোকানের নিজের অ্যাপে দেখতে বলে।" },
-                { "title": "এটি কিছুই চায় না।", "detail": "কোনো টাকা, ফি বা ব্যক্তিগত তথ্য চায় না।" }
+                {
+                  "title": "এটি একটি আসল অর্ডারের সাথে মেলে।",
+                  "detail": "আপনি সত্যিই এই দোকান থেকে কিছু অর্ডার করেছেন।"
+                },
+                {
+                  "title": "এটি আপনার পরিচিত অ্যাপ দেখতে বলে।",
+                  "detail": "কোনো লিংক নেই। দোকানের নিজের অ্যাপে দেখতে বলে।"
+                },
+                {
+                  "title": "এটি কিছুই চায় না।",
+                  "detail": "কোনো টাকা, ফি বা ব্যক্তিগত তথ্য চায় না।"
+                }
               ],
               "tip": "যে ল্যাপটপ আপনি কেনেননি, সেটি নিয়ে আসা ShopNow মেসেজটির সাথে তুলনা করুন: একই দোকানের নাম, কিন্তু এটি আপনার অর্ডারের সাথে মেলে এবং কাউকে ফোন করতে বলে না। সন্দেহ হলে নিজেই অ্যাপটি খুলে দেখুন।"
             }
@@ -521,27 +900,54 @@
           "time": "Today, 7:46 PM",
           "message": "Hi Linda! It's Kevin from the community center. Are we still on for lunch Saturday?",
           "signs": [
-            { "title": "A friendly text from a stranger.", "detail": "You don't know a Kevin, and your name isn't Linda. It looks like a wrong number." },
-            { "title": "It's trying to start a conversation.", "detail": "Scammers send \"wrong number\" texts to start chatting, slowly build trust, and later ask for money or investments." },
-            { "title": "Replying tells them your number works.", "detail": "Even a polite \"wrong number\" reply can lead to more scam messages." }
+            {
+              "title": "A friendly text from a stranger.",
+              "detail": "You don't know a Kevin, and your name isn't Linda. It looks like a wrong number."
+            },
+            {
+              "title": "It's trying to start a conversation.",
+              "detail": "Scammers send \"wrong number\" texts to start chatting, slowly build trust, and later ask for money or investments."
+            },
+            {
+              "title": "Replying tells them your number works.",
+              "detail": "Even a polite \"wrong number\" reply can lead to more scam messages."
+            }
           ],
           "tip": "Don't reply. Delete the message, or block and report the number.",
           "translations": {
             "es": {
               "message": "¡Hola, Linda! Soy Kevin, del centro comunitario. ¿Seguimos con el almuerzo del sábado?",
               "signs": [
-                { "title": "Un mensaje amistoso de un desconocido.", "detail": "Usted no conoce a ningún Kevin y no se llama Linda. Parece un número equivocado." },
-                { "title": "Busca iniciar una conversación.", "detail": "Los estafadores envían mensajes de «número equivocado» para empezar a conversar, ganarse su confianza poco a poco y luego pedir dinero o inversiones." },
-                { "title": "Responder les confirma que su número funciona.", "detail": "Incluso una respuesta amable de «número equivocado» puede traer más mensajes de estafa." }
+                {
+                  "title": "Un mensaje amistoso de un desconocido.",
+                  "detail": "Usted no conoce a ningún Kevin y no se llama Linda. Parece un número equivocado."
+                },
+                {
+                  "title": "Busca iniciar una conversación.",
+                  "detail": "Los estafadores envían mensajes de «número equivocado» para empezar a conversar, ganarse su confianza poco a poco y luego pedir dinero o inversiones."
+                },
+                {
+                  "title": "Responder les confirma que su número funciona.",
+                  "detail": "Incluso una respuesta amable de «número equivocado» puede traer más mensajes de estafa."
+                }
               ],
               "tip": "No responda. Borre el mensaje, o bloquee y reporte el número."
             },
             "bn": {
               "message": "হাই লিন্ডা! আমি কেভিন, কমিউনিটি সেন্টার থেকে। শনিবারের লাঞ্চ কি এখনো ঠিক আছে?",
               "signs": [
-                { "title": "অচেনা মানুষের বন্ধুসুলভ মেসেজ।", "detail": "আপনি কেভিন নামে কাউকে চেনেন না, আর আপনার নামও লিন্ডা নয়। এটি ভুল নম্বরে আসা মেসেজের মতো দেখায়।" },
-                { "title": "এটি কথা শুরু করার চেষ্টা করে।", "detail": "প্রতারকেরা “ভুল নম্বর” মেসেজ পাঠিয়ে কথা শুরু করে, ধীরে ধীরে বিশ্বাস তৈরি করে, পরে টাকা বা বিনিয়োগ চায়।" },
-                { "title": "উত্তর দিলে তারা বোঝে আপনার নম্বর চালু আছে।", "detail": "ভদ্রভাবে “ভুল নম্বর” লিখে উত্তর দিলেও আরও প্রতারণার মেসেজ আসতে পারে।" }
+                {
+                  "title": "অচেনা মানুষের বন্ধুসুলভ মেসেজ।",
+                  "detail": "আপনি কেভিন নামে কাউকে চেনেন না, আর আপনার নামও লিন্ডা নয়। এটি ভুল নম্বরে আসা মেসেজের মতো দেখায়।"
+                },
+                {
+                  "title": "এটি কথা শুরু করার চেষ্টা করে।",
+                  "detail": "প্রতারকেরা “ভুল নম্বর” মেসেজ পাঠিয়ে কথা শুরু করে, ধীরে ধীরে বিশ্বাস তৈরি করে, পরে টাকা বা বিনিয়োগ চায়।"
+                },
+                {
+                  "title": "উত্তর দিলে তারা বোঝে আপনার নম্বর চালু আছে।",
+                  "detail": "ভদ্রভাবে “ভুল নম্বর” লিখে উত্তর দিলেও আরও প্রতারণার মেসেজ আসতে পারে।"
+                }
               ],
               "tip": "উত্তর দেবেন না। মেসেজটি মুছে ফেলুন, অথবা নম্বরটি ব্লক করে রিপোর্ট করুন।"
             }
@@ -552,34 +958,61 @@
           "channel": "text",
           "isScam": false,
           "category": "Purchase you made",
-          "sender": "Harborview Bank (40512)",
+          "sender": "Chase (72166)",
           "time": "Today, 12:03 PM",
-          "context": "You just bought groceries at GreenGrocer with your Harborview debit card.",
-          "message": "Harborview Bank: A purchase of $86.12 at GreenGrocer was made with your card ending in 4417. No action is needed. Questions? Call the number on the back of your card.",
+          "context": "You just bought groceries at GreenGrocer with your Chase debit card.",
+          "message": "Chase: A purchase of $86.12 at GreenGrocer was made with your card ending in 4417. No action is needed. Questions? Call the number on the back of your card.",
           "signs": [
-            { "title": "It matches what you just did.", "detail": "You really did buy groceries for that amount." },
-            { "title": "It says no action is needed.", "detail": "It doesn't rush you or ask you to do anything." },
-            { "title": "It points to a number you already have.", "detail": "The number on the back of your card is one you can trust." }
+            {
+              "title": "It matches what you just did.",
+              "detail": "You really did buy groceries for that amount."
+            },
+            {
+              "title": "It says no action is needed.",
+              "detail": "It doesn't rush you or ask you to do anything."
+            },
+            {
+              "title": "It points to a number you already have.",
+              "detail": "The number on the back of your card is one you can trust."
+            }
           ],
           "tip": "Purchase alerts like this help you catch fraud. If you ever get one for something you didn't buy, call the number on the back of your card, not a number in the text.",
           "translations": {
             "es": {
-              "context": "Acaba de comprar comida en GreenGrocer con su tarjeta de débito de Harborview.",
-              "message": "Harborview Bank: Se hizo una compra de $86.12 en GreenGrocer con su tarjeta terminada en 4417. No necesita hacer nada. ¿Preguntas? Llame al número del reverso de su tarjeta.",
+              "context": "Acaba de comprar comida en GreenGrocer con su tarjeta de débito de Chase.",
+              "message": "Chase: Se hizo una compra de $86.12 en GreenGrocer con su tarjeta terminada en 4417. No necesita hacer nada. ¿Preguntas? Llame al número del reverso de su tarjeta.",
               "signs": [
-                { "title": "Coincide con lo que acaba de hacer.", "detail": "Usted sí compró comida por esa cantidad." },
-                { "title": "Dice que no necesita hacer nada.", "detail": "No le apura ni le pide hacer nada." },
-                { "title": "Le indica un número que ya tiene.", "detail": "El número del reverso de su tarjeta es uno en el que puede confiar." }
+                {
+                  "title": "Coincide con lo que acaba de hacer.",
+                  "detail": "Usted sí compró comida por esa cantidad."
+                },
+                {
+                  "title": "Dice que no necesita hacer nada.",
+                  "detail": "No le apura ni le pide hacer nada."
+                },
+                {
+                  "title": "Le indica un número que ya tiene.",
+                  "detail": "El número del reverso de su tarjeta es uno en el que puede confiar."
+                }
               ],
               "tip": "Los avisos de compra como este le ayudan a detectar fraudes. Si alguna vez recibe uno por algo que no compró, llame al número del reverso de su tarjeta, no a un número del mensaje."
             },
             "bn": {
-              "context": "আপনি এইমাত্র আপনার Harborview ডেবিট কার্ড দিয়ে GreenGrocer থেকে বাজার করেছেন।",
-              "message": "Harborview Bank: আপনার যে কার্ডের শেষ চারটি সংখ্যা 4417, সেটি দিয়ে GreenGrocer-এ $86.12-এর কেনাকাটা হয়েছে। আপনাকে কিছু করতে হবে না। প্রশ্ন থাকলে কার্ডের পেছনে থাকা নম্বরে ফোন করুন।",
+              "context": "আপনি এইমাত্র আপনার Chase ডেবিট কার্ড দিয়ে GreenGrocer থেকে বাজার করেছেন।",
+              "message": "Chase: আপনার যে কার্ডের শেষ চারটি সংখ্যা 4417, সেটি দিয়ে GreenGrocer-এ $86.12-এর কেনাকাটা হয়েছে। আপনাকে কিছু করতে হবে না। প্রশ্ন থাকলে কার্ডের পেছনে থাকা নম্বরে ফোন করুন।",
               "signs": [
-                { "title": "আপনি এইমাত্র যা করেছেন তার সাথে মেলে।", "detail": "আপনি সত্যিই ওই টাকার বাজার করেছেন।" },
-                { "title": "এটি বলে কিছু করতে হবে না।", "detail": "এটি তাড়াহুড়া করায় না বা কিছু করতে বলে না।" },
-                { "title": "এটি আপনার কাছে থাকা নম্বর দেখায়।", "detail": "কার্ডের পেছনের নম্বরটি বিশ্বাস করা যায়।" }
+                {
+                  "title": "আপনি এইমাত্র যা করেছেন তার সাথে মেলে।",
+                  "detail": "আপনি সত্যিই ওই টাকার বাজার করেছেন।"
+                },
+                {
+                  "title": "এটি বলে কিছু করতে হবে না।",
+                  "detail": "এটি তাড়াহুড়া করায় না বা কিছু করতে বলে না।"
+                },
+                {
+                  "title": "এটি আপনার কাছে থাকা নম্বর দেখায়।",
+                  "detail": "কার্ডের পেছনের নম্বরটি বিশ্বাস করা যায়।"
+                }
               ],
               "tip": "এ ধরনের কেনাকাটার নোটিশ জালিয়াতি ধরতে সাহায্য করে। কখনো না কেনা কিছুর নোটিশ পেলে মেসেজের নম্বরে নয়, কার্ডের পেছনে থাকা নম্বরে ফোন করুন।"
             }
@@ -594,27 +1027,54 @@
           "time": "Today, 1:27 PM",
           "message": "BrightGrid Energy: FINAL NOTICE. Your power will be shut off TODAY at 4 PM for a missed payment of $214.50. To avoid shutoff, pay now with a gift card. Call (555) 380-9142.",
           "signs": [
-            { "title": "It threatens you with a deadline today.", "detail": "\"Shut off TODAY\" is meant to make you panic and pay without checking." },
-            { "title": "It wants payment by gift card.", "detail": "Real utility companies never ask you to pay with gift cards." },
-            { "title": "It gives you its own number to call.", "detail": "The number in the text goes to the scammer, not your utility company." }
+            {
+              "title": "It threatens you with a deadline today.",
+              "detail": "\"Shut off TODAY\" is meant to make you panic and pay without checking."
+            },
+            {
+              "title": "It wants payment by gift card.",
+              "detail": "Real utility companies never ask you to pay with gift cards."
+            },
+            {
+              "title": "It gives you its own number to call.",
+              "detail": "The number in the text goes to the scammer, not your utility company."
+            }
           ],
           "tip": "Don't call the number in the text. Look at your last bill or the company's app, and call the number listed there to check your account.",
           "translations": {
             "es": {
               "message": "BrightGrid Energy: AVISO FINAL. Su servicio de luz será cortado HOY a las 4 p. m. por un pago atrasado de $214.50. Para evitar el corte, pague ahora con una tarjeta de regalo. Llame al (555) 380-9142.",
               "signs": [
-                { "title": "Le amenaza con un plazo para hoy.", "detail": "«Cortado HOY» busca que entre en pánico y pague sin comprobar." },
-                { "title": "Quiere el pago con tarjeta de regalo.", "detail": "Las compañías de servicios reales nunca piden pagos con tarjetas de regalo." },
-                { "title": "Le da su propio número para llamar.", "detail": "El número del mensaje es del estafador, no de su compañía de luz." }
+                {
+                  "title": "Le amenaza con un plazo para hoy.",
+                  "detail": "«Cortado HOY» busca que entre en pánico y pague sin comprobar."
+                },
+                {
+                  "title": "Quiere el pago con tarjeta de regalo.",
+                  "detail": "Las compañías de servicios reales nunca piden pagos con tarjetas de regalo."
+                },
+                {
+                  "title": "Le da su propio número para llamar.",
+                  "detail": "El número del mensaje es del estafador, no de su compañía de luz."
+                }
               ],
               "tip": "No llame al número del mensaje. Revise su última factura o la aplicación de la compañía, y llame al número que aparece allí para revisar su cuenta."
             },
             "bn": {
               "message": "BrightGrid Energy: শেষ নোটিশ। $214.50 বিল বকেয়া থাকায় আজ বিকেল ৪টায় আপনার বিদ্যুৎ সংযোগ কেটে দেওয়া হবে। সংযোগ কাটা এড়াতে এখনই গিফট কার্ড দিয়ে পরিশোধ করুন। ফোন করুন (555) 380-9142।",
               "signs": [
-                { "title": "এটি আজকের মধ্যে সময় বেঁধে হুমকি দেয়।", "detail": "“আজই সংযোগ কাটা হবে” কথাটি আপনাকে ঘাবড়ে দিয়ে যাচাই না করেই টাকা দেওয়াতে চায়।" },
-                { "title": "এটি গিফট কার্ডে টাকা চায়।", "detail": "আসল বিদ্যুৎ বা গ্যাস কোম্পানি কখনো গিফট কার্ডে বিল চায় না।" },
-                { "title": "এটি নিজের নম্বরে ফোন করতে বলে।", "detail": "মেসেজের নম্বরটি প্রতারকের, আপনার বিদ্যুৎ কোম্পানির নয়।" }
+                {
+                  "title": "এটি আজকের মধ্যে সময় বেঁধে হুমকি দেয়।",
+                  "detail": "“আজই সংযোগ কাটা হবে” কথাটি আপনাকে ঘাবড়ে দিয়ে যাচাই না করেই টাকা দেওয়াতে চায়।"
+                },
+                {
+                  "title": "এটি গিফট কার্ডে টাকা চায়।",
+                  "detail": "আসল বিদ্যুৎ বা গ্যাস কোম্পানি কখনো গিফট কার্ডে বিল চায় না।"
+                },
+                {
+                  "title": "এটি নিজের নম্বরে ফোন করতে বলে।",
+                  "detail": "মেসেজের নম্বরটি প্রতারকের, আপনার বিদ্যুৎ কোম্পানির নয়।"
+                }
               ],
               "tip": "মেসেজের নম্বরে ফোন করবেন না। আপনার শেষ বিল বা কোম্পানির অ্যাপ দেখুন, এবং সেখানে দেওয়া নম্বরে ফোন করে অ্যাকাউন্টের খবর নিন।"
             }
@@ -630,9 +1090,18 @@
           "context": "You have an account with BrightGrid Energy and signed up for bill reminders by text.",
           "message": "BrightGrid Energy: Your November bill of $72.18 is ready and is due Nov 20. Pay in the BrightGrid app or by calling the number on your bill.",
           "signs": [
-            { "title": "You signed up for it.", "detail": "You asked for bill reminders, and the amount looks normal." },
-            { "title": "It gives you time.", "detail": "The due date is weeks away. There's no threat to shut anything off." },
-            { "title": "It points to places you already trust.", "detail": "Your app or the number printed on your bill, not a link or a new number." }
+            {
+              "title": "You signed up for it.",
+              "detail": "You asked for bill reminders, and the amount looks normal."
+            },
+            {
+              "title": "It gives you time.",
+              "detail": "The due date is weeks away. There's no threat to shut anything off."
+            },
+            {
+              "title": "It points to places you already trust.",
+              "detail": "Your app or the number printed on your bill, not a link or a new number."
+            }
           ],
           "tip": "Compare this with the \"FINAL NOTICE\" from BrightGrid: same company name, but the real bill gives you time, asks for no gift cards, and sends you to your app or bill.",
           "translations": {
@@ -640,9 +1109,18 @@
               "context": "Usted tiene una cuenta con BrightGrid Energy y se inscribió para recibir recordatorios de factura por mensaje de texto.",
               "message": "BrightGrid Energy: Su factura de noviembre por $72.18 está lista y vence el 20 de noviembre. Pague en la aplicación de BrightGrid o llamando al número que aparece en su factura.",
               "signs": [
-                { "title": "Usted lo pidió.", "detail": "Pidió recordatorios de factura, y la cantidad parece normal." },
-                { "title": "Le da tiempo.", "detail": "La fecha límite es en unas semanas. No hay amenaza de cortar nada." },
-                { "title": "Le indica lugares en los que ya confía.", "detail": "Su aplicación o el número impreso en su factura, no un enlace ni un número nuevo." }
+                {
+                  "title": "Usted lo pidió.",
+                  "detail": "Pidió recordatorios de factura, y la cantidad parece normal."
+                },
+                {
+                  "title": "Le da tiempo.",
+                  "detail": "La fecha límite es en unas semanas. No hay amenaza de cortar nada."
+                },
+                {
+                  "title": "Le indica lugares en los que ya confía.",
+                  "detail": "Su aplicación o el número impreso en su factura, no un enlace ni un número nuevo."
+                }
               ],
               "tip": "Compárelo con el «AVISO FINAL» de BrightGrid: es el mismo nombre de compañía, pero la factura real le da tiempo, no pide tarjetas de regalo y le envía a su aplicación o a su factura."
             },
@@ -650,9 +1128,18 @@
               "context": "BrightGrid Energy-তে আপনার অ্যাকাউন্ট আছে এবং আপনি টেক্সটে বিলের রিমাইন্ডার পাওয়ার জন্য সাইন আপ করেছেন।",
               "message": "BrightGrid Energy: আপনার নভেম্বরের $72.18 বিল তৈরি, পরিশোধের শেষ তারিখ ২০ নভেম্বর। BrightGrid অ্যাপে অথবা বিলে থাকা নম্বরে ফোন করে পরিশোধ করুন।",
               "signs": [
-                { "title": "আপনি এটি চেয়েছিলেন।", "detail": "আপনি বিলের রিমাইন্ডার চেয়েছিলেন, আর টাকার পরিমাণও স্বাভাবিক।" },
-                { "title": "এটি সময় দেয়।", "detail": "শেষ তারিখ কয়েক সপ্তাহ পরে। কিছু কেটে দেওয়ার হুমকি নেই।" },
-                { "title": "এটি আপনার বিশ্বস্ত জায়গা দেখায়।", "detail": "আপনার অ্যাপ বা বিলে ছাপা নম্বর, কোনো লিংক বা নতুন নম্বর নয়।" }
+                {
+                  "title": "আপনি এটি চেয়েছিলেন।",
+                  "detail": "আপনি বিলের রিমাইন্ডার চেয়েছিলেন, আর টাকার পরিমাণও স্বাভাবিক।"
+                },
+                {
+                  "title": "এটি সময় দেয়।",
+                  "detail": "শেষ তারিখ কয়েক সপ্তাহ পরে। কিছু কেটে দেওয়ার হুমকি নেই।"
+                },
+                {
+                  "title": "এটি আপনার বিশ্বস্ত জায়গা দেখায়।",
+                  "detail": "আপনার অ্যাপ বা বিলে ছাপা নম্বর, কোনো লিংক বা নতুন নম্বর নয়।"
+                }
               ],
               "tip": "BrightGrid-এর “শেষ নোটিশ” মেসেজটির সাথে তুলনা করুন: একই কোম্পানির নাম, কিন্তু আসল বিল সময় দেয়, গিফট কার্ড চায় না, এবং আপনার অ্যাপ বা বিল দেখতে বলে।"
             }
@@ -668,9 +1155,18 @@
           "context": "You signed up for a chair yoga class at the Eastside Community Center.",
           "message": "Eastside Community Center: This week's chair yoga class moves to Thursday at 10 AM because of the holiday. See you there!",
           "signs": [
-            { "title": "It's about something you joined.", "detail": "You signed up for this class." },
-            { "title": "It only gives information.", "detail": "A schedule change, with nothing to tap, pay, or reply to." },
-            { "title": "Nothing is urgent or scary.", "detail": "There's no threat, no prize, and no request for personal details." }
+            {
+              "title": "It's about something you joined.",
+              "detail": "You signed up for this class."
+            },
+            {
+              "title": "It only gives information.",
+              "detail": "A schedule change, with nothing to tap, pay, or reply to."
+            },
+            {
+              "title": "Nothing is urgent or scary.",
+              "detail": "There's no threat, no prize, and no request for personal details."
+            }
           ],
           "tip": "If you're ever unsure about a message like this, call the center using the number on its flyer or website.",
           "translations": {
@@ -678,9 +1174,18 @@
               "context": "Usted se inscribió en una clase de yoga en silla en el Eastside Community Center.",
               "message": "Eastside Community Center: La clase de yoga en silla de esta semana se cambia al jueves a las 10 a. m. por el día festivo. ¡Nos vemos allí!",
               "signs": [
-                { "title": "Es sobre algo en lo que usted se inscribió.", "detail": "Usted se inscribió en esta clase." },
-                { "title": "Solo da información.", "detail": "Un cambio de horario, sin nada que tocar, pagar ni responder." },
-                { "title": "Nada es urgente ni da miedo.", "detail": "No hay amenazas, ni premios, ni pedidos de datos personales." }
+                {
+                  "title": "Es sobre algo en lo que usted se inscribió.",
+                  "detail": "Usted se inscribió en esta clase."
+                },
+                {
+                  "title": "Solo da información.",
+                  "detail": "Un cambio de horario, sin nada que tocar, pagar ni responder."
+                },
+                {
+                  "title": "Nada es urgente ni da miedo.",
+                  "detail": "No hay amenazas, ni premios, ni pedidos de datos personales."
+                }
               ],
               "tip": "Si alguna vez tiene dudas sobre un mensaje así, llame al centro usando el número de su folleto o de su sitio web."
             },
@@ -688,9 +1193,18 @@
               "context": "আপনি Eastside Community Center-এ একটি চেয়ার যোগব্যায়াম ক্লাসে নাম লিখিয়েছেন।",
               "message": "Eastside Community Center: ছুটির কারণে এই সপ্তাহের চেয়ার যোগব্যায়াম ক্লাস বৃহস্পতিবার সকাল ১০টায় সরানো হয়েছে। সেখানে দেখা হবে!",
               "signs": [
-                { "title": "এটি আপনার যোগ দেওয়া কিছু নিয়ে।", "detail": "আপনি এই ক্লাসে নাম লিখিয়েছেন।" },
-                { "title": "এটি শুধু তথ্য দেয়।", "detail": "শুধু সময় বদলের খবর। চাপ দেওয়া, টাকা দেওয়া বা উত্তর দেওয়ার কিছু নেই।" },
-                { "title": "কোনো তাড়া বা ভয় নেই।", "detail": "কোনো হুমকি, পুরস্কার বা ব্যক্তিগত তথ্য চাওয়া নেই।" }
+                {
+                  "title": "এটি আপনার যোগ দেওয়া কিছু নিয়ে।",
+                  "detail": "আপনি এই ক্লাসে নাম লিখিয়েছেন।"
+                },
+                {
+                  "title": "এটি শুধু তথ্য দেয়।",
+                  "detail": "শুধু সময় বদলের খবর। চাপ দেওয়া, টাকা দেওয়া বা উত্তর দেওয়ার কিছু নেই।"
+                },
+                {
+                  "title": "কোনো তাড়া বা ভয় নেই।",
+                  "detail": "কোনো হুমকি, পুরস্কার বা ব্যক্তিগত তথ্য চাওয়া নেই।"
+                }
               ],
               "tip": "এমন মেসেজ নিয়ে কখনো সন্দেহ হলে, সেন্টারের লিফলেট বা ওয়েবসাইটে থাকা নম্বরে ফোন করুন।"
             }
@@ -705,27 +1219,54 @@
           "time": "Wednesday, 4:18 PM",
           "message": "Hi, I'm Rachel from BrightPath Staffing. We have a part-time remote job for you: just like and rate products online and earn $300 to $500 a day. Reply YES to get started!",
           "signs": [
-            { "title": "A job you never applied for.", "detail": "Real employers don't text strangers with job offers out of nowhere." },
-            { "title": "The pay is too good for easy work.", "detail": "Hundreds of dollars a day for simple clicks is a common trick called a task scam." },
-            { "title": "It asks you to reply.", "detail": "Replying starts a conversation that usually ends with them asking you to pay money to \"unlock\" your earnings." }
+            {
+              "title": "A job you never applied for.",
+              "detail": "Real employers don't text strangers with job offers out of nowhere."
+            },
+            {
+              "title": "The pay is too good for easy work.",
+              "detail": "Hundreds of dollars a day for simple clicks is a common trick called a task scam."
+            },
+            {
+              "title": "It asks you to reply.",
+              "detail": "Replying starts a conversation that usually ends with them asking you to pay money to \"unlock\" your earnings."
+            }
           ],
           "tip": "Don't reply. If you're looking for work, apply through the company's official website or a job site you trust.",
           "translations": {
             "es": {
               "message": "Hola, soy Rachel, de BrightPath Staffing. Tenemos un trabajo remoto de medio tiempo para usted: solo tiene que dar «me gusta» y calificar productos por internet y ganar de $300 a $500 al día. ¡Responda YES para empezar!",
               "signs": [
-                { "title": "Un trabajo que usted nunca solicitó.", "detail": "Los empleadores reales no envían ofertas de trabajo a desconocidos de la nada." },
-                { "title": "El pago es demasiado bueno para un trabajo fácil.", "detail": "Cientos de dólares al día por hacer clics simples es un truco común llamado estafa de tareas." },
-                { "title": "Le pide responder.", "detail": "Responder inicia una conversación que normalmente termina con un pedido de dinero para «desbloquear» sus ganancias." }
+                {
+                  "title": "Un trabajo que usted nunca solicitó.",
+                  "detail": "Los empleadores reales no envían ofertas de trabajo a desconocidos de la nada."
+                },
+                {
+                  "title": "El pago es demasiado bueno para un trabajo fácil.",
+                  "detail": "Cientos de dólares al día por hacer clics simples es un truco común llamado estafa de tareas."
+                },
+                {
+                  "title": "Le pide responder.",
+                  "detail": "Responder inicia una conversación que normalmente termina con un pedido de dinero para «desbloquear» sus ganancias."
+                }
               ],
               "tip": "No responda. Si busca trabajo, solicítelo en el sitio web oficial de la empresa o en un sitio de empleos en el que confíe."
             },
             "bn": {
               "message": "হাই, আমি রেচেল, BrightPath Staffing থেকে। আপনার জন্য একটি পার্ট-টাইম অনলাইন কাজ আছে: শুধু অনলাইনে পণ্য লাইক ও রেটিং দিয়ে দিনে $300 থেকে $500 আয় করুন। শুরু করতে YES লিখে উত্তর দিন!",
               "signs": [
-                { "title": "আপনি কখনো আবেদন করেননি এমন চাকরি।", "detail": "আসল নিয়োগকর্তারা হঠাৎ অচেনা মানুষকে মেসেজে চাকরির প্রস্তাব পাঠায় না।" },
-                { "title": "সহজ কাজে অস্বাভাবিক বেশি টাকা।", "detail": "সাধারণ কয়েকটি ক্লিকে দিনে শত শত ডলার, এটি “টাস্ক স্ক্যাম” নামে পরিচিত একটি কৌশল।" },
-                { "title": "এটি উত্তর দিতে বলে।", "detail": "উত্তর দিলে কথা শুরু হয়, যা সাধারণত আপনার “আয় খোলার” জন্য টাকা চাওয়ায় গিয়ে শেষ হয়।" }
+                {
+                  "title": "আপনি কখনো আবেদন করেননি এমন চাকরি।",
+                  "detail": "আসল নিয়োগকর্তারা হঠাৎ অচেনা মানুষকে মেসেজে চাকরির প্রস্তাব পাঠায় না।"
+                },
+                {
+                  "title": "সহজ কাজে অস্বাভাবিক বেশি টাকা।",
+                  "detail": "সাধারণ কয়েকটি ক্লিকে দিনে শত শত ডলার, এটি “টাস্ক স্ক্যাম” নামে পরিচিত একটি কৌশল।"
+                },
+                {
+                  "title": "এটি উত্তর দিতে বলে।",
+                  "detail": "উত্তর দিলে কথা শুরু হয়, যা সাধারণত আপনার “আয় খোলার” জন্য টাকা চাওয়ায় গিয়ে শেষ হয়।"
+                }
               ],
               "tip": "উত্তর দেবেন না। কাজ খুঁজলে কোম্পানির আসল ওয়েবসাইট বা বিশ্বস্ত চাকরির ওয়েবসাইটের মাধ্যমে আবেদন করুন।"
             }
@@ -740,27 +1281,54 @@
           "time": "Today, 11:54 AM",
           "message": "Hi Mom, it's me. I dropped my phone and this is my new number. Can you save it? Also I need help paying a bill today, I'll pay you back this weekend.",
           "signs": [
-            { "title": "A \"new number\" with no name.", "detail": "It never says who it is. Scammers hope you'll fill in a name yourself." },
-            { "title": "It asks for money right away.", "detail": "A new number plus a money request in the same message is a classic trick." },
-            { "title": "It's urgent.", "detail": "\"Today\" pushes you to pay before you can check with your real family member." }
+            {
+              "title": "A \"new number\" with no name.",
+              "detail": "It never says who it is. Scammers hope you'll fill in a name yourself."
+            },
+            {
+              "title": "It asks for money right away.",
+              "detail": "A new number plus a money request in the same message is a classic trick."
+            },
+            {
+              "title": "It's urgent.",
+              "detail": "\"Today\" pushes you to pay before you can check with your real family member."
+            }
           ],
           "tip": "Don't send money or save the number. Call your child at the number you already have saved and ask if they changed phones.",
           "translations": {
             "es": {
               "message": "Hola, mamá, soy yo. Se me cayó el teléfono y este es mi número nuevo. ¿Lo puedes guardar? Además, necesito ayuda para pagar una cuenta hoy, te lo devuelvo este fin de semana.",
               "signs": [
-                { "title": "Un «número nuevo» sin nombre.", "detail": "Nunca dice quién es. Los estafadores esperan que usted mismo ponga un nombre." },
-                { "title": "Pide dinero enseguida.", "detail": "Un número nuevo y un pedido de dinero en el mismo mensaje es un truco clásico." },
-                { "title": "Es urgente.", "detail": "«Hoy» le empuja a pagar antes de poder comprobar con su familiar real." }
+                {
+                  "title": "Un «número nuevo» sin nombre.",
+                  "detail": "Nunca dice quién es. Los estafadores esperan que usted mismo ponga un nombre."
+                },
+                {
+                  "title": "Pide dinero enseguida.",
+                  "detail": "Un número nuevo y un pedido de dinero en el mismo mensaje es un truco clásico."
+                },
+                {
+                  "title": "Es urgente.",
+                  "detail": "«Hoy» le empuja a pagar antes de poder comprobar con su familiar real."
+                }
               ],
               "tip": "No envíe dinero ni guarde el número. Llame a su hijo o hija al número que ya tiene guardado y pregúntele si cambió de teléfono."
             },
             "bn": {
               "message": "হাই মা, আমি। আমার ফোন পড়ে গেছে, এটা আমার নতুন নম্বর। নম্বরটা সেভ করবে? আর আজ একটা বিল দিতে তোমার সাহায্য লাগবে, এই সপ্তাহের শেষে ফেরত দিয়ে দেব।",
               "signs": [
-                { "title": "নাম ছাড়া “নতুন নম্বর”।", "detail": "এটি কখনো বলে না কে লিখছে। প্রতারকেরা আশা করে আপনি নিজেই একটি নাম ভেবে নেবেন।" },
-                { "title": "এটি সঙ্গে সঙ্গে টাকা চায়।", "detail": "একই মেসেজে নতুন নম্বর আর টাকা চাওয়া একটি পুরোনো কৌশল।" },
-                { "title": "এতে তাড়া আছে।", "detail": "“আজই” কথাটি আপনার আসল আত্মীয়ের সাথে যাচাই করার আগেই টাকা দিতে চাপ দেয়।" }
+                {
+                  "title": "নাম ছাড়া “নতুন নম্বর”।",
+                  "detail": "এটি কখনো বলে না কে লিখছে। প্রতারকেরা আশা করে আপনি নিজেই একটি নাম ভেবে নেবেন।"
+                },
+                {
+                  "title": "এটি সঙ্গে সঙ্গে টাকা চায়।",
+                  "detail": "একই মেসেজে নতুন নম্বর আর টাকা চাওয়া একটি পুরোনো কৌশল।"
+                },
+                {
+                  "title": "এতে তাড়া আছে।",
+                  "detail": "“আজই” কথাটি আপনার আসল আত্মীয়ের সাথে যাচাই করার আগেই টাকা দিতে চাপ দেয়।"
+                }
               ],
               "tip": "টাকা পাঠাবেন না, নম্বরটিও সেভ করবেন না। আপনার সন্তানের আগে থেকে সেভ করা নম্বরে ফোন করে জিজ্ঞেস করুন সে ফোন বদলেছে কি না।"
             }
@@ -776,9 +1344,18 @@
           "context": "Your son Daniel is saved in your phone's contacts.",
           "message": "Hey Mom, call me when you get a chance. No rush. I want to talk about plans for Thanksgiving.",
           "signs": [
-            { "title": "It's from a saved contact.", "detail": "It shows his name, from the number you already have." },
-            { "title": "It says \"no rush.\"", "detail": "There's no pressure and no emergency." },
-            { "title": "It asks for nothing.", "detail": "No money, no gift cards, no codes, and no secrets." }
+            {
+              "title": "It's from a saved contact.",
+              "detail": "It shows his name, from the number you already have."
+            },
+            {
+              "title": "It says \"no rush.\"",
+              "detail": "There's no pressure and no emergency."
+            },
+            {
+              "title": "It asks for nothing.",
+              "detail": "No money, no gift cards, no codes, and no secrets."
+            }
           ],
           "tip": "Compare this with the \"new number\" text: that one had no name, came from an unknown number, and asked for money. Calling back on a saved number is always safe.",
           "translations": {
@@ -786,9 +1363,18 @@
               "context": "Su hijo Daniel está guardado en los contactos de su teléfono.",
               "message": "Hola, mamá, llámame cuando puedas. Sin prisa. Quiero hablar de los planes para el Día de Acción de Gracias.",
               "signs": [
-                { "title": "Viene de un contacto guardado.", "detail": "Muestra su nombre, desde el número que usted ya tiene." },
-                { "title": "Dice «sin prisa».", "detail": "No hay presión ni emergencia." },
-                { "title": "No pide nada.", "detail": "Ni dinero, ni tarjetas de regalo, ni códigos, ni secretos." }
+                {
+                  "title": "Viene de un contacto guardado.",
+                  "detail": "Muestra su nombre, desde el número que usted ya tiene."
+                },
+                {
+                  "title": "Dice «sin prisa».",
+                  "detail": "No hay presión ni emergencia."
+                },
+                {
+                  "title": "No pide nada.",
+                  "detail": "Ni dinero, ni tarjetas de regalo, ni códigos, ni secretos."
+                }
               ],
               "tip": "Compárelo con el mensaje del «número nuevo»: ese no tenía nombre, llegó desde un número desconocido y pedía dinero. Devolver la llamada a un número guardado siempre es seguro."
             },
@@ -796,9 +1382,18 @@
               "context": "আপনার ছেলে ড্যানিয়েলের নম্বর ফোনে সেভ করা আছে।",
               "message": "মা, সময় পেলে আমাকে ফোন দিও। তাড়া নেই। থ্যাংকসগিভিংয়ের পরিকল্পনা নিয়ে কথা বলতে চাই।",
               "signs": [
-                { "title": "এটি সেভ করা নম্বর থেকে এসেছে।", "detail": "এতে তার নাম দেখা যাচ্ছে, আপনার কাছে আগে থেকে থাকা নম্বর থেকে।" },
-                { "title": "এতে লেখা “তাড়া নেই”।", "detail": "কোনো চাপ বা জরুরি অবস্থা নেই।" },
-                { "title": "এটি কিছুই চায় না।", "detail": "টাকা, গিফট কার্ড, কোড বা গোপনীয়তা কিছুই চায় না।" }
+                {
+                  "title": "এটি সেভ করা নম্বর থেকে এসেছে।",
+                  "detail": "এতে তার নাম দেখা যাচ্ছে, আপনার কাছে আগে থেকে থাকা নম্বর থেকে।"
+                },
+                {
+                  "title": "এতে লেখা “তাড়া নেই”।",
+                  "detail": "কোনো চাপ বা জরুরি অবস্থা নেই।"
+                },
+                {
+                  "title": "এটি কিছুই চায় না।",
+                  "detail": "টাকা, গিফট কার্ড, কোড বা গোপনীয়তা কিছুই চায় না।"
+                }
               ],
               "tip": "“নতুন নম্বর” মেসেজটির সাথে তুলনা করুন: সেটিতে কোনো নাম ছিল না, অচেনা নম্বর থেকে এসেছিল, আর টাকা চেয়েছিল। সেভ করা নম্বরে ফোন করা সবসময় নিরাপদ।"
             }
@@ -813,27 +1408,54 @@
           "time": "Thursday, 10:05 AM",
           "message": "U.S. Benefits Office: Your Medicare card will be deactivated in 24 hours due to a records error. Call 1-555-207-4410 now and verify your Social Security number to keep your benefits.",
           "signs": [
-            { "title": "It pretends to be the government.", "detail": "Agencies like Medicare and Social Security don't send surprise texts asking for personal information." },
-            { "title": "It asks for your Social Security number.", "detail": "Never give your Social Security number to someone who contacts you first." },
-            { "title": "It threatens your benefits.", "detail": "\"Deactivated in 24 hours\" is meant to scare you into calling fast." }
+            {
+              "title": "It pretends to be the government.",
+              "detail": "Agencies like Medicare and Social Security don't send surprise texts asking for personal information."
+            },
+            {
+              "title": "It asks for your Social Security number.",
+              "detail": "Never give your Social Security number to someone who contacts you first."
+            },
+            {
+              "title": "It threatens your benefits.",
+              "detail": "\"Deactivated in 24 hours\" is meant to scare you into calling fast."
+            }
           ],
           "tip": "Don't call the number in the text. If you're worried, call Medicare yourself at 1-800-MEDICARE (1-800-633-4227).",
           "translations": {
             "es": {
               "message": "U.S. Benefits Office: Su tarjeta de Medicare será desactivada en 24 horas por un error en los registros. Llame ahora al 1-555-207-4410 y verifique su número de Seguro Social para conservar sus beneficios.",
               "signs": [
-                { "title": "Se hace pasar por el gobierno.", "detail": "Agencias como Medicare y el Seguro Social no envían mensajes inesperados pidiendo datos personales." },
-                { "title": "Pide su número de Seguro Social.", "detail": "Nunca dé su número de Seguro Social a alguien que le contacta primero." },
-                { "title": "Amenaza sus beneficios.", "detail": "«Desactivada en 24 horas» busca asustarle para que llame rápido." }
+                {
+                  "title": "Se hace pasar por el gobierno.",
+                  "detail": "Agencias como Medicare y el Seguro Social no envían mensajes inesperados pidiendo datos personales."
+                },
+                {
+                  "title": "Pide su número de Seguro Social.",
+                  "detail": "Nunca dé su número de Seguro Social a alguien que le contacta primero."
+                },
+                {
+                  "title": "Amenaza sus beneficios.",
+                  "detail": "«Desactivada en 24 horas» busca asustarle para que llame rápido."
+                }
               ],
               "tip": "No llame al número del mensaje. Si le preocupa, llame usted mismo a Medicare al 1-800-MEDICARE (1-800-633-4227)."
             },
             "bn": {
               "message": "U.S. Benefits Office: রেকর্ডে ভুলের কারণে ২৪ ঘণ্টার মধ্যে আপনার Medicare কার্ড বন্ধ করে দেওয়া হবে। আপনার সুবিধা চালু রাখতে এখনই 1-555-207-4410 নম্বরে ফোন করে আপনার সোশ্যাল সিকিউরিটি নম্বর যাচাই করুন।",
               "signs": [
-                { "title": "এটি সরকারি অফিস সেজে আসে।", "detail": "Medicare বা সোশ্যাল সিকিউরিটির মতো সরকারি সংস্থা হঠাৎ মেসেজ পাঠিয়ে ব্যক্তিগত তথ্য চায় না।" },
-                { "title": "এটি সোশ্যাল সিকিউরিটি নম্বর চায়।", "detail": "যে আগে যোগাযোগ করেছে, তাকে কখনো আপনার সোশ্যাল সিকিউরিটি নম্বর দেবেন না।" },
-                { "title": "এটি আপনার সুবিধা বন্ধের হুমকি দেয়।", "detail": "“২৪ ঘণ্টার মধ্যে বন্ধ” কথাটি আপনাকে ভয় দেখিয়ে তাড়াতাড়ি ফোন করাতে চায়।" }
+                {
+                  "title": "এটি সরকারি অফিস সেজে আসে।",
+                  "detail": "Medicare বা সোশ্যাল সিকিউরিটির মতো সরকারি সংস্থা হঠাৎ মেসেজ পাঠিয়ে ব্যক্তিগত তথ্য চায় না।"
+                },
+                {
+                  "title": "এটি সোশ্যাল সিকিউরিটি নম্বর চায়।",
+                  "detail": "যে আগে যোগাযোগ করেছে, তাকে কখনো আপনার সোশ্যাল সিকিউরিটি নম্বর দেবেন না।"
+                },
+                {
+                  "title": "এটি আপনার সুবিধা বন্ধের হুমকি দেয়।",
+                  "detail": "“২৪ ঘণ্টার মধ্যে বন্ধ” কথাটি আপনাকে ভয় দেখিয়ে তাড়াতাড়ি ফোন করাতে চায়।"
+                }
               ],
               "tip": "মেসেজের নম্বরে ফোন করবেন না। চিন্তা হলে নিজে Medicare-কে 1-800-MEDICARE (1-800-633-4227) নম্বরে ফোন করুন।"
             }
@@ -844,36 +1466,1127 @@
           "channel": "text",
           "isScam": false,
           "category": "Store announcement",
-          "sender": "Greenleaf Pharmacy",
+          "sender": "Walgreens",
           "time": "Friday, 10:00 AM",
-          "context": "You get your prescriptions at Greenleaf Pharmacy and agreed to receive its texts.",
-          "message": "Greenleaf Pharmacy: Flu shots are now available at your Main St store. No appointment needed. Reply STOP to opt out.",
+          "context": "You get your prescriptions at Walgreens and agreed to receive its texts.",
+          "message": "Walgreens: Flu shots are now available at your Main St store. No appointment needed. Reply STOP to opt out.",
           "signs": [
-            { "title": "It's from a store you use.", "detail": "You already get texts from this pharmacy." },
-            { "title": "It's just an announcement.", "detail": "No link, no payment, and no deadline." },
-            { "title": "You decide what to do.", "detail": "You can go to the store you know, whenever you want." }
+            {
+              "title": "It's from a store you use.",
+              "detail": "You already get texts from this pharmacy."
+            },
+            {
+              "title": "It's just an announcement.",
+              "detail": "No link, no payment, and no deadline."
+            },
+            {
+              "title": "You decide what to do.",
+              "detail": "You can go to the store you know, whenever you want."
+            }
           ],
           "tip": "Replying STOP to a store you know is fine. If you're unsure, call the pharmacy using the number on your prescription bottle.",
           "translations": {
             "es": {
-              "context": "Usted recoge sus medicamentos en Greenleaf Pharmacy y aceptó recibir sus mensajes.",
-              "message": "Greenleaf Pharmacy: Ya hay vacunas contra la gripe en su tienda de Main St. No necesita cita. Responda STOP para dejar de recibir mensajes.",
+              "context": "Usted recoge sus medicamentos en Walgreens y aceptó recibir sus mensajes.",
+              "message": "Walgreens: Ya hay vacunas contra la gripe en su tienda de Main St. No necesita cita. Responda STOP para dejar de recibir mensajes.",
               "signs": [
-                { "title": "Viene de una tienda que usted usa.", "detail": "Usted ya recibe mensajes de esta farmacia." },
-                { "title": "Es solo un anuncio.", "detail": "Sin enlace, sin pago y sin fecha límite." },
-                { "title": "Usted decide qué hacer.", "detail": "Puede ir a la tienda que conoce cuando quiera." }
+                {
+                  "title": "Viene de una tienda que usted usa.",
+                  "detail": "Usted ya recibe mensajes de esta farmacia."
+                },
+                {
+                  "title": "Es solo un anuncio.",
+                  "detail": "Sin enlace, sin pago y sin fecha límite."
+                },
+                {
+                  "title": "Usted decide qué hacer.",
+                  "detail": "Puede ir a la tienda que conoce cuando quiera."
+                }
               ],
               "tip": "Responder STOP a una tienda que conoce está bien. Si tiene dudas, llame a la farmacia usando el número del frasco de su medicamento."
             },
             "bn": {
-              "context": "আপনি Greenleaf Pharmacy থেকে ওষুধ নেন এবং তাদের মেসেজ পেতে রাজি হয়েছেন।",
-              "message": "Greenleaf Pharmacy: আপনার Main St শাখায় এখন ফ্লুর টিকা পাওয়া যাচ্ছে। অ্যাপয়েন্টমেন্ট লাগবে না। মেসেজ বন্ধ করতে STOP লিখে উত্তর দিন।",
+              "context": "আপনি Walgreens থেকে ওষুধ নেন এবং তাদের মেসেজ পেতে রাজি হয়েছেন।",
+              "message": "Walgreens: আপনার Main St শাখায় এখন ফ্লুর টিকা পাওয়া যাচ্ছে। অ্যাপয়েন্টমেন্ট লাগবে না। মেসেজ বন্ধ করতে STOP লিখে উত্তর দিন।",
               "signs": [
-                { "title": "এটি আপনার পরিচিত দোকান থেকে এসেছে।", "detail": "আপনি আগে থেকেই এই ফার্মেসির মেসেজ পান।" },
-                { "title": "এটি শুধু একটি ঘোষণা।", "detail": "কোনো লিংক, টাকা বা সময়সীমা নেই।" },
-                { "title": "কী করবেন, তা আপনিই ঠিক করবেন।", "detail": "যখন খুশি পরিচিত দোকানে যেতে পারেন।" }
+                {
+                  "title": "এটি আপনার পরিচিত দোকান থেকে এসেছে।",
+                  "detail": "আপনি আগে থেকেই এই ফার্মেসির মেসেজ পান।"
+                },
+                {
+                  "title": "এটি শুধু একটি ঘোষণা।",
+                  "detail": "কোনো লিংক, টাকা বা সময়সীমা নেই।"
+                },
+                {
+                  "title": "কী করবেন, তা আপনিই ঠিক করবেন।",
+                  "detail": "যখন খুশি পরিচিত দোকানে যেতে পারেন।"
+                }
               ],
               "tip": "পরিচিত দোকানে STOP লিখে উত্তর দেওয়া ঠিক আছে। সন্দেহ হলে ওষুধের বোতলে থাকা নম্বরে ফার্মেসিতে ফোন করুন।"
+            }
+          }
+        }
+      ],
+      "channel": "text"
+    },
+    {
+      "id": "emails",
+      "channel": "email",
+      "scenarios": [
+        {
+          "id": "email-antivirus-renewal",
+          "channel": "email",
+          "isScam": true,
+          "category": "Fake renewal charge",
+          "sender": "ShieldPro Security",
+          "senderAddress": "shieldpro.billing.dept@gmail.com",
+          "subject": "Invoice #SP-48213: Your subscription has renewed",
+          "time": "Today, 6:52 AM",
+          "message": "Dear Customer,\n\nThank you for renewing ShieldPro Total Protection for 3 years. $399.99 has been charged to your account today.\n\nIf you did not authorize this charge, call our refund department within 24 hours at 1-555-310-7746 to cancel and get your money back.\n\nShieldPro Billing Team",
+          "signs": [
+            {
+              "title": "It scares you with a charge.",
+              "detail": "A big charge you don't recognize is meant to make you panic and call right away."
+            },
+            {
+              "title": "It wants you to call its number.",
+              "detail": "The \"refund department\" is the scammer. On the call, they may ask to get into your computer or for your bank details to \"refund\" you."
+            },
+            {
+              "title": "The email address doesn't match.",
+              "detail": "A real company wouldn't send a bill from a free Gmail address."
+            }
+          ],
+          "tip": "Don't call the number in the email. Check your bank or card statement yourself. If there's a charge you don't know, call the number on the back of your card.",
+          "translations": {
+            "es": {
+              "subject": "Factura #SP-48213: Su suscripción se ha renovado",
+              "message": "Estimado cliente:\n\nGracias por renovar ShieldPro Total Protection por 3 años. Hoy se cobraron $399.99 a su cuenta.\n\nSi usted no autorizó este cobro, llame a nuestro departamento de reembolsos en las próximas 24 horas al 1-555-310-7746 para cancelarlo y recuperar su dinero.\n\nEquipo de Facturación de ShieldPro",
+              "signs": [
+                {
+                  "title": "Le asusta con un cobro.",
+                  "detail": "Un cobro grande que usted no reconoce busca que se asuste y llame de inmediato."
+                },
+                {
+                  "title": "Quiere que llame a su número.",
+                  "detail": "El \"departamento de reembolsos\" es el estafador. En la llamada, puede pedirle entrar a su computadora o sus datos bancarios para \"devolverle\" el dinero."
+                },
+                {
+                  "title": "La dirección de correo no coincide.",
+                  "detail": "Una empresa real no enviaría una factura desde una cuenta gratuita de Gmail."
+                }
+              ],
+              "tip": "No llame al número del correo. Revise usted mismo el estado de cuenta de su banco o tarjeta. Si hay un cobro que no reconoce, llame al número que aparece detrás de su tarjeta."
+            },
+            "bn": {
+              "subject": "ইনভয়েস #SP-48213: আপনার সাবস্ক্রিপশন নবায়ন হয়েছে",
+              "message": "প্রিয় গ্রাহক,\n\nShieldPro Total Protection ৩ বছরের জন্য নবায়ন করার জন্য ধন্যবাদ। আজ আপনার অ্যাকাউন্ট থেকে $399.99 কাটা হয়েছে।\n\nআপনি এই চার্জের অনুমতি না দিয়ে থাকলে, বাতিল করে টাকা ফেরত পেতে ২৪ ঘণ্টার মধ্যে আমাদের রিফান্ড বিভাগে 1-555-310-7746 নম্বরে ফোন করুন।\n\nShieldPro বিলিং টিম",
+              "signs": [
+                {
+                  "title": "এটি একটি চার্জ দেখিয়ে ভয় দেখায়।",
+                  "detail": "অচেনা একটি বড় চার্জ দেখানো হয়, যাতে আপনি ঘাবড়ে গিয়ে সঙ্গে সঙ্গে ফোন করেন।"
+                },
+                {
+                  "title": "এটি আপনাকে তাদের নম্বরে ফোন করাতে চায়।",
+                  "detail": "\"রিফান্ড বিভাগ\" আসলে প্রতারক নিজেই। ফোনে তারা টাকা \"ফেরত\" দেওয়ার কথা বলে আপনার কম্পিউটারে ঢোকার অনুমতি বা আপনার ব্যাংকের তথ্য চাইতে পারে।"
+                },
+                {
+                  "title": "ইমেইল ঠিকানাটি মেলে না।",
+                  "detail": "আসল কোনো কোম্পানি বিনামূল্যের Gmail ঠিকানা থেকে বিল পাঠায় না।"
+                }
+              ],
+              "tip": "ইমেইলের নম্বরে ফোন করবেন না। নিজে আপনার ব্যাংক বা কার্ডের স্টেটমেন্ট দেখুন। অচেনা কোনো চার্জ থাকলে কার্ডের পেছনে লেখা নম্বরে ফোন করুন।"
+            }
+          }
+        },
+        {
+          "id": "email-account-suspend",
+          "channel": "email",
+          "isScam": true,
+          "category": "Fake account warning",
+          "sender": "ShopNow Support",
+          "senderAddress": "support@shopnow-accounts-verify.com",
+          "subject": "Action required: Your account will be suspended",
+          "time": "Yesterday, 10:17 PM",
+          "message": "We were unable to verify your payment information. To avoid losing access to your account and your orders, please confirm your card details within 48 hours.\n\nVerify now: shopnow-accounts-verify.com/login\n\nThank you,\nShopNow Account Services",
+          "signs": [
+            {
+              "title": "It gives you a deadline.",
+              "detail": "\"Within 48 hours\" and losing your account are meant to rush you."
+            },
+            {
+              "title": "The web address is a copy.",
+              "detail": "It has ShopNow's name in it, but shopnow-accounts-verify.com isn't ShopNow's real website, shopnow.com."
+            },
+            {
+              "title": "It asks for your card details.",
+              "detail": "Real stores don't ask you to confirm your card through a link in an email."
+            }
+          ],
+          "tip": "Don't click the link. Open the ShopNow app, or type shopnow.com yourself, and sign in. If there's a real problem, you'll see it there.",
+          "translations": {
+            "es": {
+              "subject": "Acción requerida: Su cuenta será suspendida",
+              "message": "No pudimos verificar su información de pago. Para no perder el acceso a su cuenta y a sus pedidos, confirme los datos de su tarjeta en las próximas 48 horas.\n\nVerifique ahora: shopnow-accounts-verify.com/login\n\nGracias,\nServicios de Cuenta de ShopNow",
+              "signs": [
+                {
+                  "title": "Le da una fecha límite.",
+                  "detail": "\"Within 48 hours\" (en 48 horas) y perder su cuenta buscan apurarle."
+                },
+                {
+                  "title": "La dirección web es una copia.",
+                  "detail": "Tiene el nombre de ShopNow, pero shopnow-accounts-verify.com no es el sitio real de ShopNow, que es shopnow.com."
+                },
+                {
+                  "title": "Le pide los datos de su tarjeta.",
+                  "detail": "Las tiendas reales no le piden confirmar su tarjeta mediante un enlace en un correo."
+                }
+              ],
+              "tip": "No haga clic en el enlace. Abra la aplicación de ShopNow, o escriba usted mismo shopnow.com, e inicie sesión. Si hay un problema real, lo verá allí."
+            },
+            "bn": {
+              "subject": "জরুরি পদক্ষেপ প্রয়োজন: আপনার অ্যাকাউন্ট স্থগিত করা হবে",
+              "message": "আমরা আপনার পেমেন্টের তথ্য যাচাই করতে পারিনি। আপনার অ্যাকাউন্ট ও অর্ডারগুলো হারাতে না চাইলে ৪৮ ঘণ্টার মধ্যে আপনার কার্ডের তথ্য নিশ্চিত করুন।\n\nএখনই যাচাই করুন: shopnow-accounts-verify.com/login\n\nধন্যবাদ,\nShopNow অ্যাকাউন্ট সার্ভিস",
+              "signs": [
+                {
+                  "title": "এটি সময়সীমা বেঁধে দেয়।",
+                  "detail": "\"Within 48 hours\" (৪৮ ঘণ্টার মধ্যে) আর অ্যাকাউন্ট হারানোর ভয় দেখানো হয় আপনাকে তাড়াহুড়া করাতে।"
+                },
+                {
+                  "title": "ওয়েবসাইটের ঠিকানাটি নকল।",
+                  "detail": "এতে ShopNow নামটি আছে, কিন্তু shopnow-accounts-verify.com ShopNow-এর আসল ওয়েবসাইট নয়। আসলটি হলো shopnow.com।"
+                },
+                {
+                  "title": "এটি আপনার কার্ডের তথ্য চায়।",
+                  "detail": "আসল দোকান ইমেইলের লিংকের মাধ্যমে কার্ডের তথ্য নিশ্চিত করতে বলে না।"
+                }
+              ],
+              "tip": "লিংকে ক্লিক করবেন না। ShopNow অ্যাপ খুলুন, অথবা নিজে shopnow.com লিখে লগ ইন করুন। সত্যিই কোনো সমস্যা থাকলে সেখানে দেখতে পাবেন।"
+            }
+          }
+        },
+        {
+          "id": "email-giftcard-favor",
+          "channel": "email",
+          "isScam": true,
+          "category": "Someone pretending to be a person you know",
+          "sender": "Linda Park",
+          "senderAddress": "lindapark.eastside@gmail.com",
+          "subject": "Quick favor",
+          "time": "Today, 9:05 AM",
+          "context": "You take a class at Eastside Community Center. Linda Park is the center's director.",
+          "message": "Hi, are you free? I'm in meetings all day and can't take calls. One of our members is in the hospital and I want to send a get-well gift. Could you pick up 4 Apple gift cards, $100 each, and email me photos of the backs? I'll pay you back tomorrow. Please keep this between us for now.\n\nLinda\nSent from my iPhone",
+          "signs": [
+            {
+              "title": "It asks for gift cards.",
+              "detail": "No real director, boss, or friend needs you to buy gift cards and send the numbers. Once someone has the numbers, the money is gone."
+            },
+            {
+              "title": "It asks for secrecy, and you can't check.",
+              "detail": "\"I can't take calls\" and \"keep this between us\" stop you from asking the real Linda."
+            },
+            {
+              "title": "The address isn't the center's.",
+              "detail": "It uses Linda's name, but it comes from a free Gmail account that anyone could open, not the center's own email."
+            }
+          ],
+          "tip": "Don't buy anything or reply. Call Linda or the community center using a number you already have, and ask if she really sent it.",
+          "translations": {
+            "es": {
+              "context": "Usted toma una clase en Eastside Community Center. Linda Park es la directora del centro.",
+              "subject": "Un favor rápido",
+              "message": "Hola, ¿está disponible? Estoy en reuniones todo el día y no puedo atender llamadas. Una de nuestras socias está en el hospital y quiero enviarle un regalo. ¿Podría comprar 4 tarjetas de regalo de Apple de $100 cada una y enviarme por correo fotos de la parte de atrás? Se lo pago mañana. Por favor, que quede entre nosotras por ahora.\n\nLinda\nEnviado desde mi iPhone",
+              "signs": [
+                {
+                  "title": "Le pide tarjetas de regalo.",
+                  "detail": "Ninguna directora, jefe o amigo de verdad necesita que usted compre tarjetas de regalo y le envíe los números. Cuando alguien tiene los números, el dinero se pierde."
+                },
+                {
+                  "title": "Le pide secreto y no puede comprobarlo.",
+                  "detail": "\"No puedo atender llamadas\" y \"que quede entre nosotras\" impiden que le pregunte a la verdadera Linda."
+                },
+                {
+                  "title": "La dirección no es la del centro.",
+                  "detail": "Usa el nombre de Linda, pero viene de una cuenta gratuita de Gmail que cualquiera puede abrir, no del correo del centro."
+                }
+              ],
+              "tip": "No compre nada ni responda. Llame a Linda o al centro comunitario a un número que ya tenga y pregunte si de verdad ella lo envió."
+            },
+            "bn": {
+              "context": "আপনি Eastside Community Center-এ একটি ক্লাস করেন। Linda Park সেখানকার পরিচালক।",
+              "subject": "ছোট একটা উপকার",
+              "message": "হাই, আপনি কি ফ্রি আছেন? আমি সারাদিন মিটিংয়ে, ফোন ধরতে পারছি না। আমাদের একজন সদস্য হাসপাতালে আছেন, তাঁকে একটা উপহার পাঠাতে চাই। আপনি কি ১০০ ডলার করে ৪টি Apple গিফট কার্ড কিনে কার্ডগুলোর পেছনের ছবি আমাকে ইমেইল করতে পারবেন? কাল আপনাকে টাকা ফেরত দেব। আপাতত কথাটা আমাদের মধ্যেই রাখবেন।\n\nLinda\nআমার iPhone থেকে পাঠানো",
+              "signs": [
+                {
+                  "title": "এটি গিফট কার্ড চায়।",
+                  "detail": "আসল কোনো পরিচালক, বস বা বন্ধু আপনাকে গিফট কার্ড কিনে নম্বর পাঠাতে বলেন না। নম্বর একবার কারও হাতে গেলে টাকা আর ফেরত আসে না।"
+                },
+                {
+                  "title": "এটি গোপন রাখতে বলে, আর যাচাই করার সুযোগ দেয় না।",
+                  "detail": "\"ফোন ধরতে পারছি না\" আর \"আমাদের মধ্যেই রাখবেন\" বলা হয়, যাতে আপনি আসল Linda-কে জিজ্ঞেস করতে না পারেন।"
+                },
+                {
+                  "title": "ঠিকানাটি সেন্টারের নয়।",
+                  "detail": "এতে Linda-র নাম আছে, কিন্তু এটি এসেছে বিনামূল্যের একটি Gmail অ্যাকাউন্ট থেকে, যা যে কেউ খুলতে পারে। সেন্টারের নিজস্ব ইমেইল থেকে নয়।"
+                }
+              ],
+              "tip": "কিছু কিনবেন না, উত্তরও দেবেন না। আপনার কাছে আগে থেকে থাকা নম্বরে Linda বা কমিউনিটি সেন্টারে ফোন করে জিজ্ঞেস করুন, সত্যিই তিনি পাঠিয়েছেন কি না।"
+            }
+          }
+        },
+        {
+          "id": "email-tax-refund",
+          "channel": "email",
+          "isScam": true,
+          "category": "Fake government refund",
+          "sender": "Tax Refund Office",
+          "senderAddress": "refunds@irs-taxrefund-center.com",
+          "subject": "You are eligible for a tax refund of $812.40",
+          "time": "Tuesday, 2:30 PM",
+          "message": "After the last annual review of your tax records, we have determined that you are eligible to receive a tax refund of $812.40.\n\nTo receive your refund, submit your bank account and routing numbers using the secure form below within 3 days. Late requests will be cancelled.\n\nClaim your refund: irs-taxrefund-center.com/claim\n\nInternal Revenue Service",
+          "signs": [
+            {
+              "title": "It pretends to be the government.",
+              "detail": "The IRS doesn't email you to ask for your bank details, and its real website is irs.gov."
+            },
+            {
+              "title": "It offers money to get your bank details.",
+              "detail": "The refund is bait. Your bank account number is what the scammer really wants."
+            },
+            {
+              "title": "It has a short deadline.",
+              "detail": "\"Within 3 days\" and \"cancelled\" are there to rush you."
+            }
+          ],
+          "tip": "Don't click the link or reply. Check on any refund yourself at irs.gov, or call the IRS at 1-800-829-1040.",
+          "translations": {
+            "es": {
+              "subject": "Usted califica para un reembolso de impuestos de $812.40",
+              "message": "Tras la última revisión anual de sus registros de impuestos, determinamos que usted califica para recibir un reembolso de $812.40.\n\nPara recibir su reembolso, envíe su número de cuenta bancaria y número de ruta mediante el formulario seguro de abajo en un plazo de 3 días. Las solicitudes tardías serán canceladas.\n\nReclame su reembolso: irs-taxrefund-center.com/claim\n\nServicio de Impuestos Internos",
+              "signs": [
+                {
+                  "title": "Finge ser del gobierno.",
+                  "detail": "El IRS no le envía correos para pedir sus datos bancarios, y su sitio web real es irs.gov."
+                },
+                {
+                  "title": "Ofrece dinero para obtener sus datos bancarios.",
+                  "detail": "El reembolso es una trampa. Lo que el estafador quiere de verdad es su número de cuenta."
+                },
+                {
+                  "title": "Tiene un plazo muy corto.",
+                  "detail": "\"Within 3 days\" (en 3 días) y \"cancelled\" (canceladas) están para apurarle."
+                }
+              ],
+              "tip": "No haga clic en el enlace ni responda. Consulte cualquier reembolso usted mismo en irs.gov, o llame al IRS al 1-800-829-1040."
+            },
+            "bn": {
+              "subject": "আপনি $812.40 ট্যাক্স রিফান্ড পাওয়ার যোগ্য",
+              "message": "আপনার করের রেকর্ডের সর্বশেষ বার্ষিক পর্যালোচনার পর আমরা দেখেছি যে আপনি $812.40 ট্যাক্স রিফান্ড পাওয়ার যোগ্য।\n\nরিফান্ড পেতে ৩ দিনের মধ্যে নিচের নিরাপদ ফর্মে আপনার ব্যাংক অ্যাকাউন্ট নম্বর ও রাউটিং নম্বর জমা দিন। দেরিতে জমা দেওয়া অনুরোধ বাতিল করা হবে।\n\nরিফান্ড নিন: irs-taxrefund-center.com/claim\n\nInternal Revenue Service (মার্কিন কর বিভাগ)",
+              "signs": [
+                {
+                  "title": "এটি সরকার সেজে আসে।",
+                  "detail": "IRS (মার্কিন কর বিভাগ) ইমেইল করে আপনার ব্যাংকের তথ্য চায় না। তাদের আসল ওয়েবসাইট হলো irs.gov।"
+                },
+                {
+                  "title": "টাকার লোভ দেখিয়ে ব্যাংকের তথ্য চায়।",
+                  "detail": "রিফান্ডটা একটা টোপ। প্রতারক আসলে আপনার ব্যাংক অ্যাকাউন্ট নম্বরটাই চায়।"
+                },
+                {
+                  "title": "সময় খুব কম দেওয়া হয়।",
+                  "detail": "\"Within 3 days\" (৩ দিনের মধ্যে) আর \"cancelled\" (বাতিল) লেখা হয় আপনাকে তাড়াহুড়া করাতে।"
+                }
+              ],
+              "tip": "লিংকে ক্লিক করবেন না, উত্তরও দেবেন না। কোনো রিফান্ড আছে কি না, নিজে irs.gov-এ দেখুন, অথবা IRS-কে 1-800-829-1040 নম্বরে ফোন করুন।"
+            }
+          }
+        },
+        {
+          "id": "email-order-shipped",
+          "channel": "email",
+          "isScam": false,
+          "category": "Order you placed",
+          "sender": "ShopNow",
+          "senderAddress": "orders@shopnow.com",
+          "subject": "Your ShopNow order has shipped",
+          "time": "Today, 8:40 AM",
+          "context": "Yesterday you ordered reading glasses from ShopNow.",
+          "message": "Hello,\n\nGood news! Your order of 2 pairs of reading glasses has shipped and should arrive Thursday.\n\nTo track or change your order, open the ShopNow app or sign in at shopnow.com and go to Your Orders.\n\nThanks for shopping with us,\nShopNow",
+          "signs": [
+            {
+              "title": "It matches what you did.",
+              "detail": "You really did order reading glasses yesterday."
+            },
+            {
+              "title": "It comes from the store's own address.",
+              "detail": "The email ends in @shopnow.com, the store's real website."
+            },
+            {
+              "title": "It doesn't rush you or ask for anything.",
+              "detail": "No deadline and no payment. It tells you to use the app or website yourself."
+            }
+          ],
+          "tip": "When in doubt, don't click anything in the email. Open the ShopNow app, or type shopnow.com yourself, and check Your Orders.",
+          "translations": {
+            "es": {
+              "context": "Ayer usted pidió anteojos para leer en ShopNow.",
+              "subject": "Su pedido de ShopNow fue enviado",
+              "message": "Hola:\n\n¡Buenas noticias! Su pedido de 2 pares de anteojos para leer fue enviado y debería llegar el jueves.\n\nPara seguir o cambiar su pedido, abra la aplicación de ShopNow o inicie sesión en shopnow.com y vaya a Sus pedidos.\n\nGracias por comprar con nosotros,\nShopNow",
+              "signs": [
+                {
+                  "title": "Coincide con lo que usted hizo.",
+                  "detail": "Usted de verdad pidió anteojos para leer ayer."
+                },
+                {
+                  "title": "Viene de la dirección de la tienda.",
+                  "detail": "El correo termina en @shopnow.com, el sitio web real de la tienda."
+                },
+                {
+                  "title": "No le apura ni le pide nada.",
+                  "detail": "No hay plazo ni pago. Le indica usar usted mismo la aplicación o el sitio web."
+                }
+              ],
+              "tip": "Si tiene dudas, no haga clic en nada del correo. Abra la aplicación de ShopNow, o escriba usted mismo shopnow.com, y revise Sus pedidos."
+            },
+            "bn": {
+              "context": "গতকাল আপনি ShopNow থেকে পড়ার চশমা অর্ডার করেছেন।",
+              "subject": "আপনার ShopNow অর্ডার পাঠানো হয়েছে",
+              "message": "হ্যালো,\n\nসুখবর! আপনার ২ জোড়া পড়ার চশমার অর্ডার পাঠানো হয়েছে, বৃহস্পতিবার পৌঁছানোর কথা।\n\nঅর্ডার ট্র্যাক বা পরিবর্তন করতে ShopNow অ্যাপ খুলুন, অথবা shopnow.com-এ লগ ইন করে Your Orders-এ যান।\n\nআমাদের সাথে কেনাকাটার জন্য ধন্যবাদ,\nShopNow",
+              "signs": [
+                {
+                  "title": "আপনি যা করেছেন, তার সাথে মেলে।",
+                  "detail": "আপনি সত্যিই গতকাল পড়ার চশমা অর্ডার করেছেন।"
+                },
+                {
+                  "title": "এটি দোকানের নিজস্ব ঠিকানা থেকে এসেছে।",
+                  "detail": "ইমেইলটির শেষে আছে @shopnow.com, যা দোকানের আসল ওয়েবসাইট।"
+                },
+                {
+                  "title": "তাড়াহুড়া করায় না, কিছু চায়ও না।",
+                  "detail": "কোনো সময়সীমা বা টাকা চাওয়া নেই। নিজে অ্যাপ বা ওয়েবসাইটে যেতে বলে।"
+                }
+              ],
+              "tip": "সন্দেহ হলে ইমেইলের কোনো কিছুতে ক্লিক করবেন না। ShopNow অ্যাপ খুলুন, অথবা নিজে shopnow.com লিখে Your Orders দেখুন।"
+            }
+          }
+        },
+        {
+          "id": "email-bank-statement",
+          "channel": "email",
+          "isScam": false,
+          "category": "Bank notice",
+          "sender": "Capital One",
+          "senderAddress": "capitalone@notification.capitalone.com",
+          "subject": "Your statement is ready",
+          "time": "Monday, 7:00 AM",
+          "context": "You have a Capital One credit card.",
+          "message": "Your monthly statement for your card ending in 8205 is ready to view.\n\nTo see it, open the Capital One app or sign in at capitalone.com.\n\nFor your security, we will never ask for your password, PIN, or a one-time code by email.\n\nCapital One",
+          "signs": [
+            {
+              "title": "It's routine.",
+              "detail": "It's news you get every month."
+            },
+            {
+              "title": "It sends you to the app you already use.",
+              "detail": "It doesn't push you to a special link. You can open the app or type the website yourself."
+            },
+            {
+              "title": "It asks for nothing.",
+              "detail": "No password, no payment, and no personal details."
+            }
+          ],
+          "tip": "Open the Capital One app yourself, or call the number on the back of your card.",
+          "translations": {
+            "es": {
+              "context": "Usted tiene una tarjeta de crédito de Capital One.",
+              "subject": "Su estado de cuenta está listo",
+              "message": "Su estado de cuenta mensual de la tarjeta que termina en 8205 está listo.\n\nPara verlo, abra la aplicación de Capital One o inicie sesión en capitalone.com.\n\nPor su seguridad, nunca le pediremos por correo su contraseña, su PIN ni un código de un solo uso.\n\nCapital One",
+              "signs": [
+                {
+                  "title": "Es algo de rutina.",
+                  "detail": "Es un aviso que recibe cada mes."
+                },
+                {
+                  "title": "Le envía a la aplicación que ya usa.",
+                  "detail": "No le presiona a usar un enlace especial. Puede abrir la aplicación o escribir el sitio web usted mismo."
+                },
+                {
+                  "title": "No le pide nada.",
+                  "detail": "Ni contraseña, ni pagos, ni datos personales."
+                }
+              ],
+              "tip": "Abra usted mismo la aplicación de Capital One, o llame al número que aparece detrás de su tarjeta."
+            },
+            "bn": {
+              "context": "আপনার একটি Capital One ক্রেডিট কার্ড আছে।",
+              "subject": "আপনার স্টেটমেন্ট তৈরি",
+              "message": "8205 দিয়ে শেষ হওয়া আপনার কার্ডের মাসিক স্টেটমেন্ট দেখার জন্য তৈরি।\n\nদেখতে Capital One অ্যাপ খুলুন, অথবা capitalone.com-এ লগ ইন করুন।\n\nআপনার নিরাপত্তার জন্য আমরা কখনোই ইমেইলে আপনার পাসওয়ার্ড, পিন বা ওয়ান-টাইম কোড চাইব না।\n\nCapital One",
+              "signs": [
+                {
+                  "title": "এটি নিয়মিত বিষয়।",
+                  "detail": "এই খবর আপনি প্রতি মাসেই পান।"
+                },
+                {
+                  "title": "এটি আপনার চেনা অ্যাপে যেতে বলে।",
+                  "detail": "বিশেষ কোনো লিংকে চাপ দিতে জোর করে না। আপনি নিজে অ্যাপ খুলতে বা ওয়েবসাইট লিখতে পারেন।"
+                },
+                {
+                  "title": "এটি কিছুই চায় না।",
+                  "detail": "পাসওয়ার্ড, টাকা বা ব্যক্তিগত তথ্য কিছুই চাওয়া হয়নি।"
+                }
+              ],
+              "tip": "নিজে Capital One অ্যাপ খুলুন, অথবা কার্ডের পেছনে লেখা নম্বরে ফোন করুন।"
+            }
+          }
+        },
+        {
+          "id": "email-community-newsletter",
+          "channel": "email",
+          "isScam": false,
+          "category": "Newsletter you signed up for",
+          "sender": "Eastside Community Center",
+          "senderAddress": "news@eastsidecc.org",
+          "subject": "December classes and holiday hours",
+          "time": "Wednesday, 9:00 AM",
+          "context": "You take a class at Eastside Community Center and signed up for its emails.",
+          "message": "Hello neighbors,\n\nHere's what's happening in December:\n• Chair yoga: Mondays and Wednesdays, 10 AM\n• Computer help: Thursdays, 1 PM (bring your phone or tablet)\n• Holiday lunch: Friday, December 18, at noon\n\nThe center will be closed December 24 and 25.\n\nSee you soon,\nLinda Park, Director\n\nTo stop getting these emails, reply UNSUBSCRIBE.",
+          "signs": [
+            {
+              "title": "You signed up for it.",
+              "detail": "You asked the center to send you emails."
+            },
+            {
+              "title": "It asks for nothing.",
+              "detail": "No money, no passwords, and no link you have to click."
+            },
+            {
+              "title": "It comes from the center's own address.",
+              "detail": "It's from news@eastsidecc.org, not a free Gmail account that anyone could open."
+            }
+          ],
+          "tip": "If something in a newsletter surprises you, call the center using a number you already have.",
+          "translations": {
+            "es": {
+              "context": "Usted toma una clase en Eastside Community Center y se inscribió para recibir sus correos.",
+              "subject": "Clases de diciembre y horario de fiestas",
+              "message": "Hola, vecinos:\n\nEsto es lo que habrá en diciembre:\n• Yoga en silla: lunes y miércoles, 10 AM\n• Ayuda con la computadora: jueves, 1 PM (traiga su teléfono o tableta)\n• Almuerzo de fiestas: viernes 18 de diciembre, al mediodía\n\nEl centro estará cerrado el 24 y el 25 de diciembre.\n\nHasta pronto,\nLinda Park, directora\n\nPara dejar de recibir estos correos, responda UNSUBSCRIBE.",
+              "signs": [
+                {
+                  "title": "Usted se inscribió.",
+                  "detail": "Usted le pidió al centro que le enviara correos."
+                },
+                {
+                  "title": "No le pide nada.",
+                  "detail": "Ni dinero, ni contraseñas, ni un enlace en el que tenga que hacer clic."
+                },
+                {
+                  "title": "Viene de la dirección del centro.",
+                  "detail": "Viene de news@eastsidecc.org, no de una cuenta gratuita de Gmail que cualquiera puede abrir."
+                }
+              ],
+              "tip": "Si algo de un boletín le sorprende, llame al centro a un número que ya tenga."
+            },
+            "bn": {
+              "context": "আপনি Eastside Community Center-এ একটি ক্লাস করেন এবং তাদের ইমেইল পেতে সাইন আপ করেছেন।",
+              "subject": "ডিসেম্বরের ক্লাস ও ছুটির সময়সূচি",
+              "message": "প্রিয় প্রতিবেশীরা,\n\nডিসেম্বরে যা যা হচ্ছে:\n• চেয়ার যোগব্যায়াম: সোম ও বুধবার, সকাল ১০টা\n• কম্পিউটার সাহায্য: বৃহস্পতিবার, দুপুর ১টা (আপনার ফোন বা ট্যাবলেট সাথে আনুন)\n• ছুটির দুপুরের খাবার: শুক্রবার, ১৮ ডিসেম্বর, দুপুর ১২টা\n\n২৪ ও ২৫ ডিসেম্বর সেন্টার বন্ধ থাকবে।\n\nশিগগিরই দেখা হবে,\nLinda Park, পরিচালক\n\nএই ইমেইল আর না পেতে চাইলে UNSUBSCRIBE লিখে উত্তর দিন।",
+              "signs": [
+                {
+                  "title": "আপনি এর জন্য সাইন আপ করেছেন।",
+                  "detail": "আপনি নিজেই সেন্টারকে ইমেইল পাঠাতে বলেছেন।"
+                },
+                {
+                  "title": "এটি কিছুই চায় না।",
+                  "detail": "টাকা, পাসওয়ার্ড বা জরুরি কোনো লিংক কিছুই নেই।"
+                },
+                {
+                  "title": "এটি সেন্টারের নিজস্ব ঠিকানা থেকে এসেছে।",
+                  "detail": "এটি এসেছে news@eastsidecc.org থেকে, যে কেউ খুলতে পারে এমন বিনামূল্যের Gmail অ্যাকাউন্ট থেকে নয়।"
+                }
+              ],
+              "tip": "নিউজলেটারের কোনো কিছু অবাক লাগলে, আগে থেকে থাকা নম্বরে সেন্টারে ফোন করুন।"
+            }
+          }
+        },
+        {
+          "id": "email-patient-portal",
+          "channel": "email",
+          "isScam": false,
+          "category": "Doctor's office notice",
+          "sender": "Dr. Patel's Office",
+          "senderAddress": "portal@patelfamilymedicine.com",
+          "subject": "You have a new message",
+          "time": "Today, 3:15 PM",
+          "context": "You had a checkup with Dr. Patel last week and use the office's patient portal.",
+          "message": "You have a new message from your care team in your patient portal.\n\nFor your privacy, we don't include health details in email. To read it, sign in to the patient portal the way you usually do.\n\nPlease do not reply to this email.\nDr. Patel's Office",
+          "signs": [
+            {
+              "title": "It matches something real.",
+              "detail": "You saw Dr. Patel last week, so a message from the office makes sense."
+            },
+            {
+              "title": "It keeps the details private.",
+              "detail": "Real offices don't put health information in an email."
+            },
+            {
+              "title": "It sends you to sign in yourself.",
+              "detail": "It asks you to use the portal the way you usually do, not a new link or form."
+            }
+          ],
+          "tip": "Sign in to the portal the way you usually do, or call the office using the number on your appointment card.",
+          "translations": {
+            "es": {
+              "context": "La semana pasada tuvo un chequeo con el Dr. Patel y usa el portal de pacientes del consultorio.",
+              "subject": "Tiene un mensaje nuevo",
+              "message": "Tiene un mensaje nuevo de su equipo médico en su portal de pacientes.\n\nPor su privacidad, no incluimos detalles de salud en el correo. Para leerlo, inicie sesión en el portal de pacientes como lo hace normalmente.\n\nPor favor, no responda a este correo.\nConsultorio del Dr. Patel",
+              "signs": [
+                {
+                  "title": "Coincide con algo real.",
+                  "detail": "Usted vio al Dr. Patel la semana pasada, así que un mensaje del consultorio tiene sentido."
+                },
+                {
+                  "title": "Mantiene los detalles en privado.",
+                  "detail": "Los consultorios reales no ponen información de salud en un correo."
+                },
+                {
+                  "title": "Le pide entrar usted mismo.",
+                  "detail": "Le pide usar el portal como lo hace siempre, no un enlace ni un formulario nuevo."
+                }
+              ],
+              "tip": "Inicie sesión en el portal como lo hace normalmente, o llame al consultorio al número de su tarjeta de citas."
+            },
+            "bn": {
+              "context": "গত সপ্তাহে আপনি Dr. Patel-এর কাছে চেকআপ করিয়েছেন এবং তাঁর অফিসের পেশেন্ট পোর্টাল ব্যবহার করেন।",
+              "subject": "আপনার একটি নতুন মেসেজ আছে",
+              "message": "আপনার পেশেন্ট পোর্টালে চিকিৎসা দলের কাছ থেকে একটি নতুন মেসেজ এসেছে।\n\nআপনার গোপনীয়তার জন্য আমরা ইমেইলে স্বাস্থ্যের তথ্য দিই না। পড়তে হলে যেভাবে সাধারণত করেন, সেভাবে পেশেন্ট পোর্টালে লগ ইন করুন।\n\nঅনুগ্রহ করে এই ইমেইলের উত্তর দেবেন না।\nDr. Patel-এর অফিস",
+              "signs": [
+                {
+                  "title": "এটি বাস্তব ঘটনার সাথে মেলে।",
+                  "detail": "গত সপ্তাহে আপনি Dr. Patel-কে দেখিয়েছেন, তাই অফিস থেকে মেসেজ আসাটা স্বাভাবিক।"
+                },
+                {
+                  "title": "এটি তথ্য গোপন রাখে।",
+                  "detail": "আসল ডাক্তারের অফিস ইমেইলে স্বাস্থ্যের তথ্য লেখে না।"
+                },
+                {
+                  "title": "এটি আপনাকে নিজে লগ ইন করতে বলে।",
+                  "detail": "নতুন কোনো লিংক বা ফর্ম নয়, যেভাবে সবসময় পোর্টাল ব্যবহার করেন সেভাবেই যেতে বলে।"
+                }
+              ],
+              "tip": "যেভাবে সাধারণত করেন সেভাবে পোর্টালে লগ ইন করুন, অথবা অ্যাপয়েন্টমেন্ট কার্ডে লেখা নম্বরে অফিসে ফোন করুন।"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "calls",
+      "channel": "call",
+      "scenarios": [
+        {
+          "id": "call-grandchild-accident",
+          "channel": "call",
+          "isScam": true,
+          "category": "Family emergency call",
+          "sender": "(555) 203-8841",
+          "time": "Today, 8:47 PM",
+          "message": "Caller: Grandma? It's me. I'm so sorry. I was in a car accident and the police took my phone. Please don't tell Mom and Dad. They'll be so mad.\n\nSecond voice: Hello, ma'am. I'm the lawyer helping your grandson. He needs $2,000 for bail tonight. A courier will come to your home in one hour to pick up the cash. Please don't discuss this with anyone. It could hurt his case.",
+          "signs": [
+            {
+              "title": "It's an emergency.",
+              "detail": "Panic makes it hard to think, and that's what the caller wants."
+            },
+            {
+              "title": "It asks for secrecy and cash.",
+              "detail": "\"Don't tell Mom\" and a courier picking up cash are big warning signs. Real lawyers and courts don't send someone to your home to collect cash."
+            },
+            {
+              "title": "The voice can be faked.",
+              "detail": "Scammers can copy a voice with AI from a short video online, so a voice that sounds like family isn't proof."
+            }
+          ],
+          "tip": "Hang up. Call your grandchild, or their parents, using a number you already have. Many families agree on a code word to ask for in an emergency.",
+          "translations": {
+            "es": {
+              "message": "Persona que llama: ¿Abuela? Soy yo. Lo siento mucho. Tuve un accidente de carro y la policía me quitó el teléfono. Por favor, no les digas a mamá y papá. Se van a enojar mucho.\n\nOtra voz: Hola, señora. Soy el abogado que está ayudando a su nieto. Necesita $2,000 para la fianza esta noche. Un mensajero irá a su casa en una hora a recoger el efectivo. Por favor, no hable de esto con nadie. Podría perjudicar su caso.",
+              "signs": [
+                {
+                  "title": "Es una emergencia.",
+                  "detail": "El pánico no le deja pensar, y eso es lo que quiere quien llama."
+                },
+                {
+                  "title": "Pide secreto y efectivo.",
+                  "detail": "\"No les digas a mamá\" y un mensajero que recoge efectivo son grandes señales de alerta. Los abogados y tribunales reales no mandan a nadie a su casa a recoger dinero."
+                },
+                {
+                  "title": "La voz se puede imitar.",
+                  "detail": "Los estafadores pueden copiar una voz con inteligencia artificial a partir de un video corto en internet. Que la voz suene como un familiar no es prueba."
+                }
+              ],
+              "tip": "Cuelgue. Llame a su nieto, o a sus padres, a un número que ya tenga. Muchas familias acuerdan una palabra clave para pedirla en una emergencia."
+            },
+            "bn": {
+              "message": "যিনি ফোন করেছেন: দাদি? আমি বলছি। খুব দুঃখিত। আমার গাড়ি দুর্ঘটনা হয়েছে, পুলিশ আমার ফোন নিয়ে গেছে। প্লিজ আম্মু-আব্বুকে বোলো না। ওরা খুব রেগে যাবে।\n\nআরেকজনের কণ্ঠ: হ্যালো, ম্যাডাম। আমি আপনার নাতির উকিল। আজ রাতে জামিনের জন্য তার ২,০০০ ডলার লাগবে। এক ঘণ্টার মধ্যে একজন লোক আপনার বাসায় গিয়ে নগদ টাকা নিয়ে আসবে। দয়া করে কাউকে কিছু বলবেন না। এতে তার মামলার ক্ষতি হতে পারে।",
+              "signs": [
+                {
+                  "title": "এটি একটি জরুরি অবস্থা।",
+                  "detail": "আতঙ্কে মাথা ঠিকমতো কাজ করে না, আর ফোনকারী ঠিক সেটাই চায়।"
+                },
+                {
+                  "title": "এটি গোপন রাখতে বলে আর নগদ টাকা চায়।",
+                  "detail": "\"আম্মুকে বোলো না\" আর লোক পাঠিয়ে নগদ টাকা নেওয়া বড় বিপদের সংকেত। আসল উকিল বা আদালত টাকা নিতে কাউকে বাসায় পাঠায় না।"
+                },
+                {
+                  "title": "কণ্ঠ নকল করা যায়।",
+                  "detail": "প্রতারকরা অনলাইনের ছোট একটি ভিডিও থেকে AI দিয়ে কারও কণ্ঠ নকল করতে পারে। তাই পরিবারের কারও মতো শোনালেই সেটা প্রমাণ নয়।"
+                }
+              ],
+              "tip": "ফোন রেখে দিন। আগে থেকে থাকা নম্বরে আপনার নাতি-নাতনি বা তাদের বাবা-মাকে ফোন করুন। অনেক পরিবার জরুরি অবস্থার জন্য একটি গোপন শব্দ ঠিক করে রাখে, যা ফোনে জিজ্ঞেস করা যায়।"
+            }
+          }
+        },
+        {
+          "id": "call-bank-code",
+          "channel": "call",
+          "isScam": true,
+          "category": "Fake bank fraud call",
+          "sender": "Chase",
+          "time": "Today, 4:12 PM",
+          "message": "Caller: Hi, this is Mark from the Chase fraud department. We just stopped a $950 purchase at an electronics store on your debit card. Did you make that purchase?\n\nYou: No.\n\nCaller: Okay, I'm going to block it for you. To confirm you're the account holder, I just sent a code to your phone. Please read me that code.",
+          "signs": [
+            {
+              "title": "Caller ID can be faked.",
+              "detail": "Seeing \"Chase\" on your screen doesn't prove the bank is calling."
+            },
+            {
+              "title": "It asks for your code.",
+              "detail": "Chase will never ask you for a one-time code. The scammer uses it to get into your account."
+            },
+            {
+              "title": "It scares you first.",
+              "detail": "A big fake charge gets you worried, so reading the code feels like you're helping."
+            }
+          ],
+          "tip": "Hang up, even if the caller sounds real. Call the number on the back of your card and ask if there's a problem.",
+          "translations": {
+            "es": {
+              "message": "Persona que llama: Hola, habla Mark del departamento de fraudes de Chase. Acabamos de detener una compra de $950 en una tienda de electrónica con su tarjeta de débito. ¿Hizo usted esa compra?\n\nUsted: No.\n\nPersona que llama: Bien, se la voy a bloquear. Para confirmar que usted es el titular de la cuenta, le acabo de enviar un código a su teléfono. Por favor, léame ese código.",
+              "signs": [
+                {
+                  "title": "El identificador de llamadas se puede falsificar.",
+                  "detail": "Ver \"Chase\" en su pantalla no prueba que sea el banco quien llama."
+                },
+                {
+                  "title": "Le pide su código.",
+                  "detail": "Chase nunca le pedirá un código de un solo uso. El estafador lo usa para entrar a su cuenta."
+                },
+                {
+                  "title": "Primero le asusta.",
+                  "detail": "Un cobro falso y grande le preocupa, y así leer el código parece una forma de ayudar."
+                }
+              ],
+              "tip": "Cuelgue, aunque la persona suene real. Llame al número que aparece detrás de su tarjeta y pregunte si hay algún problema."
+            },
+            "bn": {
+              "message": "যিনি ফোন করেছেন: হাই, আমি Chase-এর জালিয়াতি বিভাগ থেকে Mark বলছি। একটু আগে আপনার ডেবিট কার্ড দিয়ে একটি ইলেকট্রনিকসের দোকানে ৯৫০ ডলারের কেনাকাটা আমরা আটকেছি। কেনাকাটাটা কি আপনি করেছেন?\n\nআপনি: না।\n\nযিনি ফোন করেছেন: ঠিক আছে, আমি এটা বন্ধ করে দিচ্ছি। আপনিই যে অ্যাকাউন্টের মালিক তা নিশ্চিত করতে আপনার ফোনে একটা কোড পাঠিয়েছি। কোডটা আমাকে পড়ে শোনান।",
+              "signs": [
+                {
+                  "title": "কলার আইডি নকল করা যায়।",
+                  "detail": "স্ক্রিনে \"Chase\" লেখা দেখলেই প্রমাণ হয় না যে ব্যাংক ফোন করেছে।"
+                },
+                {
+                  "title": "এটি আপনার কোড চায়।",
+                  "detail": "Chase কখনোই আপনার কাছে ওয়ান-টাইম কোড চায় না। প্রতারক কোডটি দিয়ে আপনার অ্যাকাউন্টে ঢুকে পড়ে।"
+                },
+                {
+                  "title": "আগে ভয় দেখায়।",
+                  "detail": "বড় একটি ভুয়া চার্জের কথা শুনে আপনি চিন্তায় পড়েন, তখন কোড পড়ে শোনানোকে সাহায্য করা বলে মনে হয়।"
+                }
+              ],
+              "tip": "ফোন রেখে দিন, ফোনকারীকে যতই আসল মনে হোক। কার্ডের পেছনে লেখা নম্বরে ফোন করে জিজ্ঞেস করুন কোনো সমস্যা আছে কি না।"
+            }
+          }
+        },
+        {
+          "id": "call-tech-support",
+          "channel": "call",
+          "isScam": true,
+          "category": "Fake tech support call",
+          "sender": "(555) 640-1187",
+          "time": "Today, 11:20 AM",
+          "message": "Caller: Hello, this is David from the computer security department. Our system shows your computer has been sending us error messages, and it has a dangerous virus. Hackers can see your bank information right now. Please go to your computer. I'll help you install a free program so I can connect to it and fix the problem.",
+          "signs": [
+            {
+              "title": "You didn't ask for help.",
+              "detail": "Real tech companies don't call you about a virus on your computer."
+            },
+            {
+              "title": "It scares you.",
+              "detail": "\"Hackers can see your bank information\" is meant to frighten you into following directions."
+            },
+            {
+              "title": "It wants into your computer.",
+              "detail": "The \"free program\" lets the scammer control your computer and see your accounts."
+            }
+          ],
+          "tip": "Hang up. Never let a caller connect to your computer. If you're worried about a virus, ask a family member or a store you trust to look at it.",
+          "translations": {
+            "es": {
+              "message": "Persona que llama: Hola, habla David del departamento de seguridad informática. Nuestro sistema muestra que su computadora nos ha estado enviando mensajes de error y que tiene un virus peligroso. Ahora mismo, unos hackers pueden ver su información bancaria. Por favor, vaya a su computadora. Le ayudaré a instalar un programa gratuito para que yo pueda conectarme y arreglar el problema.",
+              "signs": [
+                {
+                  "title": "Usted no pidió ayuda.",
+                  "detail": "Las empresas de tecnología reales no le llaman por un virus en su computadora."
+                },
+                {
+                  "title": "Le asusta.",
+                  "detail": "\"Unos hackers pueden ver su información bancaria\" busca asustarle para que siga las instrucciones."
+                },
+                {
+                  "title": "Quiere entrar a su computadora.",
+                  "detail": "El \"programa gratuito\" le permite al estafador controlar su computadora y ver sus cuentas."
+                }
+              ],
+              "tip": "Cuelgue. Nunca deje que alguien que le llamó se conecte a su computadora. Si le preocupa un virus, pida a un familiar o a una tienda de confianza que la revise."
+            },
+            "bn": {
+              "message": "যিনি ফোন করেছেন: হ্যালো, আমি কম্পিউটার নিরাপত্তা বিভাগ থেকে David বলছি। আমাদের সিস্টেম দেখাচ্ছে আপনার কম্পিউটার থেকে আমাদের কাছে এরর মেসেজ আসছে, আর এতে একটা বিপজ্জনক ভাইরাস আছে। হ্যাকাররা এই মুহূর্তে আপনার ব্যাংকের তথ্য দেখতে পাচ্ছে। দয়া করে কম্পিউটারের কাছে যান। আমি একটা ফ্রি প্রোগ্রাম ইনস্টল করতে সাহায্য করব, যাতে আমি কম্পিউটারে ঢুকে সমস্যাটা ঠিক করতে পারি।",
+              "signs": [
+                {
+                  "title": "আপনি সাহায্য চাননি।",
+                  "detail": "আসল টেক কোম্পানি কম্পিউটারে ভাইরাসের কথা বলে আপনাকে ফোন করে না।"
+                },
+                {
+                  "title": "এটি ভয় দেখায়।",
+                  "detail": "\"হ্যাকাররা আপনার ব্যাংকের তথ্য দেখতে পাচ্ছে\" বলা হয় ভয় দেখিয়ে নির্দেশ মানাতে।"
+                },
+                {
+                  "title": "এটি আপনার কম্পিউটারে ঢুকতে চায়।",
+                  "detail": "\"ফ্রি প্রোগ্রাম\"টি দিয়ে প্রতারক আপনার কম্পিউটার নিয়ন্ত্রণ করে আপনার অ্যাকাউন্টগুলো দেখতে পারে।"
+                }
+              ],
+              "tip": "ফোন রেখে দিন। যে আপনাকে ফোন করেছে, তাকে কখনোই কম্পিউটারে ঢুকতে দেবেন না। ভাইরাস নিয়ে চিন্তা হলে পরিবারের কাউকে বা বিশ্বস্ত কোনো দোকানে দেখিয়ে নিন।"
+            }
+          }
+        },
+        {
+          "id": "call-social-security",
+          "channel": "call",
+          "isScam": true,
+          "category": "Fake government robocall",
+          "sender": "(555) 772-0390",
+          "time": "Thursday, 1:05 PM",
+          "message": "Recorded voice: This is an urgent message from the Social Security Administration. Your Social Security number has been suspended because of suspicious activity, and a warrant has been issued for your arrest. To speak with an officer and resolve this today, press 1 now.",
+          "signs": [
+            {
+              "title": "It threatens you.",
+              "detail": "Arrest and a \"suspended\" number are scary on purpose. Social Security numbers don't get suspended."
+            },
+            {
+              "title": "It pretends to be the government.",
+              "detail": "Social Security won't call to threaten you with arrest or demand money."
+            },
+            {
+              "title": "It wants you to press 1.",
+              "detail": "Pressing 1 connects you to a scammer, who will ask for your number or for money."
+            }
+          ],
+          "tip": "Hang up without pressing anything. If you're worried, call Social Security yourself at 1-800-772-1213.",
+          "translations": {
+            "es": {
+              "message": "Voz grabada: Este es un mensaje urgente de la Administración del Seguro Social. Su número de Seguro Social ha sido suspendido por actividad sospechosa, y se ha emitido una orden de arresto contra usted. Para hablar con un agente y resolverlo hoy, oprima 1 ahora.",
+              "signs": [
+                {
+                  "title": "Le amenaza.",
+                  "detail": "El arresto y un número \"suspendido\" asustan a propósito. Los números de Seguro Social no se suspenden."
+                },
+                {
+                  "title": "Finge ser del gobierno.",
+                  "detail": "El Seguro Social no le llamará para amenazarle con arrestarle ni para exigirle dinero."
+                },
+                {
+                  "title": "Quiere que oprima 1.",
+                  "detail": "Al oprimir 1, le conectan con un estafador que le pedirá su número o dinero."
+                }
+              ],
+              "tip": "Cuelgue sin oprimir nada. Si le preocupa, llame usted mismo al Seguro Social al 1-800-772-1213."
+            },
+            "bn": {
+              "message": "রেকর্ড করা কণ্ঠ: এটি সোশ্যাল সিকিউরিটি অ্যাডমিনিস্ট্রেশন থেকে একটি জরুরি বার্তা। সন্দেহজনক কার্যকলাপের কারণে আপনার সোশ্যাল সিকিউরিটি নম্বর স্থগিত করা হয়েছে, এবং আপনার বিরুদ্ধে গ্রেপ্তারি পরোয়ানা জারি হয়েছে। একজন কর্মকর্তার সাথে কথা বলে আজই এর সমাধান করতে এখনই ১ চাপুন।",
+              "signs": [
+                {
+                  "title": "এটি হুমকি দেয়।",
+                  "detail": "গ্রেপ্তার আর \"স্থগিত\" নম্বরের কথা ইচ্ছা করেই ভয় দেখাতে বলা হয়। সোশ্যাল সিকিউরিটি নম্বর স্থগিত হয় না।"
+                },
+                {
+                  "title": "এটি সরকার সেজে আসে।",
+                  "detail": "সোশ্যাল সিকিউরিটি ফোন করে গ্রেপ্তারের হুমকি দেয় না, টাকাও দাবি করে না।"
+                },
+                {
+                  "title": "এটি আপনাকে ১ চাপতে বলে।",
+                  "detail": "১ চাপলে আপনি একজন প্রতারকের সাথে যুক্ত হবেন, যে আপনার নম্বর বা টাকা চাইবে।"
+                }
+              ],
+              "tip": "কিছু না চেপে ফোন রেখে দিন। চিন্তা হলে নিজে সোশ্যাল সিকিউরিটিতে 1-800-772-1213 নম্বরে ফোন করুন।"
+            }
+          }
+        },
+        {
+          "id": "call-pharmacy-ready",
+          "channel": "call",
+          "isScam": false,
+          "category": "Pharmacy notice",
+          "sender": "Walgreens",
+          "time": "Today, 10:30 AM",
+          "context": "You get your prescriptions at Walgreens.",
+          "message": "Recorded voice: Hello, this is Walgreens Pharmacy calling with a message for you. Your prescription is ready for pickup at your Main Street store. No action is needed. Thank you for choosing Walgreens.",
+          "signs": [
+            {
+              "title": "It matches something you expect.",
+              "detail": "You know when you have a prescription waiting."
+            },
+            {
+              "title": "It asks for nothing.",
+              "detail": "No payment, no personal information, and no button to press."
+            },
+            {
+              "title": "There's no pressure.",
+              "detail": "It says no action is needed. You can pick it up whenever you like."
+            }
+          ],
+          "tip": "If you're unsure, call the pharmacy using the number on your prescription bottle.",
+          "translations": {
+            "es": {
+              "context": "Usted recoge sus medicamentos recetados en Walgreens.",
+              "message": "Voz grabada: Hola, le llama la farmacia Walgreens con un mensaje para usted. Su medicamento recetado está listo para recoger en su tienda de Main Street. No necesita hacer nada. Gracias por elegir Walgreens.",
+              "signs": [
+                {
+                  "title": "Coincide con algo que espera.",
+                  "detail": "Usted sabe cuándo tiene una receta pendiente."
+                },
+                {
+                  "title": "No le pide nada.",
+                  "detail": "Ni pagos, ni datos personales, ni que oprima ningún botón."
+                },
+                {
+                  "title": "No hay presión.",
+                  "detail": "Dice que no necesita hacer nada. Puede recogerlo cuando quiera."
+                }
+              ],
+              "tip": "Si tiene dudas, llame a la farmacia al número que aparece en el frasco de su medicamento."
+            },
+            "bn": {
+              "context": "আপনি Walgreens থেকে প্রেসক্রিপশনের ওষুধ নেন।",
+              "message": "রেকর্ড করা কণ্ঠ: হ্যালো, Walgreens ফার্মেসি থেকে আপনার জন্য একটি বার্তা। আপনার প্রেসক্রিপশনের ওষুধ Main Street-এর দোকানে নেওয়ার জন্য তৈরি। আপনাকে কিছু করতে হবে না। Walgreens বেছে নেওয়ার জন্য ধন্যবাদ।",
+              "signs": [
+                {
+                  "title": "আপনি যা আশা করছেন, তার সাথে মেলে।",
+                  "detail": "কখন আপনার ওষুধ অপেক্ষা করছে, তা আপনি জানেন।"
+                },
+                {
+                  "title": "এটি কিছুই চায় না।",
+                  "detail": "টাকা, ব্যক্তিগত তথ্য বা কোনো বোতাম চাপার কথা নেই।"
+                },
+                {
+                  "title": "কোনো চাপ নেই।",
+                  "detail": "বলা হয়েছে কিছু করতে হবে না। যখন খুশি গিয়ে ওষুধ নিতে পারেন।"
+                }
+              ],
+              "tip": "সন্দেহ হলে ওষুধের বোতলে লেখা নম্বরে ফার্মেসিতে ফোন করুন।"
+            }
+          }
+        },
+        {
+          "id": "call-doctor-confirm",
+          "channel": "call",
+          "isScam": false,
+          "category": "Appointment reminder",
+          "sender": "Dr. Patel's Office",
+          "time": "Monday, 9:15 AM",
+          "context": "You have an appointment with Dr. Patel on Tuesday at 10 AM.",
+          "message": "Caller: Hi, this is Maria from Dr. Patel's office. I'm calling to confirm your appointment this Tuesday at 10 AM. If you need to reschedule, please call us at the number on your appointment card. See you Tuesday!",
+          "signs": [
+            {
+              "title": "It matches something real.",
+              "detail": "You really do have an appointment on Tuesday at 10."
+            },
+            {
+              "title": "It asks for no information.",
+              "detail": "No birth date, insurance number, or payment."
+            },
+            {
+              "title": "It points to a number you already have.",
+              "detail": "It tells you to use the number on your appointment card, not a new number."
+            }
+          ],
+          "tip": "If you're unsure, call the office using the number on your appointment card.",
+          "translations": {
+            "es": {
+              "context": "Usted tiene una cita con el Dr. Patel el martes a las 10 AM.",
+              "message": "Persona que llama: Hola, habla María del consultorio del Dr. Patel. Le llamo para confirmar su cita de este martes a las 10 AM. Si necesita cambiarla, llámenos al número de su tarjeta de citas. ¡Nos vemos el martes!",
+              "signs": [
+                {
+                  "title": "Coincide con algo real.",
+                  "detail": "Usted de verdad tiene una cita el martes a las 10."
+                },
+                {
+                  "title": "No le pide información.",
+                  "detail": "Ni fecha de nacimiento, ni número de seguro, ni pagos."
+                },
+                {
+                  "title": "Le indica un número que ya tiene.",
+                  "detail": "Le pide usar el número de su tarjeta de citas, no un número nuevo."
+                }
+              ],
+              "tip": "Si tiene dudas, llame al consultorio al número de su tarjeta de citas."
+            },
+            "bn": {
+              "context": "মঙ্গলবার সকাল ১০টায় Dr. Patel-এর সাথে আপনার অ্যাপয়েন্টমেন্ট আছে।",
+              "message": "যিনি ফোন করেছেন: হাই, আমি Dr. Patel-এর অফিস থেকে Maria বলছি। এই মঙ্গলবার সকাল ১০টায় আপনার অ্যাপয়েন্টমেন্ট নিশ্চিত করতে ফোন করেছি। সময় বদলাতে চাইলে আপনার অ্যাপয়েন্টমেন্ট কার্ডে লেখা নম্বরে আমাদের ফোন করুন। মঙ্গলবার দেখা হবে!",
+              "signs": [
+                {
+                  "title": "এটি বাস্তব ঘটনার সাথে মেলে।",
+                  "detail": "সত্যিই মঙ্গলবার ১০টায় আপনার অ্যাপয়েন্টমেন্ট আছে।"
+                },
+                {
+                  "title": "কোনো তথ্য চায় না।",
+                  "detail": "জন্মতারিখ, ইন্স্যুরেন্স নম্বর বা টাকা কিছুই চাওয়া হয়নি।"
+                },
+                {
+                  "title": "চেনা নম্বরে যোগাযোগ করতে বলে।",
+                  "detail": "নতুন কোনো নম্বর নয়, অ্যাপয়েন্টমেন্ট কার্ডে লেখা নম্বরটি ব্যবহার করতে বলে।"
+                }
+              ],
+              "tip": "সন্দেহ হলে অ্যাপয়েন্টমেন্ট কার্ডে লেখা নম্বরে অফিসে ফোন করুন।"
+            }
+          }
+        },
+        {
+          "id": "call-bank-alert",
+          "channel": "call",
+          "isScam": false,
+          "category": "Real fraud alert",
+          "sender": "Chase",
+          "time": "Today, 2:48 PM",
+          "context": "You just bought groceries at Corner Market with your Chase debit card.",
+          "message": "Recorded voice: This is Chase calling about possible fraud on your debit card ending in 4417. Did you make a purchase of $54.20 at Corner Market today? Press 1 if yes. Press 2 if no. Chase will never ask for your PIN, your password, or a one-time code.",
+          "signs": [
+            {
+              "title": "It matches what you just did.",
+              "detail": "You really did buy groceries at Corner Market."
+            },
+            {
+              "title": "It only asks yes or no.",
+              "detail": "No codes, no passwords, and no account numbers."
+            },
+            {
+              "title": "It tells you what the bank won't ask for.",
+              "detail": "Real alerts remind you never to share your PIN, password, or codes."
+            }
+          ],
+          "tip": "Answering yes or no is fine here. If you're ever unsure, hang up and call the number on the back of your card. A real alert will be on record.",
+          "translations": {
+            "es": {
+              "context": "Usted acaba de comprar comida en Corner Market con su tarjeta de débito de Chase.",
+              "message": "Voz grabada: Le llama Chase por un posible fraude en su tarjeta de débito que termina en 4417. ¿Hizo usted una compra de $54.20 en Corner Market hoy? Oprima 1 si la respuesta es sí. Oprima 2 si es no. Chase nunca le pedirá su PIN, su contraseña ni un código de un solo uso.",
+              "signs": [
+                {
+                  "title": "Coincide con lo que acaba de hacer.",
+                  "detail": "Usted de verdad compró comida en Corner Market."
+                },
+                {
+                  "title": "Solo pregunta sí o no.",
+                  "detail": "Ni códigos, ni contraseñas, ni números de cuenta."
+                },
+                {
+                  "title": "Le dice lo que el banco no le pedirá.",
+                  "detail": "Las alertas reales le recuerdan que nunca comparta su PIN, contraseña ni códigos."
+                }
+              ],
+              "tip": "Aquí está bien responder sí o no. Si alguna vez tiene dudas, cuelgue y llame al número que aparece detrás de su tarjeta. Una alerta real quedará registrada."
+            },
+            "bn": {
+              "context": "একটু আগে আপনি Chase ডেবিট কার্ড দিয়ে Corner Market থেকে বাজার করেছেন।",
+              "message": "রেকর্ড করা কণ্ঠ: Chase থেকে ফোন করা হচ্ছে, 4417 দিয়ে শেষ হওয়া আপনার ডেবিট কার্ডে সম্ভাব্য জালিয়াতির বিষয়ে। আজ কি আপনি Corner Market-এ ৫৪.২০ ডলারের কেনাকাটা করেছেন? হ্যাঁ হলে ১ চাপুন। না হলে ২ চাপুন। Chase কখনোই আপনার পিন, পাসওয়ার্ড বা ওয়ান-টাইম কোড চাইবে না।",
+              "signs": [
+                {
+                  "title": "আপনি এইমাত্র যা করেছেন, তার সাথে মেলে।",
+                  "detail": "আপনি সত্যিই Corner Market থেকে বাজার করেছেন।"
+                },
+                {
+                  "title": "শুধু হ্যাঁ বা না জানতে চায়।",
+                  "detail": "কোনো কোড, পাসওয়ার্ড বা অ্যাকাউন্ট নম্বর চাওয়া হয়নি।"
+                },
+                {
+                  "title": "ব্যাংক কী চাইবে না, তা মনে করিয়ে দেয়।",
+                  "detail": "আসল সতর্কবার্তা মনে করিয়ে দেয় যে পিন, পাসওয়ার্ড বা কোড কখনো কাউকে দেবেন না।"
+                }
+              ],
+              "tip": "এখানে হ্যাঁ বা না চাপা ঠিক আছে। কখনো সন্দেহ হলে ফোন রেখে কার্ডের পেছনে লেখা নম্বরে ফোন করুন। আসল সতর্কবার্তা হলে সেটা তাদের রেকর্ডে থাকবে।"
+            }
+          }
+        },
+        {
+          "id": "call-daughter-store",
+          "channel": "call",
+          "isScam": false,
+          "category": "Family member",
+          "sender": "Maya",
+          "time": "Today, 5:30 PM",
+          "context": "Maya is your daughter. Her number is saved in your phone's contacts.",
+          "message": "Caller: Hi Mom, it's Maya. I'm at the grocery store. Do you still need milk and eggs? I can drop them off on my way home. Call me back when you get a chance.",
+          "signs": [
+            {
+              "title": "It's her saved number.",
+              "detail": "The call comes from the number you have saved for Maya."
+            },
+            {
+              "title": "It's an everyday errand.",
+              "detail": "Picking up groceries is a normal thing for her to offer."
+            },
+            {
+              "title": "It doesn't ask for money or secrets.",
+              "detail": "No emergency, no payment, and no \"don't tell anyone.\""
+            }
+          ],
+          "tip": "If a call from a family member ever feels wrong, hang up and call them back on the number you have saved.",
+          "translations": {
+            "es": {
+              "context": "Maya es su hija. Su número está guardado en los contactos de su teléfono.",
+              "message": "Persona que llama: Hola, mamá, soy Maya. Estoy en el supermercado. ¿Todavía necesitas leche y huevos? Te los puedo dejar de camino a casa. Llámame cuando puedas.",
+              "signs": [
+                {
+                  "title": "Es su número guardado.",
+                  "detail": "La llamada viene del número que usted tiene guardado para Maya."
+                },
+                {
+                  "title": "Es un mandado cotidiano.",
+                  "detail": "Ofrecerse a traer comida es algo normal para ella."
+                },
+                {
+                  "title": "No pide dinero ni secretos.",
+                  "detail": "No hay emergencia, ni pagos, ni \"no se lo digas a nadie\"."
+                }
+              ],
+              "tip": "Si alguna vez una llamada de un familiar le parece extraña, cuelgue y llámele al número que tiene guardado."
+            },
+            "bn": {
+              "context": "Maya আপনার মেয়ে। তার নম্বর আপনার ফোনের কন্টাক্টে সেভ করা আছে।",
+              "message": "যিনি ফোন করেছেন: হাই আম্মু, আমি Maya। আমি মুদির দোকানে আছি। তোমার কি এখনো দুধ আর ডিম লাগবে? বাসায় ফেরার পথে দিয়ে যেতে পারি। সময় পেলে আমাকে ফোন দিও।",
+              "signs": [
+                {
+                  "title": "এটি তার সেভ করা নম্বর।",
+                  "detail": "ফোনটি এসেছে Maya-র নামে সেভ করা নম্বর থেকে।"
+                },
+                {
+                  "title": "এটি প্রতিদিনের সাধারণ কাজ।",
+                  "detail": "বাজার এনে দেওয়ার প্রস্তাব তার জন্য স্বাভাবিক ব্যাপার।"
+                },
+                {
+                  "title": "টাকা বা গোপনীয়তা চায় না।",
+                  "detail": "কোনো জরুরি অবস্থা, টাকা বা \"কাউকে বোলো না\" কিছুই নেই।"
+                }
+              ],
+              "tip": "পরিবারের কারও ফোন কখনো অস্বাভাবিক মনে হলে ফোন রেখে সেভ করা নম্বরে তাকে আবার ফোন করুন।"
             }
           }
         }

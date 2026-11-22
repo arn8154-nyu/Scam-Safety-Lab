@@ -174,6 +174,24 @@ h1:focus, h2:focus { outline: none; }
 }
 .why h2 { font-size: 1.45rem; }
 .why-source { color: var(--muted); font-size: 1rem; }
+/* Choosing what to practice */
+.choose { display: flex; flex-direction: column; gap: 14px; }
+.choose h2 { font-size: 1.45rem; }
+.kind-list { display: grid; gap: 12px; }
+.kind-btn {
+  display: flex; align-items: center; gap: 16px; width: 100%; min-height: 76px; padding: 12px 18px;
+  background: var(--surface); color: var(--ink); border: 3px solid var(--ink); border-radius: 12px;
+  font-family: var(--font); text-align: left; cursor: pointer;
+}
+.kind-btn:hover { background: var(--bubble); }
+.kind-btn:disabled { opacity: 0.55; cursor: wait; }
+.kind-btn[data-kind="mix"] { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+.kind-btn[data-kind="mix"]:hover { background: var(--accent); }
+.kind-btn svg { flex-shrink: 0; }
+.kind-text { display: flex; flex-direction: column; gap: 2px; }
+.kind-name { font-size: 1.35rem; font-weight: 700; }
+.kind-count { font-size: 1.05rem; }
+.fineprint { color: var(--muted); font-size: 1rem; }
 .home-art { display: flex; justify-content: center; }
 .phone {
   width: 100%; max-width: 300px; border: 3px solid var(--ink); border-radius: 32px;
@@ -207,13 +225,44 @@ h1:focus, h2:focus { outline: none; }
   background: var(--surface); border: 2px solid var(--ink); border-radius: var(--radius);
   padding: 18px; display: flex; flex-direction: column; gap: 12px;
 }
-.message-from { color: var(--muted); font-size: 1.1rem; }
+.message-from { color: var(--muted); font-size: 1.1rem; overflow-wrap: anywhere; }
 .message-from strong { color: var(--ink); }
 .message-bubble {
   background: var(--bubble); border-radius: 18px 18px 18px 4px; padding: 16px;
   font-size: 1.3rem; line-height: 1.45; overflow-wrap: anywhere;
 }
 .message-time { color: var(--muted); font-size: 1rem; }
+/* Email card */
+.email-subject { font-size: 1.2rem; overflow-wrap: anywhere; }
+.email-body {
+  border-top: 2px solid var(--line); padding-top: 14px;
+  font-size: 1.25rem; line-height: 1.5; white-space: pre-line; overflow-wrap: anywhere;
+}
+/* Phone call card */
+.call-head { display: flex; align-items: center; gap: 14px; }
+.call-icon {
+  flex-shrink: 0; width: 52px; height: 52px; border-radius: 50%;
+  background: var(--right); color: var(--surface); display: flex; align-items: center; justify-content: center;
+}
+.call-label { color: var(--muted); font-size: 1.05rem; }
+.call-from { font-size: 1.5rem; font-weight: 700; overflow-wrap: anywhere; }
+.call-transcript {
+  background: var(--bubble); border-radius: 12px; padding: 16px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.call-transcript-head { font-weight: 700; color: var(--muted); font-size: 1.05rem; }
+.call-line { font-size: 1.25rem; line-height: 1.5; overflow-wrap: anywhere; }
+.call-line strong { margin-right: 6px; }
+/* Read-aloud for calls */
+.listen { display: flex; flex-direction: column; gap: 8px; }
+.listen-btn {
+  display: inline-flex; align-items: center; gap: 10px; align-self: flex-start;
+  min-height: 60px; padding: 0 22px; border-radius: 12px;
+  background: var(--accent); color: var(--on-accent); border: 3px solid var(--accent);
+  font-family: var(--font); font-size: 1.25rem; font-weight: 700; cursor: pointer;
+}
+.listen-note { color: var(--muted); font-size: 1rem; }
+
 
 /* Optional translation of the practice message */
 .translate { display: flex; flex-direction: column; gap: 12px; }
@@ -228,7 +277,7 @@ h1:focus, h2:focus { outline: none; }
   padding: 16px; display: flex; flex-direction: column; gap: 10px;
 }
 .translate-label { font-weight: 700; color: var(--muted); font-size: 1.05rem; }
-.translated { font-size: 1.25rem; overflow-wrap: anywhere; }
+.translated { font-size: 1.25rem; overflow-wrap: anywhere; white-space: pre-line; }
 .translate-panel .note { font-size: 1.05rem; }
 
 /* Feedback */
@@ -281,6 +330,7 @@ h1:focus, h2:focus { outline: none; }
   .wrap { padding-block: 48px 64px; }
   .home { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px; }
   .phone { max-width: 340px; }
+  .kind-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .split { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; }
   #screen-practice .split-side { padding-top: 52px; }
   .actions-end .btn { flex: 0 0 auto; }
